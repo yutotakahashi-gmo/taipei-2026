@@ -3,14 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="2026年9月23〜27日 初めての台湾・台北4泊5日の旅程。九份・十分の日帰り、羽田T3の深夜早朝攻略、グルメと持ち物リスト。">
+<meta name="description" content="2026年9月23〜27日 初めての台湾・台北4泊5日の旅程。日本語／繁體中文切替。九份・十分の日帰り、羽田T3の深夜早朝攻略、グルメと持ち物リスト。">
 <meta name="theme-color" content="#F1F3EE">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8F%AE%3C/text%3E%3C/svg%3E">
 <style>*{box-sizing:border-box}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
 <title>台北 4泊5日 手帖</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@600;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Roboto+Mono:wght@400;500&display=swap">
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@600;800&amp;family=Zen+Kaku+Gothic+New:wght@400;500;700&amp;family=Noto+Serif+TC:wght@600;700&amp;family=Noto+Sans+TC:wght@400;500;700&amp;family=Roboto+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/>
 <style>
 :root{
   --paper:#F1F3EE;
@@ -183,729 +183,683 @@ td .zh2{color:var(--ink-3);font-size:12px}
 
 footer{margin-top:52px;padding-top:20px;border-top:1px solid var(--line);font-size:12px;color:var(--ink-3)}
 footer p{margin:0 0 6px}
+:root[data-lang="zh"]{
+  --serif:"Noto Serif TC","Songti TC","PingFang TC",serif;
+  --sans:"Noto Sans TC","PingFang TC","Microsoft JhengHei",system-ui,sans-serif;
+}
+:root[data-lang="zh"] body{line-height:1.8}
+:root[data-lang="zh"] .daynum{letter-spacing:0}
+header.hero{position:relative}
+.langbar{position:absolute;top:22px;right:0;display:flex;border:1px solid var(--line-strong);border-radius:999px;overflow:hidden;background:var(--surface);z-index:2}
+.langbar button{background:none;border:0;padding:6px 14px;font-size:12px;font-family:"Zen Kaku Gothic New","Noto Sans TC",system-ui,sans-serif;color:var(--ink-2);cursor:pointer;letter-spacing:.02em;white-space:nowrap}
+.langbar button:hover{color:var(--ink)}
+.langbar button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+.asklist{list-style:none;padding:0;margin:0;display:grid;gap:12px;counter-reset:qq}
+.asklist>li{counter-increment:qq;display:grid;grid-template-columns:34px 1fr;gap:0 14px;background:var(--surface);border:1px solid var(--line);border-radius:3px;padding:14px 16px;box-shadow:var(--shadow)}
+.asklist>li::before{content:counter(qq,decimal-leading-zero);font-family:var(--mono);font-size:12px;color:var(--red);padding-top:5px;font-variant-numeric:tabular-nums}
+.asklist h3{margin:0;font-family:var(--serif);font-size:16.5px;font-weight:600;line-height:1.5}
+.asklist p{margin:5px 0 0;font-size:13.5px;color:var(--ink-2)}
+@media(max-width:560px){.langbar{position:static;margin-bottom:16px;width:max-content}}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 </style>
-
 </head>
 <body>
 <div class="wrap">
 <header class="hero">
-  <div class="eyebrow">2026.09.23 — 09.27 ／ 4泊5日 ／ ひとり旅</div>
-  <h1>台北 手帖<span class="sub">初めての台湾・九份とランタンの旅</span></h1>
-  <p class="lede">ピーチの往復、台北駅そばのドミトリー4泊。到着日の午前と最終日の夕方まで丸ごと使える日程です。1日2〜3スポット＋食事を軸に、九份・十分の日帰り、北投温泉、夜市を組み込みました。</p>
-  <div class="flights">
-    <div class="flight">
-      <div class="tag">Outbound — 9/23 wed</div>
-      <div class="route">羽田 T3 → 台北 桃園</div>
-      <div class="time">06:00 → 08:35 <span class="unit" style="font-family:var(--mono);font-size:11px;color:var(--ink-3)">/ 3h35m 直行</span></div>
-      <div class="note">ピーチ・Standard運賃／返金・変更不可／受託手荷物1個込み</div>
-    </div>
-    <div class="flight">
-      <div class="tag">Return — 9/27 sun</div>
-      <div class="route">台北 桃園 → 羽田 T3</div>
-      <div class="time">20:25 → 00:45<sup>+1</sup> <span class="unit" style="font-family:var(--mono);font-size:11px;color:var(--ink-3)">/ 3h20m 直行</span></div>
-      <div class="note">深夜着。鉄道・リムジンの終車後なので帰路は別途手配</div>
-    </div>
-  </div>
+<div class="langbar" role="group" aria-label="言語 / 語言"><button type="button" data-lang="ja" aria-pressed="true">日本語</button><button type="button" data-lang="zh" aria-pressed="false">繁體中文</button></div>
+<div class="eyebrow" data-zh="2026.09.23 — 09.27 ／ 5天4夜 ／ 一人旅行">2026.09.23 — 09.27 ／ 4泊5日 ／ ひとり旅</div>
+<h1>台北 手帖<span class="sub" data-zh="第一次台灣行．九份與天燈之旅">初めての台湾・九份とランタンの旅</span></h1>
+<p class="lede" data-zh="樂桃航空來回，住台北車站附近的背包客房4晚。抵達當天上午到最後一天傍晚都能完整利用的行程。以一天2〜3個景點＋吃飯為主軸，安排了九份與十分一日遊、北投溫泉、還有夜市。">ピーチの往復、台北駅そばのドミトリー4泊。到着日の午前と最終日の夕方まで丸ごと使える日程です。1日2〜3スポット＋食事を軸に、九份・十分の日帰り、北投温泉、夜市を組み込みました。</p>
+<div class="flights">
+<div class="flight">
+<div class="tag">Outbound — 9/23 wed</div>
+<div class="route" data-zh="羽田機場 第3航廈 → 台北 桃園">羽田 T3 → 台北 桃園</div>
+<div class="time">06:00 → 08:35 <span class="unit" style="font-family:var(--mono);font-size:11px;color:var(--ink-3)">/ 3h35m 直行</span></div>
+<div class="note" data-zh="樂桃航空・Standard 票價／不可退票、不可更改／含托運行李1件">ピーチ・Standard運賃／返金・変更不可／受託手荷物1個込み</div>
+</div>
+<div class="flight">
+<div class="tag">Return — 9/27 sun</div>
+<div class="route" data-zh="台北 桃園 → 羽田機場 第3航廈">台北 桃園 → 羽田 T3</div>
+<div class="time">20:25 → 00:45<sup>+1</sup> <span class="unit" style="font-family:var(--mono);font-size:11px;color:var(--ink-3)">/ 3h20m 直行</span></div>
+<div class="note" data-zh="深夜抵達。鐵路和利木津巴士都已收班，回程要另外安排">深夜着。鉄道・リムジンの終車後なので帰路は別途手配</div>
+</div>
+</div>
 </header>
 </div>
-
 <nav>
-  <div class="navinner" role="tablist" aria-label="日程とセクション">
-    <div class="navrow">
-      <button role="tab" aria-selected="true" data-p="d1"><span class="d">D1</span>9/23 到着</button>
-      <button role="tab" aria-selected="false" data-p="d2"><span class="d">D2</span>9/24 十分・九份</button>
-      <button role="tab" aria-selected="false" data-p="d3"><span class="d">D3</span>9/25 故宮・101</button>
-      <button role="tab" aria-selected="false" data-p="d4"><span class="d">D4</span>9/26 北投</button>
-      <button role="tab" aria-selected="false" data-p="d5"><span class="d">D5</span>9/27 最終日</button>
-    </div>
-    <div class="navrow sub">
-      <button role="tab" aria-selected="false" data-p="air">往復・空港</button>
-      <button role="tab" aria-selected="false" data-p="base">基本情報</button>
-      <button role="tab" aria-selected="false" data-p="eat">食べたい物</button>
-      <button role="tab" aria-selected="false" data-p="sns">SNSで下調べ</button>
-      <button role="tab" aria-selected="false" data-p="pack">持ち物</button>
-    </div>
-  </div>
+<div aria-label="日程とセクション" class="navinner" role="tablist">
+<div class="navrow">
+<button aria-selected="true" data-p="d1" data-zh='&lt;span class="d"&gt;D1&lt;/span&gt;9/23 抵達' role="tab"><span class="d">D1</span>9/23 到着</button>
+<button aria-selected="false" data-p="d2" data-zh='&lt;span class="d"&gt;D2&lt;/span&gt;9/24 十分・九份' role="tab"><span class="d">D2</span>9/24 十分・九份</button>
+<button aria-selected="false" data-p="d3" data-zh='&lt;span class="d"&gt;D3&lt;/span&gt;9/25 故宮・101' role="tab"><span class="d">D3</span>9/25 故宮・101</button>
+<button aria-selected="false" data-p="d4" data-zh='&lt;span class="d"&gt;D4&lt;/span&gt;9/26 北投' role="tab"><span class="d">D4</span>9/26 北投</button>
+<button aria-selected="false" data-p="d5" data-zh='&lt;span class="d"&gt;D5&lt;/span&gt;9/27 最後一天' role="tab"><span class="d">D5</span>9/27 最終日</button>
+</div>
+<div class="navrow sub">
+<button aria-selected="false" data-p="base" data-zh="基本資訊" role="tab">基本情報</button>
+<button aria-selected="false" data-p="ask" data-zh="想請你確認" role="tab">聞きたいこと</button>
+<button aria-selected="false" data-p="eat" data-zh="想吃的東西" role="tab">食べたい物</button>
+<button aria-selected="false" data-p="sns" data-zh="社群做功課" role="tab">SNSで下調べ</button>
+<button aria-selected="false" data-p="pack" data-zh="攜帶物品" role="tab">持ち物</button>
+<button aria-selected="false" data-p="air" data-zh="來回・機場" role="tab">往復・空港</button>
+</div>
+</div>
 </nav>
-
 <div class="wrap">
-
 <!-- ============ DAY 1 ============ -->
 <section class="panel" id="d1" role="tabpanel">
-  <div class="dayhead"><div class="daynum">01</div><div>
-    <h2>着いたその足で、西門と寧夏夜市</h2>
-    <div class="when">9月23日（水）／ 日の入り 17:56 前後</div>
-  </div></div>
-  <p class="daysummary">午前8:35着なので実質フルデー。荷物をホテルに預けて、ホテル徒歩圏の西門・龍山寺エリアを一周し、夜は同じく徒歩圏の寧夏夜市で締めます。移動距離を最小にして初日の疲れを溜めない構成。</p>
-
-  <div class="alert"><b>出発前夜がいちばんの難所</b>
-    <p>6:00発なので羽田T3には4:00〜4:15に着いていたい。始発の電車では間に合わないので、<strong>深夜アクセスバスか前泊</strong>で空港入りします。保安検査を抜けたら108番ゲート付近の <strong>Sky Lounge South</strong>（24時間・プライオリティパス可・シャワー無料）で朝食とシャワーを済ませるのが最適解。詳細は「往復・空港」タブに。</p>
-  </div>
-
-  <ul class="tl">
-    <li class="key"><div class="clock">08:35</div><div class="dot"></div><div class="card">
-      <h3>桃園国際空港 着<span class="zh">桃園機場</span></h3>
-      <p>入国審査 → 手荷物受取 → 到着ロビー。ここで悠遊カード（EasyCard）を購入し、現金を少し両替。空港の両替レートは市中より少し不利ですが、初日分の数千円だけ替えれば十分です。</p>
-      <div class="meta"><span class="chip time">入国〜出るまで 40〜60分</span><span class="chip money">悠遊カード NT$100（デポジット）</span></div>
-      <div class="links"><a href="https://www.taoyuan-airport.com/japanese" target="_blank" rel="noopener">桃園空港 公式（日本語）</a><a href="https://www.easycard.com.tw/" target="_blank" rel="noopener">悠遊カード 公式</a></div>
-    </div></li>
-
-    <li><div class="clock">09:30</div><div class="dot"></div><div class="card">
-      <h3>空港MRTで台北駅へ<span class="zh">機捷 直達車 → A1</span></h3>
-      <p>紫色の「直達車（Express）」に乗れば台北駅まで約35分。青の「普通車（Commuter）」は約50分。15分間隔で交互に来ます。運賃はどちらも同額。</p>
-      <div class="meta"><span class="chip money">NT$160</span><span class="chip time">35〜50分</span></div>
-      <div class="links"><a href="https://www.tymetro.com.tw/tymetro-new/" target="_blank" rel="noopener">桃園空港MRT 時刻表</a></div>
-    </div></li>
-
-    <li class="key"><div class="clock">10:30</div><div class="dot"></div><div class="card">
-      <h3>ホテルに荷物を預ける<span class="zh">Cattail pocket Inn</span></h3>
-      <p>台北駅から約700m。チェックインは通常15時以降ですが、フロントで荷物だけ預かってもらえます（&ldquo;Can I leave my luggage?&rdquo;）。男女共用ドミトリー（シングルベッド10台）なので、貴重品は身につけて出発。</p>
-      <div class="meta"><span class="chip">4泊：9/23〜9/27</span><span class="chip">台北駅 徒歩10分</span><span class="chip">寧夏夜市 徒歩圏</span></div>
-      <div class="links"><a href="https://www.google.com/maps/search/?api=1&amp;query=Cattail%20pocket%20Inn%20Taipei" target="_blank" rel="noopener">地図で見る</a><a href="https://www.hotels.com/ho3270287264/cattail-pocket-inn-taipei-taiwan/" target="_blank" rel="noopener">施設情報・口コミ</a></div>
-    </div></li>
-
-    <li><div class="clock">11:30</div><div class="dot"></div><div class="card">
-      <h3>阿宗麵線で最初の一杯<span class="zh">阿宗麵線・西門</span></h3>
-      <p>台湾に着いてすぐ食べたい立ち食いの麵線（とろみのある細麵）。店先で丼を持って立って食べるのが正解。小サイズで十分、この後も食べるので。西門紅樓や西門町のアーケードをそのまま散策。</p>
-      <div class="meta"><span class="chip money">NT$60前後</span><span class="chip">MRT 西門駅 6番出口</span></div>
-      <div class="links"><a href="https://www.google.com/maps/search/?api=1&amp;query=%E9%98%BF%E5%AE%97%E9%BA%B5%E7%B7%9A%20%E8%A5%BF%E9%96%80" target="_blank" rel="noopener">地図で見る</a><a href="https://www.google.com/maps/search/?api=1&amp;query=%E8%A5%BF%E9%96%80%E7%B4%85%E6%A8%93%20%E5%8F%B0%E5%8C%97" target="_blank" rel="noopener">西門紅樓を地図で見る</a></div>
-    </div></li>
-
-    <li><div class="clock">13:00</div><div class="dot"></div><div class="card">
-      <h3>龍山寺と剝皮寮<span class="zh">龍山寺・剝皮寮歷史街區</span></h3>
-      <p>台北で最も濃い線香の香りがする廟。参拝作法の案内板が日本語でも出ています。おみくじ（擲筊→抽籤）もぜひ。すぐ隣の剝皮寮は清代の街並みが残る無料の歴史街区で、写真が良く撮れます。</p>
-      <div class="meta"><span class="chip money">無料</span><span class="chip time">合わせて 1.5時間</span><span class="chip">西門から1駅</span></div>
-      <div class="links"><a href="https://www.lungshan.org.tw/" target="_blank" rel="noopener">龍山寺 公式</a><a href="https://www.google.com/maps/search/?api=1&amp;query=%E5%89%9D%E7%9A%AE%E5%AF%AE%E6%AD%B7%E5%8F%B2%E8%A1%97%E5%8D%80" target="_blank" rel="noopener">剝皮寮を地図で見る</a></div>
-    </div></li>
-
-    <li><div class="clock">15:00</div><div class="dot"></div><div class="card">
-      <h3>中正紀念堂の衛兵交代<span class="zh">中正紀念堂</span></h3>
-      <p>毎正時に衛兵の交代儀式。館内の改修状況によって屋外の広場で行われる時期があるため、当日の実施場所と時間は公式サイトで確認を。広大な広場と自由廣場の牌楼は台北を象徴する景色です。</p>
-      <div class="meta"><span class="chip money">無料</span><span class="chip time">交代式は毎時00分</span></div>
-      <div class="links"><a href="https://www.cksmh.gov.tw/en/" target="_blank" rel="noopener">中正紀念堂 公式</a></div>
-    </div></li>
-
-    <li class="plain"><div class="clock">17:00</div><div class="dot"></div><div class="card">
-      <h3>ホテルでチェックイン・シャワー</h3>
-      <p>いったん戻ってベッドを確認し、荷物を整えて仮眠。前泊＋早朝便の疲れが出るタイミングなので、ここで30分でも横になると夜が楽になります。</p>
-    </div></li>
-
-    <li class="key"><div class="clock">18:30</div><div class="dot"></div><div class="card">
-      <h3>寧夏夜市で夕食<span class="zh">寧夏路夜市</span></h3>
-      <p>ホテルから歩ける、地元客比率の高いコンパクトな夜市。<strong>劉芋仔</strong>（揚げタロイモ団子・ミシュランのビブグルマン常連）、<strong>圓環邊蚵仔煎</strong>（牡蠣オムレツ）、<strong>豬肝榮仔</strong>（レバースープ）が定番。1品ずつ買って食べ歩くのが正解。</p>
-      <div class="meta"><span class="chip money">NT$300〜500</span><span class="chip time">17:00頃〜24:00</span><span class="chip">ホテル徒歩圏</span></div>
-      <div class="links"><a href="https://www.travel.taipei/ja" target="_blank" rel="noopener">台北観光サイトで夜市を探す</a><a href="https://www.google.com/maps/search/?api=1&amp;query=%E5%AF%A7%E5%A4%8F%E5%A4%9C%E5%B8%82" target="_blank" rel="noopener">地図で見る</a></div>
-    </div></li>
-
-    <li class="plain"><div class="clock">21:00</div><div class="dot"></div><div class="card">
-      <h3>早めに就寝</h3>
-      <p>翌日は7時台に出発。コンビニ（全聯・7-11）で水と朝の飲み物を買っておくと朝がスムーズです。</p>
-    </div></li>
-  </ul>
+<div class="dayhead"><div class="daynum">01</div><div>
+<h2 data-zh="一落地就直奔西門和寧夏夜市">着いたその足で、西門と寧夏夜市</h2>
+<div class="when" data-zh="9月23日（三）／ 日落 17:56 前後">9月23日（水）／ 日の入り 17:56 前後</div>
+</div></div>
+<p class="daysummary" data-zh="上午8:35 就落地，等於有完整的一天。先把行李寄放在飯店，繞一圈走得到的西門、龍山寺一帶，晚上同樣是步行可達的寧夏夜市收尾。把移動距離壓到最小，第一天不累積疲勞。">午前8:35着なので実質フルデー。荷物をホテルに預けて、ホテル徒歩圏の西門・龍山寺エリアを一周し、夜は同じく徒歩圏の寧夏夜市で締めます。移動距離を最小にして初日の疲れを溜めない構成。</p>
+<div class="alert"><b data-zh="出發前一晚是最大的難關">出発前夜がいちばんの難所</b>
+<p data-zh="因為是6:00起飛，希望4:00〜4:15就到羽田第3航廈。搭首班電車趕不上，所以要靠&lt;strong&gt;深夜接駁巴士或前一晚住機場附近&lt;/strong&gt;進機場。過了安檢之後，到108號登機門附近的 &lt;strong&gt;Sky Lounge South&lt;/strong&gt;（24小時・可用Priority Pass・淋浴免費）吃早餐順便洗澡是最佳解。詳細看「去回程・機場」分頁。">6:00発なので羽田T3には4:00〜4:15に着いていたい。始発の電車では間に合わないので、<strong>深夜アクセスバスか前泊</strong>で空港入りします。保安検査を抜けたら108番ゲート付近の <strong>Sky Lounge South</strong>（24時間・プライオリティパス可・シャワー無料）で朝食とシャワーを済ませるのが最適解。詳細は「往復・空港」タブに。</p>
+</div>
+<ul class="tl">
+<li class="key"><div class="clock">08:35</div><div class="dot"></div><div class="card">
+<h3 data-zh='抵達桃園國際機場&lt;span class="zh"&gt;桃園機場&lt;/span&gt;'>桃園国際空港 着<span class="zh">桃園機場</span></h3>
+<p data-zh="入境審查 → 領行李 → 入境大廳。在這裡買悠遊卡（EasyCard），順便換一點現金。機場的匯率比市區稍差一些，但只換第一天要用的幾千日圓就夠了。">入国審査 → 手荷物受取 → 到着ロビー。ここで悠遊カード（EasyCard）を購入し、現金を少し両替。空港の両替レートは市中より少し不利ですが、初日分の数千円だけ替えれば十分です。</p>
+<div class="meta"><span class="chip time" data-zh="入境到出關 40〜60分鐘">入国〜出るまで 40〜60分</span><span class="chip money" data-zh="悠遊卡 NT$100（押金）">悠遊カード NT$100（デポジット）</span></div>
+<div class="links"><a data-zh="桃園機場 官網（日文）" href="https://www.taoyuan-airport.com/japanese" rel="noopener" target="_blank">桃園空港 公式（日本語）</a><a data-zh="悠遊卡 官網" href="https://www.easycard.com.tw/" rel="noopener" target="_blank">悠遊カード 公式</a></div>
+</div></li>
+<li><div class="clock">09:30</div><div class="dot"></div><div class="card">
+<h3 data-zh='搭機場捷運到台北車站&lt;span class="zh"&gt;機捷 直達車 → A1&lt;/span&gt;'>空港MRTで台北駅へ<span class="zh">機捷 直達車 → A1</span></h3>
+<p data-zh="搭紫色的「直達車（Express）」到台北車站約35分鐘，藍色的「普通車（Commuter）」約50分鐘。兩種每15分鐘交替發車，票價一樣。">紫色の「直達車（Express）」に乗れば台北駅まで約35分。青の「普通車（Commuter）」は約50分。15分間隔で交互に来ます。運賃はどちらも同額。</p>
+<div class="meta"><span class="chip money">NT$160</span><span class="chip time" data-zh="35〜50分鐘">35〜50分</span></div>
+<div class="links"><a data-zh="機場捷運 時刻表" href="https://www.tymetro.com.tw/tymetro-new/" rel="noopener" target="_blank">桃園空港MRT 時刻表</a></div>
+</div></li>
+<li class="key"><div class="clock">10:30</div><div class="dot"></div><div class="card">
+<h3 data-zh='把行李寄放在飯店&lt;span class="zh"&gt;Cattail pocket Inn&lt;/span&gt;'>ホテルに荷物を預ける<span class="zh">Cattail pocket Inn</span></h3>
+<p data-zh="距離台北車站約700m。入住通常是15點以後，但可以先在櫃檯寄放行李（“Can I leave my luggage?”）。是男女混住的背包客房（10張單人床），所以貴重物品要隨身帶著再出門。">台北駅から約700m。チェックインは通常15時以降ですが、フロントで荷物だけ預かってもらえます（“Can I leave my luggage?”）。男女共用ドミトリー（シングルベッド10台）なので、貴重品は身につけて出発。</p>
+<div class="meta"><span class="chip" data-zh="4晚：9/23〜9/27">4泊：9/23〜9/27</span><span class="chip" data-zh="台北車站 步行10分鐘">台北駅 徒歩10分</span><span class="chip" data-zh="寧夏夜市 走得到">寧夏夜市 徒歩圏</span></div>
+<div class="links"><a data-zh="看地圖" href="https://www.google.com/maps/search/?api=1&amp;query=Cattail%20pocket%20Inn%20Taipei" rel="noopener" target="_blank">地図で見る</a><a data-zh="設施資訊・評論" href="https://www.hotels.com/ho3270287264/cattail-pocket-inn-taipei-taiwan/" rel="noopener" target="_blank">施設情報・口コミ</a></div>
+</div></li>
+<li><div class="clock">11:30</div><div class="dot"></div><div class="card">
+<h3 data-zh='在阿宗麵線來第一碗&lt;span class="zh"&gt;阿宗麵線・西門&lt;/span&gt;'>阿宗麵線で最初の一杯<span class="zh">阿宗麵線・西門</span></h3>
+<p data-zh="一到台灣就想馬上吃的站著吃麵線（湯頭稠稠的細麵）。在店門口捧著碗站著吃才對味。點小碗就夠了，因為後面還要繼續吃。接著就順路逛西門紅樓和西門町的商店街。">台湾に着いてすぐ食べたい立ち食いの麵線（とろみのある細麵）。店先で丼を持って立って食べるのが正解。小サイズで十分、この後も食べるので。西門紅樓や西門町のアーケードをそのまま散策。</p>
+<div class="meta"><span class="chip money" data-zh="約NT$60">NT$60前後</span><span class="chip" data-zh="捷運西門站 6號出口">MRT 西門駅 6番出口</span></div>
+<div class="links"><a data-zh="看地圖" href="https://www.google.com/maps/search/?api=1&amp;query=%E9%98%BF%E5%AE%97%E9%BA%B5%E7%B7%9A%20%E8%A5%BF%E9%96%80" rel="noopener" target="_blank">地図で見る</a><a data-zh="西門紅樓看地圖" href="https://www.google.com/maps/search/?api=1&amp;query=%E8%A5%BF%E9%96%80%E7%B4%85%E6%A8%93%20%E5%8F%B0%E5%8C%97" rel="noopener" target="_blank">西門紅樓を地図で見る</a></div>
+</div></li>
+<li><div class="clock">13:00</div><div class="dot"></div><div class="card">
+<h3 data-zh='龍山寺和剝皮寮&lt;span class="zh"&gt;龍山寺・剝皮寮歷史街區&lt;/span&gt;'>龍山寺と剝皮寮<span class="zh">龍山寺・剝皮寮歷史街區</span></h3>
+<p data-zh="台北香火最濃的廟，參拜方式的說明牌也有日文版。擲筊→抽籤也很值得試。就在隔壁的剝皮寮是保留清代街景的免費歷史街區，很好拍。">台北で最も濃い線香の香りがする廟。参拝作法の案内板が日本語でも出ています。おみくじ（擲筊→抽籤）もぜひ。すぐ隣の剝皮寮は清代の街並みが残る無料の歴史街区で、写真が良く撮れます。</p>
+<div class="meta"><span class="chip money" data-zh="免費">無料</span><span class="chip time" data-zh="合計 1.5小時">合わせて 1.5時間</span><span class="chip" data-zh="從西門1站">西門から1駅</span></div>
+<div class="links"><a data-zh="龍山寺 官網" href="https://www.lungshan.org.tw/" rel="noopener" target="_blank">龍山寺 公式</a><a data-zh="剝皮寮看地圖" href="https://www.google.com/maps/search/?api=1&amp;query=%E5%89%9D%E7%9A%AE%E5%AF%AE%E6%AD%B7%E5%8F%B2%E8%A1%97%E5%8D%80" rel="noopener" target="_blank">剝皮寮を地図で見る</a></div>
+</div></li>
+<li><div class="clock">15:00</div><div class="dot"></div><div class="card">
+<h3 data-zh='中正紀念堂的衛兵交接&lt;span class="zh"&gt;中正紀念堂&lt;/span&gt;'>中正紀念堂の衛兵交代<span class="zh">中正紀念堂</span></h3>
+<p data-zh="每到整點有衛兵交接儀式。依館內整修狀況，有些時期會改在戶外廣場舉行，所以當天的地點和時間要上官網確認。廣闊的廣場和自由廣場的牌樓是台北的代表景色。">毎正時に衛兵の交代儀式。館内の改修状況によって屋外の広場で行われる時期があるため、当日の実施場所と時間は公式サイトで確認を。広大な広場と自由廣場の牌楼は台北を象徴する景色です。</p>
+<div class="meta"><span class="chip money" data-zh="免費">無料</span><span class="chip time" data-zh="交接儀式每小時00分">交代式は毎時00分</span></div>
+<div class="links"><a data-zh="中正紀念堂 官網" href="https://www.cksmh.gov.tw/en/" rel="noopener" target="_blank">中正紀念堂 公式</a></div>
+</div></li>
+<li class="plain"><div class="clock">17:00</div><div class="dot"></div><div class="card">
+<h3 data-zh="回飯店 check in、洗澡">ホテルでチェックイン・シャワー</h3>
+<p data-zh="先回去確認床位、整理行李、小睡一下。前一晚沒睡好＋清晨班機的疲勞會在這時湧上來，就算只躺30分鐘，晚上也會輕鬆很多。">いったん戻ってベッドを確認し、荷物を整えて仮眠。前泊＋早朝便の疲れが出るタイミングなので、ここで30分でも横になると夜が楽になります。</p>
+</div></li>
+<li class="key"><div class="clock">18:30</div><div class="dot"></div><div class="card">
+<h3 data-zh='在寧夏夜市吃晚餐&lt;span class="zh"&gt;寧夏路夜市&lt;/span&gt;'>寧夏夜市で夕食<span class="zh">寧夏路夜市</span></h3>
+<p data-zh="從飯店走得到、當地客比例很高的小巧夜市。&lt;strong&gt;劉芋仔&lt;/strong&gt;（炸芋丸・米其林必比登常客）、&lt;strong&gt;圓環邊蚵仔煎&lt;/strong&gt;（蚵仔煎）、&lt;strong&gt;豬肝榮仔&lt;/strong&gt;（豬肝湯）是必吃。一攤買一樣邊走邊吃才對。">ホテルから歩ける、地元客比率の高いコンパクトな夜市。<strong>劉芋仔</strong>（揚げタロイモ団子・ミシュランのビブグルマン常連）、<strong>圓環邊蚵仔煎</strong>（牡蠣オムレツ）、<strong>豬肝榮仔</strong>（レバースープ）が定番。1品ずつ買って食べ歩くのが正解。</p>
+<div class="meta"><span class="chip money">NT$300〜500</span><span class="chip time" data-zh="約17:00〜24:00">17:00頃〜24:00</span><span class="chip" data-zh="飯店走得到">ホテル徒歩圏</span></div>
+<div class="links"><a data-zh="在台北旅遊網找夜市" href="https://www.travel.taipei/ja" rel="noopener" target="_blank">台北観光サイトで夜市を探す</a><a data-zh="看地圖" href="https://www.google.com/maps/search/?api=1&amp;query=%E5%AF%A7%E5%A4%8F%E5%A4%9C%E5%B8%82" rel="noopener" target="_blank">地図で見る</a></div>
+</div></li>
+<li class="plain"><div class="clock">21:00</div><div class="dot"></div><div class="card">
+<h3 data-zh="早點睡">早めに就寝</h3>
+<p data-zh="隔天7點多就要出門。先在超商（全聯・7-11）買好水和早上的飲料，早上會比較順。">翌日は7時台に出発。コンビニ（全聯・7-11）で水と朝の飲み物を買っておくと朝がスムーズです。</p>
+</div></li>
+</ul>
 </section>
-
 <!-- ============ DAY 2 ============ -->
-<section class="panel" id="d2" role="tabpanel" hidden>
-  <div class="dayhead"><div class="daynum">02</div><div>
-    <h2>十分でランタンを上げ、暗くなる頃に九份へ</h2>
-    <div class="when">9月24日（木）／ この日がハイライト</div>
-  </div></div>
-  <p class="daysummary">「九份は日が落ちてからの提灯が本番」という一点でこの順番。午前は十分でランタン上げと滝、午後に瑞芳へ戻ってバスで九份に登り、夕暮れ〜夜景を見て帰ります。逆順にすると九份が明るい時間になってしまうので、この向きがおすすめ。</p>
-
-  <div class="alert"><b>九份をこの日に入れた理由</b>
-    <p>9/25（金）から台湾は<strong>中秋節＋教師節の4連休</strong>。九份・十分は連休中に地元客で激しく混みます。平日の木曜であるこの日に郊外を済ませるのが、混雑を避ける最大の一手です。<strong>この日程は動かさないのがおすすめ。</strong></p>
-  </div>
-
-  <div class="alert calm"><b>切符は2枚だけ覚えればOK</b>
-    <p>①台北→瑞芳の台鐵（悠遊カードでそのまま乗れます）②瑞芳で買う<strong>平溪線1日周遊券 NT$80</strong>。九份へのバスも悠遊カードでタッチ。現金は屋台用に小額紙幣を用意。</p>
-  </div>
-
-  <ul class="tl">
-    <li><div class="clock">07:00</div><div class="dot"></div><div class="card">
-      <h3>阜杭豆漿で台湾式の朝食<span class="zh">阜杭豆漿・華山市場2F</span></h3>
-      <p>行列必至の朝食店。<strong>厚餅夾蛋</strong>（分厚い焼き餅に卵）と<strong>鹹豆漿</strong>（塩味の豆乳スープ）が名物。木曜は営業日ですが、月曜定休・12:30頃終了なので朝いちで。MRT善導寺駅5番出口直結。</p>
-      <div class="meta"><span class="chip money">NT$100前後</span><span class="chip time">5:30〜12:30／月曜休</span><span class="chip">行列20〜40分</span></div>
-      <div class="links"><a href="https://www.google.com/maps/search/?api=1&amp;query=%E9%98%9C%E6%9D%AD%E8%B1%86%E6%BC%BF" target="_blank" rel="noopener">地図で見る</a></div>
-    </div></li>
-
-    <li class="key"><div class="clock">08:20</div><div class="dot"></div><div class="card">
-      <h3>台北駅 → 瑞芳駅<span class="zh">台鐵 區間車／自強號</span></h3>
-      <p>台北車站の台鐵ホームから東部幹線で瑞芳へ。區間車（各駅）で約1時間、自強號なら約45分。悠遊カードで區間車に乗るのがいちばん手軽です。</p>
-      <div class="meta"><span class="chip money">NT$49〜76</span><span class="chip time">45〜60分</span></div>
-      <div class="links"><a href="https://www.railway.gov.tw/tra-tip-web/tip" target="_blank" rel="noopener">台鐵 時刻・運賃検索</a></div>
-    </div></li>
-
-    <li><div class="clock">09:30</div><div class="dot"></div><div class="card">
-      <h3>瑞芳 → 十分（平溪線）<span class="zh">平溪線 一日週遊券</span></h3>
-      <p>瑞芳駅の窓口で平溪線1日周遊券を買って乗り換え。単線のローカル線で本数が少ないので、<strong>ホームで復路の時刻を写真に撮っておく</strong>のがコツ。約30分で十分駅。</p>
-      <div class="meta"><span class="chip money">1日券 NT$80</span><span class="chip time">約30分</span><span class="chip">1時間に1本程度</span></div>
-      <div class="links"><a href="https://www.railway.gov.tw/tra-tip-web/tip" target="_blank" rel="noopener">平溪線 時刻表</a></div>
-    </div></li>
-
-    <li class="key"><div class="clock">10:15</div><div class="dot"></div><div class="card">
-      <h3>十分老街で天燈を上げる<span class="zh">十分老街・天燈</span></h3>
-      <p>線路のすぐ脇に店が並ぶ老街。願いを書いて空へ飛ばす天燈（ランタン）は色ごとに意味があり、1色 NT$200／4色 NT$250 前後。店員が写真と動画を撮ってくれます。列車が通る時だけ人が線路から避ける、あの光景も体験できます。</p>
-      <div class="meta"><span class="chip money">天燈 NT$200〜250</span><span class="chip time">滞在 1.5〜2時間</span></div>
-      <div class="links"><a href="https://magazine.solotori.jp/8766/" target="_blank" rel="noopener">十分・九份 日帰りモデルコース</a><a href="https://www.google.com/maps/search/?api=1&amp;query=%E5%8D%81%E5%88%86%E8%80%81%E8%A1%97" target="_blank" rel="noopener">地図で見る</a></div>
-    </div></li>
-
-    <li><div class="clock">12:00</div><div class="dot"></div><div class="card">
-      <h3>十分瀑布<span class="zh">十分瀑布公園</span></h3>
-      <p>「台湾のナイアガラ」と呼ばれる幅広の滝。十分駅から徒歩20分ほど、または1駅隣の大華駅から。入園無料。昼食は老街の屋台（鶏の唐揚げ・腸詰め・芋圓）で軽く済ませるのが効率的。</p>
-      <div class="meta"><span class="chip money">無料</span><span class="chip time">往復＋見学 1時間</span><span class="chip">徒歩20分</span></div>
-      <div class="links"><a href="https://www.google.com/maps/search/?api=1&amp;query=%E5%8D%81%E5%88%86%E7%80%91%E5%B8%83" target="_blank" rel="noopener">地図で見る</a></div>
-    </div></li>
-
-    <li><div class="clock">14:00</div><div class="dot"></div><div class="card">
-      <h3>瑞芳へ戻り、バスで九份へ<span class="zh">區民廣場 → 1062／965</span></h3>
-      <p>瑞芳駅の<strong>前站（正面口）</strong>を出て、駅を背に左へ3分歩いた「<strong>區民廣場</strong>」バス停から 1062・965・788 などに乗車。九份老街まで約15分。※「788區」は瑞芳駅止まりなので乗らないよう注意。</p>
-      <div class="meta"><span class="chip money">NT$15〜30</span><span class="chip time">約15分</span><span class="chip">悠遊カード可</span></div>
-      <div class="links"><a href="https://www.taipeinavi.com/special/80017112" target="_blank" rel="noopener">九份への行き方 完全ガイド</a></div>
-    </div></li>
-
-    <li class="key"><div class="clock">15:00</div><div class="dot"></div><div class="card">
-      <h3>九份老街を歩く<span class="zh">九份老街・豎崎路</span></h3>
-      <p>基山街のアーケード商店街で食べ歩き → 石段の<strong>豎崎路</strong>へ。<strong>阿柑姨芋圓</strong>（山の斜面に張り出した席から海が見える芋団子）、<strong>阿妹茶樓</strong>（提灯を纏った赤い木造の茶楼）、<strong>昇平戲院</strong>（無料の古い映画館）が要所。茶楼は席料＋茶葉代で1人 NT$300〜500ほど。</p>
-      <div class="meta"><span class="chip money">飲食 NT$500〜800</span><span class="chip time">滞在 4時間</span></div>
-      <div class="links"><a href="https://www.taipeinavi.com/special/80017112" target="_blank" rel="noopener">九份老街ガイド</a><a href="https://www.google.com/maps/search/?api=1&amp;query=%E4%B9%9D%E4%BB%BD%E8%80%81%E8%A1%97" target="_blank" rel="noopener">地図で見る</a><a href="https://www.funliday.com/posts/jiufen-1day-spots/" target="_blank" rel="noopener">阿妹茶樓・夜景の攻略</a></div>
-    </div></li>
-
-    <li class="key"><div class="clock">17:45</div><div class="dot"></div><div class="card">
-      <h3>提灯が灯る時間<span class="zh">Golden hour</span></h3>
-      <p>9月下旬の日の入りは17:55前後。空が藍色に残っているこの<strong>18:00〜18:40</strong>が、提灯と街の灯りが一番きれいに写る時間帯。豎崎路の階段上から阿妹茶樓を見下ろすアングルが定番です。日中の混雑も引きはじめます。</p>
-      <div class="meta"><span class="chip time">18:00〜18:40 が勝負</span><span class="chip">階段は滑るので靴に注意</span></div>
-    </div></li>
-
-    <li><div class="clock">19:15</div><div class="dot"></div><div class="card">
-      <h3>九份から台北へ直帰<span class="zh">1062 → 忠孝復興</span></h3>
-      <p>1062番（基隆客運）は九份から MRT板南線の<strong>忠孝復興駅</strong>まで乗り換えなしで戻れます。所要1時間15分〜1時間45分。九份行きの最終は22:30なので、帰りも遅くまで便はありますが、座りたいなら早めのバスに。</p>
-      <div class="meta"><span class="chip money">NT$115前後</span><span class="chip time">75〜105分</span></div>
-      <div class="links"><a href="https://www.kkday.com/ja/blog/117779/asia-taiwan-taipeitojiufen-bus" target="_blank" rel="noopener">九份⇄台北 バス路線と時刻</a></div>
-    </div></li>
-
-    <li class="plain"><div class="clock">21:00</div><div class="dot"></div><div class="card">
-      <h3>ホテル着</h3>
-      <p>電車＋バス＋バスと乗り継ぎが多い日。よく歩くので、この日に履く靴はスニーカー確定です。</p>
-    </div></li>
-  </ul>
-
-  <h4 class="sec">迷ったら：現地ツアーという選択肢</h4>
-  <div class="alert calm"><b>乗り継ぎが不安なら日帰りツアーでも</b>
-    <p>予約画面に出ていた「台北発：野柳・九份・平溪日帰りツアーとスカイランタン放流」（約9時間・NT換算で1万円強）は、野柳の女王頭まで足を延ばせるのが利点。ただし九份の滞在が夕暮れ前に切り上げになるツアーもあるため、<strong>提灯の夜景を見たいなら自力の上記ルートが有利</strong>です。</p>
-  </div>
+<section class="panel" hidden="" id="d2" role="tabpanel">
+<div class="dayhead"><div class="daynum">02</div><div>
+<h2 data-zh="在十分放天燈，天黑前後上九份">十分でランタンを上げ、暗くなる頃に九份へ</h2>
+<div class="when" data-zh="9月24日（四）／ 這天是重點">9月24日（木）／ この日がハイライト</div>
+</div></div>
+<p class="daysummary" data-zh="因為「九份要天黑後點燈才是重點」，所以排這個順序。上午在十分放天燈、看瀑布，下午回瑞芳搭公車上九份，看黃昏到夜景再回台北。反過來走的話，到九份時還是大白天，所以建議照這個方向。">「九份は日が落ちてからの提灯が本番」という一点でこの順番。午前は十分でランタン上げと滝、午後に瑞芳へ戻ってバスで九份に登り、夕暮れ〜夜景を見て帰ります。逆順にすると九份が明るい時間になってしまうので、この向きがおすすめ。</p>
+<div class="alert"><b data-zh="把九份排在這一天的理由">九份をこの日に入れた理由</b>
+<p data-zh="從9/25（五）開始台灣是&lt;strong&gt;中秋節＋教師節的四天連假&lt;/strong&gt;。連假期間九份、十分會被本地客擠爆。趁還是平日的這個星期四把郊區行程走完，是避開人潮最有效的一步。&lt;strong&gt;建議這天的安排不要動。&lt;/strong&gt;">9/25（金）から台湾は<strong>中秋節＋教師節の4連休</strong>。九份・十分は連休中に地元客で激しく混みます。平日の木曜であるこの日に郊外を済ませるのが、混雑を避ける最大の一手です。<strong>この日程は動かさないのがおすすめ。</strong></p>
+</div>
+<div class="alert calm"><b data-zh="票只要記住兩張就OK">切符は2枚だけ覚えればOK</b>
+<p data-zh="①台北→瑞芳的台鐵（悠遊卡直接刷就能搭）②在瑞芳買的&lt;strong&gt;平溪線一日週遊券 NT$80&lt;/strong&gt;。去九份的公車也是悠遊卡感應。現金就準備小額鈔票給路邊攤用。">①台北→瑞芳の台鐵（悠遊カードでそのまま乗れます）②瑞芳で買う<strong>平溪線1日周遊券 NT$80</strong>。九份へのバスも悠遊カードでタッチ。現金は屋台用に小額紙幣を用意。</p>
+</div>
+<ul class="tl">
+<li><div class="clock">07:00</div><div class="dot"></div><div class="card">
+<h3 data-zh='在阜杭豆漿吃台式早餐&lt;span class="zh"&gt;阜杭豆漿・華山市場2F&lt;/span&gt;'>阜杭豆漿で台湾式の朝食<span class="zh">阜杭豆漿・華山市場2F</span></h3>
+<p data-zh="一定要排隊的早餐店。&lt;strong&gt;厚餅夾蛋&lt;/strong&gt;（厚燒餅夾蛋）和&lt;strong&gt;鹹豆漿&lt;/strong&gt;是招牌。星期四有營業，但週一固定休息、12:30 左右就收，所以要一早去。捷運善導寺站5號出口直達。">行列必至の朝食店。<strong>厚餅夾蛋</strong>（分厚い焼き餅に卵）と<strong>鹹豆漿</strong>（塩味の豆乳スープ）が名物。木曜は営業日ですが、月曜定休・12:30頃終了なので朝いちで。MRT善導寺駅5番出口直結。</p>
+<div class="meta"><span class="chip money" data-zh="約NT$100">NT$100前後</span><span class="chip time" data-zh="5:30〜12:30／週一休">5:30〜12:30／月曜休</span><span class="chip" data-zh="排隊20〜40分鐘">行列20〜40分</span></div>
+<div class="links"><a data-zh="看地圖" href="https://www.google.com/maps/search/?api=1&amp;query=%E9%98%9C%E6%9D%AD%E8%B1%86%E6%BC%BF" rel="noopener" target="_blank">地図で見る</a></div>
+</div></li>
+<li class="key"><div class="clock">08:20</div><div class="dot"></div><div class="card">
+<h3 data-zh='台北車站 → 瑞芳車站&lt;span class="zh"&gt;台鐵 區間車／自強號&lt;/span&gt;'>台北駅 → 瑞芳駅<span class="zh">台鐵 區間車／自強號</span></h3>
+<p data-zh="從台北車站的台鐵月台搭東部幹線到瑞芳。區間車（每站停）約1小時，自強號約45分鐘。用悠遊卡直接搭區間車最方便。">台北車站の台鐵ホームから東部幹線で瑞芳へ。區間車（各駅）で約1時間、自強號なら約45分。悠遊カードで區間車に乗るのがいちばん手軽です。</p>
+<div class="meta"><span class="chip money">NT$49〜76</span><span class="chip time" data-zh="45〜60分鐘">45〜60分</span></div>
+<div class="links"><a data-zh="台鐵 時刻・票價查詢" href="https://www.railway.gov.tw/tra-tip-web/tip" rel="noopener" target="_blank">台鐵 時刻・運賃検索</a></div>
+</div></li>
+<li><div class="clock">09:30</div><div class="dot"></div><div class="card">
+<h3 data-zh='瑞芳 → 十分（平溪線）&lt;span class="zh"&gt;平溪線 一日週遊券&lt;/span&gt;'>瑞芳 → 十分（平溪線）<span class="zh">平溪線 一日週遊券</span></h3>
+<p data-zh="在瑞芳車站窗口買平溪線一日週遊券後轉車。是單線的支線，班次不多，所以訣竅是&lt;strong&gt;先在月台把回程時刻拍下來&lt;/strong&gt;。約30分鐘到十分站。">瑞芳駅の窓口で平溪線1日周遊券を買って乗り換え。単線のローカル線で本数が少ないので、<strong>ホームで復路の時刻を写真に撮っておく</strong>のがコツ。約30分で十分駅。</p>
+<div class="meta"><span class="chip money" data-zh="一日券 NT$80">1日券 NT$80</span><span class="chip time" data-zh="約30分鐘">約30分</span><span class="chip" data-zh="約每小時1班">1時間に1本程度</span></div>
+<div class="links"><a data-zh="平溪線 時刻表" href="https://www.railway.gov.tw/tra-tip-web/tip" rel="noopener" target="_blank">平溪線 時刻表</a></div>
+</div></li>
+<li class="key"><div class="clock">10:15</div><div class="dot"></div><div class="card">
+<h3 data-zh='在十分老街放天燈&lt;span class="zh"&gt;十分老街・天燈&lt;/span&gt;'>十分老街で天燈を上げる<span class="zh">十分老街・天燈</span></h3>
+<p data-zh="店家就開在鐵軌旁邊的老街。寫上願望放上天的天燈，每個顏色都有不同意義，1色 NT$200／4色 NT$250 左右。店員會幫忙拍照和錄影。也能親身體驗火車經過時大家才閃到鐵軌旁的那個畫面。">線路のすぐ脇に店が並ぶ老街。願いを書いて空へ飛ばす天燈（ランタン）は色ごとに意味があり、1色 NT$200／4色 NT$250 前後。店員が写真と動画を撮ってくれます。列車が通る時だけ人が線路から避ける、あの光景も体験できます。</p>
+<div class="meta"><span class="chip money" data-zh="天燈 NT$200〜250">天燈 NT$200〜250</span><span class="chip time" data-zh="停留 1.5〜2小時">滞在 1.5〜2時間</span></div>
+<div class="links"><a data-zh="十分・九份 一日遊建議路線" href="https://magazine.solotori.jp/8766/" rel="noopener" target="_blank">十分・九份 日帰りモデルコース</a><a data-zh="看地圖" href="https://www.google.com/maps/search/?api=1&amp;query=%E5%8D%81%E5%88%86%E8%80%81%E8%A1%97" rel="noopener" target="_blank">地図で見る</a></div>
+</div></li>
+<li><div class="clock">12:00</div><div class="dot"></div><div class="card">
+<h3 data-zh='十分瀑布&lt;span class="zh"&gt;十分瀑布公園&lt;/span&gt;'>十分瀑布<span class="zh">十分瀑布公園</span></h3>
+<p data-zh="被稱為「台灣尼加拉瓜」的寬幅瀑布。從十分站走約20分鐘，或從隔一站的大華站過去。入園免費。午餐在老街的攤販（雞排、香腸、芋圓）簡單吃比較有效率。">「台湾のナイアガラ」と呼ばれる幅広の滝。十分駅から徒歩20分ほど、または1駅隣の大華駅から。入園無料。昼食は老街の屋台（鶏の唐揚げ・腸詰め・芋圓）で軽く済ませるのが効率的。</p>
+<div class="meta"><span class="chip money" data-zh="免費">無料</span><span class="chip time" data-zh="來回＋參觀 1小時">往復＋見学 1時間</span><span class="chip" data-zh="步行20分鐘">徒歩20分</span></div>
+<div class="links"><a data-zh="看地圖" href="https://www.google.com/maps/search/?api=1&amp;query=%E5%8D%81%E5%88%86%E7%80%91%E5%B8%83" rel="noopener" target="_blank">地図で見る</a></div>
+</div></li>
+<li><div class="clock">14:00</div><div class="dot"></div><div class="card">
+<h3 data-zh='回瑞芳，再搭公車上九份&lt;span class="zh"&gt;區民廣場 → 1062／965&lt;/span&gt;'>瑞芳へ戻り、バスで九份へ<span class="zh">區民廣場 → 1062／965</span></h3>
+<p data-zh="從瑞芳車站的&lt;strong&gt;前站（正面出口）&lt;/strong&gt;出來，背對車站往左走3分鐘，在「&lt;strong&gt;區民廣場&lt;/strong&gt;」站牌搭 1062、965、788 等公車。到九份老街約15分鐘。※「788區」只到瑞芳車站，注意不要搭錯。">瑞芳駅の<strong>前站（正面口）</strong>を出て、駅を背に左へ3分歩いた「<strong>區民廣場</strong>」バス停から 1062・965・788 などに乗車。九份老街まで約15分。※「788區」は瑞芳駅止まりなので乗らないよう注意。</p>
+<div class="meta"><span class="chip money">NT$15〜30</span><span class="chip time" data-zh="約15分鐘">約15分</span><span class="chip" data-zh="可用悠遊卡">悠遊カード可</span></div>
+<div class="links"><a data-zh="前往九份的交通 完全指南" href="https://www.taipeinavi.com/special/80017112" rel="noopener" target="_blank">九份への行き方 完全ガイド</a></div>
+</div></li>
+<li class="key"><div class="clock">15:00</div><div class="dot"></div><div class="card">
+<h3 data-zh='走一趟九份老街&lt;span class="zh"&gt;九份老街・豎崎路&lt;/span&gt;'>九份老街を歩く<span class="zh">九份老街・豎崎路</span></h3>
+<p data-zh="先在基山街的商店街邊走邊吃 → 再往石階的&lt;strong&gt;豎崎路&lt;/strong&gt;。&lt;strong&gt;阿柑姨芋圓&lt;/strong&gt;（從突出在山坡上的座位可以看到海的芋圓）、&lt;strong&gt;阿妹茶樓&lt;/strong&gt;（掛滿燈籠的紅色木造茶樓）、&lt;strong&gt;昇平戲院&lt;/strong&gt;（免費的老戲院）是重點。茶樓一個人的座位費＋茶葉費大約 NT$300〜500。">基山街のアーケード商店街で食べ歩き → 石段の<strong>豎崎路</strong>へ。<strong>阿柑姨芋圓</strong>（山の斜面に張り出した席から海が見える芋団子）、<strong>阿妹茶樓</strong>（提灯を纏った赤い木造の茶楼）、<strong>昇平戲院</strong>（無料の古い映画館）が要所。茶楼は席料＋茶葉代で1人 NT$300〜500ほど。</p>
+<div class="meta"><span class="chip money" data-zh="餐飲 NT$500〜800">飲食 NT$500〜800</span><span class="chip time" data-zh="停留 4小時">滞在 4時間</span></div>
+<div class="links"><a data-zh="九份老街指南" href="https://www.taipeinavi.com/special/80017112" rel="noopener" target="_blank">九份老街ガイド</a><a data-zh="看地圖" href="https://www.google.com/maps/search/?api=1&amp;query=%E4%B9%9D%E4%BB%BD%E8%80%81%E8%A1%97" rel="noopener" target="_blank">地図で見る</a><a data-zh="阿妹茶樓・夜景攻略" href="https://www.funliday.com/posts/jiufen-1day-spots/" rel="noopener" target="_blank">阿妹茶樓・夜景の攻略</a></div>
+</div></li>
+<li class="key"><div class="clock">17:45</div><div class="dot"></div><div class="card">
+<h3 data-zh='燈籠點亮的時刻&lt;span class="zh"&gt;Golden hour&lt;/span&gt;'>提灯が灯る時間<span class="zh">Golden hour</span></h3>
+<p data-zh="9月下旬的日落大約在17:55。天空還留著藍色的&lt;strong&gt;18:00〜18:40&lt;/strong&gt;，是燈籠和街上燈光拍起來最漂亮的時段。從豎崎路的階梯上往下看阿妹茶樓是經典角度。白天的人潮也開始退了。">9月下旬の日の入りは17:55前後。空が藍色に残っているこの<strong>18:00〜18:40</strong>が、提灯と街の灯りが一番きれいに写る時間帯。豎崎路の階段上から阿妹茶樓を見下ろすアングルが定番です。日中の混雑も引きはじめます。</p>
+<div class="meta"><span class="chip time" data-zh="18:00〜18:40 是關鍵">18:00〜18:40 が勝負</span><span class="chip" data-zh="階梯很滑，鞋子要注意">階段は滑るので靴に注意</span></div>
+</div></li>
+<li><div class="clock">19:15</div><div class="dot"></div><div class="card">
+<h3 data-zh='從九份直接回台北&lt;span class="zh"&gt;1062 → 忠孝復興&lt;/span&gt;'>九份から台北へ直帰<span class="zh">1062 → 忠孝復興</span></h3>
+<p data-zh="1062（基隆客運）可以從九份不用轉車，直接回到捷運板南線的&lt;strong&gt;忠孝復興站&lt;/strong&gt;，車程1小時15分〜1小時45分。往九份的末班車是22:30，回程到很晚都還有車，但想有位子坐就搭早一點的。">1062番（基隆客運）は九份から MRT板南線の<strong>忠孝復興駅</strong>まで乗り換えなしで戻れます。所要1時間15分〜1時間45分。九份行きの最終は22:30なので、帰りも遅くまで便はありますが、座りたいなら早めのバスに。</p>
+<div class="meta"><span class="chip money" data-zh="約NT$115">NT$115前後</span><span class="chip time" data-zh="75〜105分鐘">75〜105分</span></div>
+<div class="links"><a data-zh="九份⇄台北 公車路線與時刻" href="https://www.kkday.com/ja/blog/117779/asia-taiwan-taipeitojiufen-bus" rel="noopener" target="_blank">九份⇄台北 バス路線と時刻</a></div>
+</div></li>
+<li class="plain"><div class="clock">21:00</div><div class="dot"></div><div class="card">
+<h3 data-zh="回到飯店">ホテル着</h3>
+<p data-zh="火車＋公車＋公車，轉乘很多的一天。而且會走很多路，這天一定要穿球鞋。">電車＋バス＋バスと乗り継ぎが多い日。よく歩くので、この日に履く靴はスニーカー確定です。</p>
+</div></li>
+</ul>
+<h4 class="sec" data-zh="拿不定主意的話：還有當地行程這個選項">迷ったら：現地ツアーという選択肢</h4>
+<div class="alert calm"><b data-zh="擔心轉乘的話，參加一日遊也可以">乗り継ぎが不安なら日帰りツアーでも</b>
+<p data-zh="預訂頁面上出現的「台北出發：野柳・九份・平溪一日遊＋放天燈」（約9小時・換算約1萬多日圓）好處是可以順道去野柳看女王頭。不過有些行程會在天黑前就結束九份的停留，所以&lt;strong&gt;想看燈籠夜景的話，自己走上面那條路線比較有利&lt;/strong&gt;。">予約画面に出ていた「台北発：野柳・九份・平溪日帰りツアーとスカイランタン放流」（約9時間・NT換算で1万円強）は、野柳の女王頭まで足を延ばせるのが利点。ただし九份の滞在が夕暮れ前に切り上げになるツアーもあるため、<strong>提灯の夜景を見たいなら自力の上記ルートが有利</strong>です。</p>
+</div>
 </section>
-
 <!-- ============ DAY 3 ============ -->
-<section class="panel" id="d3" role="tabpanel" hidden>
-  <div class="dayhead"><div class="daynum">03</div><div>
-    <h2>故宮の宝物から、象山の夕景と饒河街へ</h2>
-    <div class="when">9月25日（金）</div>
-  </div></div>
-  <p class="daysummary">午前に北の故宮、午後に南東の永康街〜信義へ移動して、日暮れは象山から台北101を見る。夜は屋台密度の高い饒河街夜市。市内の東西を1本に繋いだ、いちばん「定番」な1日です。</p>
-
-  <ul class="tl">
-    <li><div class="clock">08:30</div><div class="dot"></div><div class="card">
-      <h3>國立故宮博物院へ<span class="zh">國立故宮博物院</span></h3>
-      <p>MRT淡水信義線の士林駅から紅30バスで約15分。9:00開館。世界屈指の中国美術コレクションで、全部見ようとすると1日かかるので<strong>翠玉白菜・肉形石・毛公鼎などの名品を絞って2時間</strong>が現実的。日本語音声ガイドあり。</p>
-      <div class="meta"><span class="chip money">NT$350</span><span class="chip time">9:00〜17:00／月曜休</span><span class="chip">滞在2時間</span></div>
-      <div class="links"><a href="https://www.npm.gov.tw/" target="_blank" rel="noopener">故宮博物院 公式</a><a href="https://www.google.com/maps/search/?api=1&amp;query=%E5%9C%8B%E7%AB%8B%E6%95%85%E5%AE%AE%E5%8D%9A%E7%89%A9%E9%99%A2" target="_blank" rel="noopener">地図で見る</a></div>
-    </div></li>
-
-    <li class="key"><div class="clock">12:30</div><div class="dot"></div><div class="card">
-      <h3>永康街で小籠包<span class="zh">鼎泰豐 信義本店</span></h3>
-      <p>MRT東門駅すぐ。ミシュラン・ビブグルマン掲載の本店。到着したら整理券を取って番号を待つ方式。小籠包＋酸辣湯＋空心菜が王道。混雑時は台北101店や南西店に回るのも手です。</p>
-      <div class="meta"><span class="chip money">NT$500〜700</span><span class="chip time">待ち30〜60分</span><span class="chip">MRT 東門駅</span></div>
-      <div class="links"><a href="https://www.dintaifung.com.tw/" target="_blank" rel="noopener">鼎泰豐 公式・店舗一覧</a><a href="https://www.google.com/maps/search/?api=1&amp;query=%E9%B0%BC%E6%B3%B0%E8%B1%90%20%E4%BF%A1%E7%BE%A9%E6%9C%AC%E5%BA%97" target="_blank" rel="noopener">地図で見る</a></div>
-    </div></li>
-
-    <li><div class="clock">14:00</div><div class="dot"></div><div class="card">
-      <h3>永康街ぶらぶら＋かき氷<span class="zh">永康街・思慕昔／冰讚</span></h3>
-      <p>雑貨・茶葉・古書店が並ぶ落ち着いた通り。<strong>思慕昔（Smoothie House）</strong>のマンゴーかき氷は9月でもまだ提供されている可能性あり（旬は5〜10月）。台湾茶の土産はこの界隈の茶葉店で試飲してから選ぶと外れません。</p>
-      <p>この通りの <strong>永康街12巷</strong> に、フォローしている<strong>たいわんめしさんの店「MESHI to CHA 台灣茶飯」</strong>（11:00〜18:00・火曜休）があります。金曜なので営業日。ティーバッグの台湾茶は軽くて荷物にならない土産です。</p>
-      <div class="meta"><span class="chip money">かき氷 NT$200前後</span><span class="chip time">1〜1.5時間</span></div>
-      <div class="links"><a href="https://www.google.com/maps/search/?api=1&amp;query=%E6%B0%B8%E5%BA%B7%E8%A1%97%20%E5%8F%B0%E5%8C%97" target="_blank" rel="noopener">永康街を地図で見る</a><a href="https://www.google.com/maps/search/?api=1&amp;query=MESHI%20to%20CHA%20%E5%8F%B0%E7%81%A3%E8%8C%B6%E9%A3%AF%20%E6%B0%B8%E5%BA%B7%E8%A1%9712%E5%B7%B78%E8%99%9F" target="_blank" rel="noopener">MESHI to CHA</a><a href="https://www.instagram.com/taiwan_meshi/" target="_blank" rel="noopener">@taiwan_meshi</a></div>
-    </div></li>
-
-    <li class="key"><div class="clock">16:30</div><div class="dot"></div><div class="card">
-      <h3>象山ハイキングで台北101を見下ろす<span class="zh">象山親山步道</span></h3>
-      <p>MRT象山駅から登山口まで徒歩10分、階段を約20〜30分登ると<strong>六巨石</strong>の展望地。台北101を真正面に見下ろす、台北で一番有名な景色。夕暮れ〜点灯の時間を狙うと昼景と夜景を両方回収できます。汗をかくので着替えかタオルを。</p>
-      <div class="meta"><span class="chip money">無料</span><span class="chip time">往復1.5時間</span><span class="chip">階段多め</span></div>
-      <div class="links"><a href="https://www.google.com/maps/search/?api=1&amp;query=%E8%B1%A1%E5%B1%B1%E8%A6%AA%E5%B1%B1%E6%AD%A5%E9%81%93%20%E7%99%BB%E5%B1%B1%E5%8F%A3" target="_blank" rel="noopener">象山登山口を地図で見る</a><a href="https://www.google.com/maps/search/?api=1&amp;query=%E8%B1%A1%E5%B1%B1%E8%A6%AA%E5%B1%B1%E6%AD%A5%E9%81%93%20%E5%85%AD%E5%B7%A8%E7%9F%B3" target="_blank" rel="noopener">六巨石の地図</a></div>
-    </div></li>
-
-    <li class="plain"><div class="clock">18:30</div><div class="dot"></div><div class="card">
-      <h3>台北101 展望台は「どちらか」で</h3>
-      <p>象山から見上げるか、101に登って見下ろすか。両方やると時間も予算も膨らむので、初台湾なら<strong>象山＋足元の信義エリア散策</strong>で十分楽しめます。登るなら89階展望台 NT$600前後、閉館は22:00頃（最終入場21:15）。</p>
-      <div class="links"><a href="https://www.taipei-101.com.tw/" target="_blank" rel="noopener">台北101 公式</a></div>
-    </div></li>
-
-    <li class="key"><div class="clock">20:00</div><div class="dot"></div><div class="card">
-      <h3>饒河街観光夜市<span class="zh">饒河街觀光夜市</span></h3>
-      <p>MRT松山駅すぐ、一本道で歩きやすい夜市。入口の<strong>福州世祖胡椒餅</strong>（窯で焼く肉まん風の胡椒餅）は必食。隣の<strong>松山慈祐宮</strong>も夜まで開いていて綺麗です。麻油雞、藥燉排骨などスープ系も名物。</p>
-      <div class="meta"><span class="chip money">NT$300〜500</span><span class="chip time">17:00〜24:00</span><span class="chip">MRT 松山駅</span></div>
-      <div class="links"><a href="https://www.google.com/maps/search/?api=1&amp;query=%E9%A5%92%E6%B2%B3%E8%A1%97%E8%A7%80%E5%85%89%E5%A4%9C%E5%B8%82" target="_blank" rel="noopener">饒河街夜市を地図で見る</a><a href="https://www.google.com/maps/search/?api=1&amp;query=%E7%A6%8F%E5%B7%9E%E4%B8%96%E7%A5%96%E8%83%A1%E6%A4%92%E9%A4%85%20%E9%A5%92%E6%B2%B3%E8%A1%97" target="_blank" rel="noopener">胡椒餅の地図</a></div>
-    </div></li>
-  </ul>
+<section class="panel" hidden="" id="d3" role="tabpanel">
+<div class="dayhead"><div class="daynum">03</div><div>
+<h2 data-zh="從故宮的珍寶，到象山夕景與饒河街">故宮の宝物から、象山の夕景と饒河街へ</h2>
+<div class="when" data-zh="9月25日（五）">9月25日（金）</div>
+</div></div>
+<p class="daysummary" data-zh="上午去北邊的故宮，下午移動到東南邊的永康街〜信義，傍晚從象山看台北101。晚上是攤販密度很高的饒河街夜市。把市區的東西向串成一條線，最「經典」的一天。">午前に北の故宮、午後に南東の永康街〜信義へ移動して、日暮れは象山から台北101を見る。夜は屋台密度の高い饒河街夜市。市内の東西を1本に繋いだ、いちばん「定番」な1日です。</p>
+<ul class="tl">
+<li><div class="clock">08:30</div><div class="dot"></div><div class="card">
+<h3 data-zh='前往國立故宮博物院&lt;span class="zh"&gt;國立故宮博物院&lt;/span&gt;'>國立故宮博物院へ<span class="zh">國立故宮博物院</span></h3>
+<p data-zh="從捷運淡水信義線士林站搭紅30公車約15分鐘。9:00 開館。是世界頂級的中國藝術收藏，想全部看完要一整天，所以&lt;strong&gt;鎖定翠玉白菜、肉形石、毛公鼎等名品，看2小時&lt;/strong&gt;比較實際。有日語語音導覽。">MRT淡水信義線の士林駅から紅30バスで約15分。9:00開館。世界屈指の中国美術コレクションで、全部見ようとすると1日かかるので<strong>翠玉白菜・肉形石・毛公鼎などの名品を絞って2時間</strong>が現実的。日本語音声ガイドあり。</p>
+<div class="meta"><span class="chip money">NT$350</span><span class="chip time" data-zh="9:00〜17:00／週一休">9:00〜17:00／月曜休</span><span class="chip" data-zh="停留2小時">滞在2時間</span></div>
+<div class="links"><a data-zh="故宮博物院 官網" href="https://www.npm.gov.tw/" rel="noopener" target="_blank">故宮博物院 公式</a><a data-zh="看地圖" href="https://www.google.com/maps/search/?api=1&amp;query=%E5%9C%8B%E7%AB%8B%E6%95%85%E5%AE%AE%E5%8D%9A%E7%89%A9%E9%99%A2" rel="noopener" target="_blank">地図で見る</a></div>
+</div></li>
+<li class="key"><div class="clock">12:30</div><div class="dot"></div><div class="card">
+<h3 data-zh='在永康街吃小籠包&lt;span class="zh"&gt;鼎泰豐 信義本店&lt;/span&gt;'>永康街で小籠包<span class="zh">鼎泰豐 信義本店</span></h3>
+<p data-zh="捷運東門站出來就到。列入米其林必比登的本店，到了先抽號碼牌等叫號。小籠包＋酸辣湯＋空心菜是王道。人太多時也可以改去台北101店或南西店。">MRT東門駅すぐ。ミシュラン・ビブグルマン掲載の本店。到着したら整理券を取って番号を待つ方式。小籠包＋酸辣湯＋空心菜が王道。混雑時は台北101店や南西店に回るのも手です。</p>
+<div class="meta"><span class="chip money">NT$500〜700</span><span class="chip time" data-zh="等30〜60分鐘">待ち30〜60分</span><span class="chip" data-zh="捷運東門站">MRT 東門駅</span></div>
+<div class="links"><a data-zh="鼎泰豐 官網・分店一覽" href="https://www.dintaifung.com.tw/" rel="noopener" target="_blank">鼎泰豐 公式・店舗一覧</a><a data-zh="看地圖" href="https://www.google.com/maps/search/?api=1&amp;query=%E9%B0%BC%E6%B3%B0%E8%B1%90%20%E4%BF%A1%E7%BE%A9%E6%9C%AC%E5%BA%97" rel="noopener" target="_blank">地図で見る</a></div>
+</div></li>
+<li><div class="clock">14:00</div><div class="dot"></div><div class="card">
+<h3 data-zh='永康街隨意逛＋吃冰&lt;span class="zh"&gt;永康街・思慕昔／冰讚&lt;/span&gt;'>永康街ぶらぶら＋かき氷<span class="zh">永康街・思慕昔／冰讚</span></h3>
+<p data-zh="小物、茶葉、二手書店林立的一條靜謐街道。&lt;strong&gt;思慕昔（Smoothie House）&lt;/strong&gt;的芒果冰在9月可能還吃得到（產季是5〜10月）。台灣茶的伴手禮，在這一帶的茶行試喝過再選就不會買錯。">雑貨・茶葉・古書店が並ぶ落ち着いた通り。<strong>思慕昔（Smoothie House）</strong>のマンゴーかき氷は9月でもまだ提供されている可能性あり（旬は5〜10月）。台湾茶の土産はこの界隈の茶葉店で試飲してから選ぶと外れません。</p>
+<p data-zh="這條街的 &lt;strong&gt;永康街12巷&lt;/strong&gt; 裡，有他追蹤的&lt;strong&gt;たいわんめし開的店「MESHI to CHA 台灣茶飯」&lt;/strong&gt;（11:00〜18:00・週二休）。當天是星期五，有營業。茶包式的台灣茶很輕、不佔行李，是很好的伴手禮。">この通りの <strong>永康街12巷</strong> に、フォローしている<strong>たいわんめしさんの店「MESHI to CHA 台灣茶飯」</strong>（11:00〜18:00・火曜休）があります。金曜なので営業日。ティーバッグの台湾茶は軽くて荷物にならない土産です。</p>
+<div class="meta"><span class="chip money" data-zh="剉冰 約NT$200">かき氷 NT$200前後</span><span class="chip time" data-zh="1〜1.5小時">1〜1.5時間</span></div>
+<div class="links"><a data-zh="永康街看地圖" href="https://www.google.com/maps/search/?api=1&amp;query=%E6%B0%B8%E5%BA%B7%E8%A1%97%20%E5%8F%B0%E5%8C%97" rel="noopener" target="_blank">永康街を地図で見る</a><a href="https://www.google.com/maps/search/?api=1&amp;query=MESHI%20to%20CHA%20%E5%8F%B0%E7%81%A3%E8%8C%B6%E9%A3%AF%20%E6%B0%B8%E5%BA%B7%E8%A1%9712%E5%B7%B78%E8%99%9F" rel="noopener" target="_blank">MESHI to CHA</a><a href="https://www.instagram.com/taiwan_meshi/" rel="noopener" target="_blank">@taiwan_meshi</a></div>
+</div></li>
+<li class="key"><div class="clock">16:30</div><div class="dot"></div><div class="card">
+<h3 data-zh='爬象山俯瞰台北101&lt;span class="zh"&gt;象山親山步道&lt;/span&gt;'>象山ハイキングで台北101を見下ろす<span class="zh">象山親山步道</span></h3>
+<p data-zh="從捷運象山站走到登山口10分鐘，階梯再爬約20〜30分鐘就到&lt;strong&gt;六巨石&lt;/strong&gt;觀景點。正面俯瞰台北101，是台北最有名的景色。抓黃昏到點燈的時間去，白天和夜晚的景色可以一次收下。會流汗，記得帶換的衣服或毛巾。">MRT象山駅から登山口まで徒歩10分、階段を約20〜30分登ると<strong>六巨石</strong>の展望地。台北101を真正面に見下ろす、台北で一番有名な景色。夕暮れ〜点灯の時間を狙うと昼景と夜景を両方回収できます。汗をかくので着替えかタオルを。</p>
+<div class="meta"><span class="chip money" data-zh="免費">無料</span><span class="chip time" data-zh="來回1.5小時">往復1.5時間</span><span class="chip" data-zh="階梯偏多">階段多め</span></div>
+<div class="links"><a data-zh="象山登山口看地圖" href="https://www.google.com/maps/search/?api=1&amp;query=%E8%B1%A1%E5%B1%B1%E8%A6%AA%E5%B1%B1%E6%AD%A5%E9%81%93%20%E7%99%BB%E5%B1%B1%E5%8F%A3" rel="noopener" target="_blank">象山登山口を地図で見る</a><a data-zh="六巨石地圖" href="https://www.google.com/maps/search/?api=1&amp;query=%E8%B1%A1%E5%B1%B1%E8%A6%AA%E5%B1%B1%E6%AD%A5%E9%81%93%20%E5%85%AD%E5%B7%A8%E7%9F%B3" rel="noopener" target="_blank">六巨石の地図</a></div>
+</div></li>
+<li class="plain"><div class="clock">18:30</div><div class="dot"></div><div class="card">
+<h3 data-zh="台北101 觀景台「二選一」">台北101 展望台は「どちらか」で</h3>
+<p data-zh="從象山往上看，還是登上101往下看？兩個都做時間和預算都會膨脹，第一次來台灣的話&lt;strong&gt;象山＋山腳下的信義區散步&lt;/strong&gt;就很夠玩了。要登塔的話89樓觀景台約NT$600，收館約22:00（最後入場21:15）。">象山から見上げるか、101に登って見下ろすか。両方やると時間も予算も膨らむので、初台湾なら<strong>象山＋足元の信義エリア散策</strong>で十分楽しめます。登るなら89階展望台 NT$600前後、閉館は22:00頃（最終入場21:15）。</p>
+<div class="links"><a data-zh="台北101 官網" href="https://www.taipei-101.com.tw/" rel="noopener" target="_blank">台北101 公式</a></div>
+</div></li>
+<li class="key"><div class="clock">20:00</div><div class="dot"></div><div class="card">
+<h3 data-zh='饒河街觀光夜市&lt;span class="zh"&gt;饒河街觀光夜市&lt;/span&gt;'>饒河街観光夜市<span class="zh">饒河街觀光夜市</span></h3>
+<p data-zh="捷運松山站出站就到，一條直路很好走的夜市。入口的&lt;strong&gt;福州世祖胡椒餅&lt;/strong&gt;（用窯烤的胡椒餅）必吃。旁邊的&lt;strong&gt;松山慈祐宮&lt;/strong&gt;也開到晚上，很漂亮。麻油雞、藥燉排骨這類湯品也是招牌。">MRT松山駅すぐ、一本道で歩きやすい夜市。入口の<strong>福州世祖胡椒餅</strong>（窯で焼く肉まん風の胡椒餅）は必食。隣の<strong>松山慈祐宮</strong>も夜まで開いていて綺麗です。麻油雞、藥燉排骨などスープ系も名物。</p>
+<div class="meta"><span class="chip money">NT$300〜500</span><span class="chip time">17:00〜24:00</span><span class="chip" data-zh="捷運松山站">MRT 松山駅</span></div>
+<div class="links"><a data-zh="饒河街夜市看地圖" href="https://www.google.com/maps/search/?api=1&amp;query=%E9%A5%92%E6%B2%B3%E8%A1%97%E8%A7%80%E5%85%89%E5%A4%9C%E5%B8%82" rel="noopener" target="_blank">饒河街夜市を地図で見る</a><a data-zh="胡椒餅地圖" href="https://www.google.com/maps/search/?api=1&amp;query=%E7%A6%8F%E5%B7%9E%E4%B8%96%E7%A5%96%E8%83%A1%E6%A4%92%E9%A4%85%20%E9%A5%92%E6%B2%B3%E8%A1%97" rel="noopener" target="_blank">胡椒餅の地図</a></div>
+</div></li>
+</ul>
 </section>
-
 <!-- ============ DAY 4 ============ -->
-<section class="panel" id="d4" role="tabpanel" hidden>
-  <div class="dayhead"><div class="daynum">04</div><div>
-    <h2>午前は北投で温泉、午後は歩いて大稻埕</h2>
-    <div class="when">9月26日（土）／ 歩き疲れをリセットする日</div>
-  </div></div>
-  <p class="daysummary">3日歩いた脚を温泉と足マッサージで回収する日。北投はMRTで30分の温泉街で、日本統治期の建物が残っています。午後はホテルから歩ける問屋街・大稻埕へ。夜は土曜で混みますが士林夜市、静かに過ごしたいなら大稻埕の川沿いで。</p>
-
-  <div class="alert"><b>温泉の持ち物は先に決めておく</b>
-    <p>台湾の温泉は施設ごとに作法が違います。<strong>瀧乃湯</strong>は裸で入る昔ながらの共同浴場（男女別）。<strong>親水公園露天温泉（千禧湯）</strong>は屋外の混浴で<strong>水着＋スイムキャップが必須</strong>。長期改修から2026年2月再オープン予定だったので、行く前に営業状況の確認を。個室風呂がある宿の日帰りプランなら手ぶらでも入れます。</p>
-  </div>
-
-  <ul class="tl">
-    <li><div class="clock">09:00</div><div class="dot"></div><div class="card">
-      <h3>新北投へ<span class="zh">MRT 淡水信義線 → 北投 → 新北投</span></h3>
-      <p>台北駅から淡水信義線で北投駅（約25分）、そこで新北投支線に1駅乗り換え。支線の車両は温泉モチーフの装飾がされていて、それ自体が楽しい移動です。</p>
-      <div class="meta"><span class="chip money">NT$40前後</span><span class="chip time">約30分</span></div>
-      <div class="links"><a href="https://www.metro.taipei/" target="_blank" rel="noopener">台北MRT 公式</a></div>
-    </div></li>
-
-    <li class="key"><div class="clock">09:45</div><div class="dot"></div><div class="card">
-      <h3>北投温泉博物館と地熱谷<span class="zh">北投溫泉博物館・地熱谷</span></h3>
-      <p>1913年築の公共浴場を再生した博物館（無料・火曜休）。畳の大広間とローマ風浴場跡が見どころ。そこから坂を上ると<strong>地熱谷</strong>——湯気が立ちこめるエメラルドの源泉池で、こちらも無料。北投公園の緑を歩いて繋げます。</p>
-      <div class="meta"><span class="chip money">どちらも無料</span><span class="chip time">合わせて1.5時間</span><span class="chip">火曜休</span></div>
-      <div class="links"><a href="https://hotspringmuseum.taipei/" target="_blank" rel="noopener">北投溫泉博物館 公式</a><a href="https://www.google.com/maps/search/?api=1&amp;query=%E5%8C%97%E6%8A%95%20%E5%9C%B0%E7%86%B1%E8%B0%B7" target="_blank" rel="noopener">地熱谷を地図で見る</a></div>
-    </div></li>
-
-    <li class="key"><div class="clock">11:30</div><div class="dot"></div><div class="card">
-      <h3>湯に入る<span class="zh">瀧乃湯 or 千禧湯</span></h3>
-      <p>日本統治時代から続く<strong>瀧乃湯</strong>は、ラジウムを含む青硫黄泉に裸で入る素朴な浴場（NT$150前後・男女別・タオル持参）。水着で入りたければ<strong>親水公園露天温泉（千禧湯）</strong>が格安（NT$60前後）で、2時間半ごとの入替制。</p>
-      <div class="meta"><span class="chip money">NT$60〜150</span><span class="chip time">1〜1.5時間</span><span class="chip">タオル・水着は持参</span></div>
-      <div class="links"><a href="https://www.asoview.com/note/7467/" target="_blank" rel="noopener">北投温泉 日帰り施設まとめ</a><a href="https://tabilover.jcb.jp/twn/blog/relaxation/jcb-20159" target="_blank" rel="noopener">日帰り入浴できる施設6選</a></div>
-    </div></li>
-
-    <li><div class="clock">13:00</div><div class="dot"></div><div class="card">
-      <h3>北投市場で昼食<span class="zh">北投市場・矮仔財滷肉飯</span></h3>
-      <p>地元の朝市の2階に食堂が集まる市場。行列の<strong>矮仔財滷肉飯</strong>（魯肉飯）は昼過ぎに売り切れるので、湯上がりに直行するのが正解。魯肉飯＋筍湯＋滷蛋の3点で満足できます。</p>
-      <div class="meta"><span class="chip money">NT$150前後</span><span class="chip time">〜13:30頃で終了</span></div>
-      <div class="links"><a href="https://www.google.com/maps/search/?api=1&amp;query=%E7%9F%AE%E4%BB%94%E8%B2%A1%E6%BB%B7%E8%82%89%E9%A3%AF" target="_blank" rel="noopener">地図で見る</a></div>
-    </div></li>
-
-    <li class="key"><div class="clock">15:00</div><div class="dot"></div><div class="card">
-      <h3>大稻埕・迪化街<span class="zh">迪化街・永樂市場</span></h3>
-      <p>ホテルから歩いて行ける、清代からの問屋街。漢方・乾物・茶葉・布の店が並ぶ赤レンガの街並みで、土産探しに最適。<strong>永樂市場</strong>の布市場、<strong>民藝埕</strong>などの古民家リノベ雑貨店、<strong>夏樹甜品</strong>の杏仁豆腐が寄り道の目印。夕方は淡水河の river side で日没も。</p>
-      <div class="meta"><span class="chip money">土産予算しだい</span><span class="chip time">2〜3時間</span><span class="chip">ホテルから徒歩</span></div>
-      <div class="links"><a href="https://www.taipeinavi.com/" target="_blank" rel="noopener">大稻埕・迪化街の情報</a><a href="https://www.google.com/maps/search/?api=1&amp;query=%E8%BF%AA%E5%8C%96%E8%A1%97" target="_blank" rel="noopener">地図で見る</a></div>
-    </div></li>
-
-    <li class="key"><div class="clock">17:30</div><div class="dot"></div><div class="card">
-      <h3>足つぼマッサージ<span class="zh">腳底按摩 60分</span></h3>
-      <p>3日歩いた脚をここで回収。60分 NT$700〜1,000が相場で、台北駅・西門・中山あたりに店が集中しています。「痛くしないで」は<strong>「輕一點（チンイーディエン）」</strong>。予約なしでも入れる店が多いですが、人気店は電話かLINEで確認を。</p>
-      <div class="meta"><span class="chip money">NT$700〜1,000</span><span class="chip time">40〜60分</span></div>
-      <div class="links"><a href="https://www.google.com/maps/search/?api=1&amp;query=%E8%84%9A%E5%BA%95%E6%8C%89%E6%91%A9%20%E5%8F%B0%E5%8C%97%E8%BB%8A%E7%AB%99" target="_blank" rel="noopener">台北駅周辺のマッサージ店</a></div>
-    </div></li>
-
-    <li><div class="clock">19:30</div><div class="dot"></div><div class="card">
-      <h3>士林夜市 ／ または静かな夜<span class="zh">士林夜市</span></h3>
-      <p>台北最大の夜市。土曜の夜は相当な混雑になるので、人混みが苦手なら無理せず<strong>大稻埕で夕食＋川沿い散歩</strong>に切り替えるのもあり。行くなら地下フードコートの大餅包小餅、豪大大雞排、青蛙下蛋あたりが名物。</p>
-      <div class="meta"><span class="chip money">NT$300〜500</span><span class="chip time">16:00〜翌1:00</span><span class="chip">MRT 劍潭駅</span></div>
-      <div class="links"><a href="https://www.google.com/maps/search/?api=1&amp;query=%E5%A3%AB%E6%9E%97%E5%A4%9C%E5%B8%82" target="_blank" rel="noopener">士林夜市を地図で見る</a></div>
-    </div></li>
-  </ul>
+<section class="panel" hidden="" id="d4" role="tabpanel">
+<div class="dayhead"><div class="daynum">04</div><div>
+<h2 data-zh="上午在北投泡溫泉，下午散步去大稻埕">午前は北投で温泉、午後は歩いて大稻埕</h2>
+<div class="when" data-zh="9月26日（六）／ 讓走累的腿回復的一天">9月26日（土）／ 歩き疲れをリセットする日</div>
+</div></div>
+<p class="daysummary" data-zh="用溫泉和腳底按摩救回走了三天的腿。北投是搭捷運30分鐘就到的溫泉區，還留著日治時期的建築。下午去從飯店走得到的批發老街大稻埕。晚上雖然是週六會很擠，還是去士林夜市；想安靜一點就待在大稻埕的河邊。">3日歩いた脚を温泉と足マッサージで回収する日。北投はMRTで30分の温泉街で、日本統治期の建物が残っています。午後はホテルから歩ける問屋街・大稻埕へ。夜は土曜で混みますが士林夜市、静かに過ごしたいなら大稻埕の川沿いで。</p>
+<div class="alert"><b data-zh="溫泉要帶的東西先決定好">温泉の持ち物は先に決めておく</b>
+<p data-zh="台灣的溫泉每間設施的規矩都不一樣。&lt;strong&gt;瀧乃湯&lt;/strong&gt;是要裸湯的老式公共浴場（男女分開）。&lt;strong&gt;親水公園露天溫泉（千禧湯）&lt;/strong&gt;是室外男女共浴，&lt;strong&gt;泳衣＋泳帽必備&lt;/strong&gt;。它長期整修後原定2026年2月重新開放，去之前要先確認營業狀況。有個人湯屋的旅館的純泡湯方案，空手去也能泡。">台湾の温泉は施設ごとに作法が違います。<strong>瀧乃湯</strong>は裸で入る昔ながらの共同浴場（男女別）。<strong>親水公園露天温泉（千禧湯）</strong>は屋外の混浴で<strong>水着＋スイムキャップが必須</strong>。長期改修から2026年2月再オープン予定だったので、行く前に営業状況の確認を。個室風呂がある宿の日帰りプランなら手ぶらでも入れます。</p>
+</div>
+<ul class="tl">
+<li><div class="clock">09:00</div><div class="dot"></div><div class="card">
+<h3 data-zh='前往新北投&lt;span class="zh"&gt;MRT 淡水信義線 → 北投 → 新北投&lt;/span&gt;'>新北投へ<span class="zh">MRT 淡水信義線 → 北投 → 新北投</span></h3>
+<p data-zh="從台北車站搭淡水信義線到北投站（約25分鐘），再轉新北投支線一站。支線的車廂做成溫泉主題的裝飾，光是搭車本身就很有趣。">台北駅から淡水信義線で北投駅（約25分）、そこで新北投支線に1駅乗り換え。支線の車両は温泉モチーフの装飾がされていて、それ自体が楽しい移動です。</p>
+<div class="meta"><span class="chip money" data-zh="約NT$40">NT$40前後</span><span class="chip time" data-zh="約30分鐘">約30分</span></div>
+<div class="links"><a data-zh="台北捷運 官網" href="https://www.metro.taipei/" rel="noopener" target="_blank">台北MRT 公式</a></div>
+</div></li>
+<li class="key"><div class="clock">09:45</div><div class="dot"></div><div class="card">
+<h3 data-zh='北投溫泉博物館和地熱谷&lt;span class="zh"&gt;北投溫泉博物館・地熱谷&lt;/span&gt;'>北投温泉博物館と地熱谷<span class="zh">北投溫泉博物館・地熱谷</span></h3>
+<p data-zh="把1913年建的公共浴場再生而成的博物館（免費・週二休）。榻榻米大廳和羅馬式浴池遺跡是看點。從那裡往上走就是&lt;strong&gt;地熱谷&lt;/strong&gt;——蒸氣瀰漫的碧綠色源泉池，也是免費。可以順著北投公園的綠意一路走過去。">1913年築の公共浴場を再生した博物館（無料・火曜休）。畳の大広間とローマ風浴場跡が見どころ。そこから坂を上ると<strong>地熱谷</strong>——湯気が立ちこめるエメラルドの源泉池で、こちらも無料。北投公園の緑を歩いて繋げます。</p>
+<div class="meta"><span class="chip money" data-zh="兩邊都免費">どちらも無料</span><span class="chip time" data-zh="合計1.5小時">合わせて1.5時間</span><span class="chip" data-zh="週二休">火曜休</span></div>
+<div class="links"><a data-zh="北投溫泉博物館 官網" href="https://hotspringmuseum.taipei/" rel="noopener" target="_blank">北投溫泉博物館 公式</a><a data-zh="地熱谷看地圖" href="https://www.google.com/maps/search/?api=1&amp;query=%E5%8C%97%E6%8A%95%20%E5%9C%B0%E7%86%B1%E8%B0%B7" rel="noopener" target="_blank">地熱谷を地図で見る</a></div>
+</div></li>
+<li class="key"><div class="clock">11:30</div><div class="dot"></div><div class="card">
+<h3 data-zh='泡湯&lt;span class="zh"&gt;瀧乃湯 or 千禧湯&lt;/span&gt;'>湯に入る<span class="zh">瀧乃湯 or 千禧湯</span></h3>
+<p data-zh="從日治時代留下來的&lt;strong&gt;瀧乃湯&lt;/strong&gt;，是裸湯泡含鐳青磺泉的樸素浴場（約NT$150・男女分開・要自備毛巾）。想穿泳衣泡的話，&lt;strong&gt;親水公園露天溫泉（千禧湯）&lt;/strong&gt;很便宜（約NT$60），每兩個半小時換一場。">日本統治時代から続く<strong>瀧乃湯</strong>は、ラジウムを含む青硫黄泉に裸で入る素朴な浴場（NT$150前後・男女別・タオル持参）。水着で入りたければ<strong>親水公園露天温泉（千禧湯）</strong>が格安（NT$60前後）で、2時間半ごとの入替制。</p>
+<div class="meta"><span class="chip money">NT$60〜150</span><span class="chip time" data-zh="1〜1.5小時">1〜1.5時間</span><span class="chip" data-zh="毛巾、泳衣自備">タオル・水着は持参</span></div>
+<div class="links"><a data-zh="北投溫泉 純泡湯設施整理" href="https://www.asoview.com/note/7467/" rel="noopener" target="_blank">北投温泉 日帰り施設まとめ</a><a data-zh="可以純泡湯的6間設施" href="https://tabilover.jcb.jp/twn/blog/relaxation/jcb-20159" rel="noopener" target="_blank">日帰り入浴できる施設6選</a></div>
+</div></li>
+<li><div class="clock">13:00</div><div class="dot"></div><div class="card">
+<h3 data-zh='在北投市場吃午餐&lt;span class="zh"&gt;北投市場・矮仔財滷肉飯&lt;/span&gt;'>北投市場で昼食<span class="zh">北投市場・矮仔財滷肉飯</span></h3>
+<p data-zh="在地早市二樓聚集了各家小吃的市場。大排長龍的&lt;strong&gt;矮仔財滷肉飯&lt;/strong&gt;過午就會賣完，所以泡完溫泉直接殺過去才對。滷肉飯＋筍湯＋滷蛋這三樣就很滿足了。">地元の朝市の2階に食堂が集まる市場。行列の<strong>矮仔財滷肉飯</strong>（魯肉飯）は昼過ぎに売り切れるので、湯上がりに直行するのが正解。魯肉飯＋筍湯＋滷蛋の3点で満足できます。</p>
+<div class="meta"><span class="chip money" data-zh="約NT$150">NT$150前後</span><span class="chip time" data-zh="約13:30就結束">〜13:30頃で終了</span></div>
+<div class="links"><a data-zh="看地圖" href="https://www.google.com/maps/search/?api=1&amp;query=%E7%9F%AE%E4%BB%94%E8%B2%A1%E6%BB%B7%E8%82%89%E9%A3%AF" rel="noopener" target="_blank">地図で見る</a></div>
+</div></li>
+<li class="key"><div class="clock">15:00</div><div class="dot"></div><div class="card">
+<h3 data-zh='大稻埕・迪化街&lt;span class="zh"&gt;迪化街・永樂市場&lt;/span&gt;'>大稻埕・迪化街<span class="zh">迪化街・永樂市場</span></h3>
+<p data-zh="從飯店走得到的清代批發街。中藥、乾貨、茶葉、布行的紅磚街景，最適合找伴手禮。&lt;strong&gt;永樂市場&lt;/strong&gt;的布市場、&lt;strong&gt;民藝埕&lt;/strong&gt;這類老屋改造的選物店、&lt;strong&gt;夏樹甜品&lt;/strong&gt;的杏仁豆腐都是順路可以停的點。傍晚還能在淡水河邊看日落。">ホテルから歩いて行ける、清代からの問屋街。漢方・乾物・茶葉・布の店が並ぶ赤レンガの街並みで、土産探しに最適。<strong>永樂市場</strong>の布市場、<strong>民藝埕</strong>などの古民家リノベ雑貨店、<strong>夏樹甜品</strong>の杏仁豆腐が寄り道の目印。夕方は淡水河の river side で日没も。</p>
+<div class="meta"><span class="chip money" data-zh="看伴手禮預算">土産予算しだい</span><span class="chip time" data-zh="2〜3小時">2〜3時間</span><span class="chip" data-zh="從飯店步行">ホテルから徒歩</span></div>
+<div class="links"><a data-zh="大稻埕・迪化街資訊" href="https://www.taipeinavi.com/" rel="noopener" target="_blank">大稻埕・迪化街の情報</a><a data-zh="看地圖" href="https://www.google.com/maps/search/?api=1&amp;query=%E8%BF%AA%E5%8C%96%E8%A1%97" rel="noopener" target="_blank">地図で見る</a></div>
+</div></li>
+<li class="key"><div class="clock">17:30</div><div class="dot"></div><div class="card">
+<h3 data-zh='腳底按摩&lt;span class="zh"&gt;腳底按摩 60分&lt;/span&gt;'>足つぼマッサージ<span class="zh">腳底按摩 60分</span></h3>
+<p data-zh="走了三天的腿在這裡修復一下。行情是60分鐘 NT$700〜1,000，店家集中在台北車站、西門、中山一帶。想說「不要太用力」的話就講&lt;strong&gt;「輕一點」&lt;/strong&gt;。很多店不用預約也能進去，不過人氣店家建議先用電話或LINE確認。">3日歩いた脚をここで回収。60分 NT$700〜1,000が相場で、台北駅・西門・中山あたりに店が集中しています。「痛くしないで」は<strong>「輕一點（チンイーディエン）」</strong>。予約なしでも入れる店が多いですが、人気店は電話かLINEで確認を。</p>
+<div class="meta"><span class="chip money">NT$700〜1,000</span><span class="chip time" data-zh="40〜60分鐘">40〜60分</span></div>
+<div class="links"><a data-zh="台北車站周邊的按摩店" href="https://www.google.com/maps/search/?api=1&amp;query=%E8%84%9A%E5%BA%95%E6%8C%89%E6%91%A9%20%E5%8F%B0%E5%8C%97%E8%BB%8A%E7%AB%99" rel="noopener" target="_blank">台北駅周辺のマッサージ店</a></div>
+</div></li>
+<li><div class="clock">19:30</div><div class="dot"></div><div class="card">
+<h3 data-zh='士林夜市 ／ 或是安靜的一晚&lt;span class="zh"&gt;士林夜市&lt;/span&gt;'>士林夜市 ／ または静かな夜<span class="zh">士林夜市</span></h3>
+<p data-zh="台北最大的夜市。週六晚上會相當擁擠，怕人多的話也不用勉強，改成&lt;strong&gt;在大稻埕吃晚餐＋沿著河邊散步&lt;/strong&gt;也可以。真的要去的話，地下美食區的大餅包小餅、豪大大雞排、青蛙下蛋是招牌。">台北最大の夜市。土曜の夜は相当な混雑になるので、人混みが苦手なら無理せず<strong>大稻埕で夕食＋川沿い散歩</strong>に切り替えるのもあり。行くなら地下フードコートの大餅包小餅、豪大大雞排、青蛙下蛋あたりが名物。</p>
+<div class="meta"><span class="chip money">NT$300〜500</span><span class="chip time" data-zh="16:00〜隔天1:00">16:00〜翌1:00</span><span class="chip" data-zh="捷運劍潭站">MRT 劍潭駅</span></div>
+<div class="links"><a data-zh="士林夜市看地圖" href="https://www.google.com/maps/search/?api=1&amp;query=%E5%A3%AB%E6%9E%97%E5%A4%9C%E5%B8%82" rel="noopener" target="_blank">士林夜市を地図で見る</a></div>
+</div></li>
+</ul>
 </section>
-
 <!-- ============ DAY 5 ============ -->
-<section class="panel" id="d5" role="tabpanel" hidden>
-  <div class="dayhead"><div class="daynum">05</div><div>
-    <h2>夕方まで遊べる、最終日の使い方</h2>
-    <div class="when">9月27日（日）／ 20:25発</div>
-  </div></div>
-  <p class="daysummary">夜便なので日中はまるごと自由。荷物をホテルか台北駅のロッカーに預けて、猫空のロープウェイでお茶を飲むか、松山文創園區で雑貨を見るか。16:30に市内を出れば余裕をもって空港に着けます。</p>
-
-  <div class="alert"><b>帰りは羽田0:45着。到着後のラウンジは使えない</b>
-    <p>鉄道・リムジンの終車後で、<strong>到着後にプライオリティパスで入れるラウンジはありません</strong>（出発前3時間以内の搭乗券が条件）。本命はT3直結の<strong>泉天空の湯で始発まで過ごす（約8,800円）</strong>。選択肢の比較は「往復・空港」タブに。</p>
-  </div>
-
-  <ul class="tl">
-    <li><div class="clock">08:30</div><div class="dot"></div><div class="card">
-      <h3>チェックアウト・荷物を預ける<span class="zh">寄放行李</span></h3>
-      <p>ホテルのフロントで夕方まで預かってもらうのが基本。台北駅のコインロッカー（NT$20〜50／回）も使えますが、日曜は埋まりやすいので早めに。</p>
-      <div class="meta"><span class="chip money">ホテル預かり 無料</span></div>
-    </div></li>
-
-    <li><div class="clock">09:00</div><div class="dot"></div><div class="card">
-      <h3>最後の台湾式朝食<span class="zh">鼎元豐 or 世界豆漿大王</span></h3>
-      <p>初日に食べ損ねた物をここで回収。小籠包・蛋餅・鹹豆漿など。台北駅周辺なら移動もロス無しです。</p>
-      <div class="meta"><span class="chip money">NT$100前後</span></div>
-      <div class="links"><a href="https://www.google.com/maps/search/?api=1&amp;query=%E9%BC%8E%E5%85%83%E8%B1%90%20%E5%8F%B0%E5%8C%97" target="_blank" rel="noopener">鼎元豐の地図</a></div>
-    </div></li>
-
-    <li class="key"><div class="clock">10:30</div><div class="dot"></div><div class="card">
-      <h3>猫空ロープウェイと茶館<span class="zh">貓空纜車</span></h3>
-      <p>MRT文湖線の動物園駅からロープウェイで山上へ。床が透けるクリスタルキャビンが人気。山頂一帯は<strong>木柵鐵觀音</strong>の茶畑と茶館が並び、台北市街を見下ろしながら茶を飲めます。月曜運休、休日は行列するので午前が狙い目。</p>
-      <div class="meta"><span class="chip money">往復 NT$240前後</span><span class="chip time">滞在3時間</span><span class="chip">月曜運休</span></div>
-      <div class="links"><a href="https://www.gondola.taipei/" target="_blank" rel="noopener">貓空纜車 公式</a><a href="https://www.google.com/maps/search/?api=1&amp;query=%E8%B2%93%E7%A9%BA%20%E8%8C%B6%E9%A4%A8" target="_blank" rel="noopener">貓空を地図で見る</a></div>
-    </div></li>
-
-    <li class="plain"><div class="clock">10:30</div><div class="dot"></div><div class="card">
-      <h3>差し替え候補：松山文創園區＋興波咖啡</h3>
-      <p>山に登る元気が残っていなければ、旧たばこ工場をリノベした<strong>松山文創園區</strong>（無料・MRT國父紀念館駅）でデザイン雑貨と展示、そして世界チャンピオンのカフェ <strong>Simple Kaffa 興波咖啡</strong> でひと休みという1日も良い締め方です。</p>
-      <div class="links"><a href="https://www.songshanculturalpark.org/" target="_blank" rel="noopener">松山文創園區 公式</a><a href="https://www.simplekaffa.com/" target="_blank" rel="noopener">Simple Kaffa 興波咖啡</a></div>
-    </div></li>
-
-    <li><div class="clock">14:00</div><div class="dot"></div><div class="card">
-      <h3>土産の総仕上げ<span class="zh">微風台北車站・新東陽</span></h3>
-      <p>パイナップルケーキ（鳳梨酥）は<strong>佳德糕餅</strong>や<strong>微熱山丘</strong>が定番。台北駅の商業施設や地下街でまとめ買いができるので、時間が読めない最終日は駅で完結させるのが安全。カラスミや高山茶も駅ナカで揃います。</p>
-      <div class="meta"><span class="chip money">予算しだい</span><span class="chip time">1時間</span></div>
-      <div class="links"><a href="https://www.google.com/maps/search/?api=1&amp;query=%E4%BD%B3%E5%BE%B7%E7%B3%95%E9%A4%85" target="_blank" rel="noopener">佳德糕餅</a><a href="https://www.sunnyhills.com.tw/" target="_blank" rel="noopener">微熱山丘 公式</a></div>
-    </div></li>
-
-    <li class="key"><div class="clock">16:30</div><div class="dot"></div><div class="card">
-      <h3>A1台北車站 → 桃園空港<span class="zh">機捷 直達車</span></h3>
-      <p>荷物を回収して空港MRTへ。直達車で35分、17:15頃に空港着（出発3時間前）。<strong>桃園空港の出発ターミナル（T1／T2）は予約確認メールで要チェック</strong>。搭乗券は事前にアプリで取得しておくとカウンターが早く済みます。</p>
-      <div class="meta"><span class="chip money">NT$160</span><span class="chip time">35分</span></div>
-      <div class="links"><a href="https://www.flypeach.com/jp" target="_blank" rel="noopener">Peach 公式（オンラインチェックイン）</a><a href="https://www.tymetro.com.tw/tymetro-new/" target="_blank" rel="noopener">空港MRT 時刻表</a></div>
-    </div></li>
-
-    <li class="key"><div class="clock">20:25</div><div class="dot"></div><div class="card">
-      <h3>台北 → 東京<span class="zh">離陸</span></h3>
-      <p>翌0:45着。機内で寝られるように、空港でアイマスクと羽織るものを手荷物の上に出しておくと楽です。残った台湾ドルは空港のコンビニで使い切るか、次回用に小銭だけ残す。</p>
-      <div class="meta"><span class="chip">受託手荷物1個込み</span><span class="chip">変更・返金不可</span></div>
-    </div></li>
-  </ul>
+<section class="panel" hidden="" id="d5" role="tabpanel">
+<div class="dayhead"><div class="daynum">05</div><div>
+<h2 data-zh="能玩到傍晚：最後一天怎麼安排">夕方まで遊べる、最終日の使い方</h2>
+<div class="when" data-zh="9月27日（日）／ 20:25 起飛">9月27日（日）／ 20:25発</div>
+</div></div>
+<p class="daysummary" data-zh="因為是晚班機，白天整天都自由。行李寄放在飯店或台北車站的置物櫃，然後選一個：搭貓空纜車上山喝茶，或去松山文創園區逛小物。16:30 離開市區就能從容地到機場。">夜便なので日中はまるごと自由。荷物をホテルか台北駅のロッカーに預けて、猫空のロープウェイでお茶を飲むか、松山文創園區で雑貨を見るか。16:30に市内を出れば余裕をもって空港に着けます。</p>
+<div class="alert"><b data-zh="回程0:45抵達羽田。抵達後的貴賓室是用不了的">帰りは羽田0:45着。到着後のラウンジは使えない</b>
+<p data-zh="抵達時電車和利木津巴士都已經收班，&lt;strong&gt;而且入境後沒有任何能用 Priority Pass 進去的貴賓室&lt;/strong&gt;（條件是出發前3小時內的登機證）。首選是直通第3航廈的&lt;strong&gt;泉天空之湯，待到首班車（約8,800円）&lt;/strong&gt;。各方案比較請看「來回・機場」分頁。">鉄道・リムジンの終車後で、<strong>到着後にプライオリティパスで入れるラウンジはありません</strong>（出発前3時間以内の搭乗券が条件）。本命はT3直結の<strong>泉天空の湯で始発まで過ごす（約8,800円）</strong>。選択肢の比較は「往復・空港」タブに。</p>
+</div>
+<ul class="tl">
+<li><div class="clock">08:30</div><div class="dot"></div><div class="card">
+<h3 data-zh='退房、寄放行李&lt;span class="zh"&gt;寄放行李&lt;/span&gt;'>チェックアウト・荷物を預ける<span class="zh">寄放行李</span></h3>
+<p data-zh="基本上就是請飯店櫃檯把行李寄放到傍晚。台北車站的置物櫃（NT$20〜50／次）也可以用，但週日容易被塞滿，要早一點去。">ホテルのフロントで夕方まで預かってもらうのが基本。台北駅のコインロッカー（NT$20〜50／回）も使えますが、日曜は埋まりやすいので早めに。</p>
+<div class="meta"><span class="chip money" data-zh="飯店寄放 免費">ホテル預かり 無料</span></div>
+</div></li>
+<li><div class="clock">09:00</div><div class="dot"></div><div class="card">
+<h3 data-zh='最後一頓台式早餐&lt;span class="zh"&gt;鼎元豐 or 世界豆漿大王&lt;/span&gt;'>最後の台湾式朝食<span class="zh">鼎元豐 or 世界豆漿大王</span></h3>
+<p data-zh="第一天沒吃到的在這裡補回來。小籠包、蛋餅、鹹豆漿之類的。選台北車站附近的話，移動也不會浪費時間。">初日に食べ損ねた物をここで回収。小籠包・蛋餅・鹹豆漿など。台北駅周辺なら移動もロス無しです。</p>
+<div class="meta"><span class="chip money" data-zh="約NT$100">NT$100前後</span></div>
+<div class="links"><a data-zh="鼎元豐地圖" href="https://www.google.com/maps/search/?api=1&amp;query=%E9%BC%8E%E5%85%83%E8%B1%90%20%E5%8F%B0%E5%8C%97" rel="noopener" target="_blank">鼎元豐の地図</a></div>
+</div></li>
+<li class="key"><div class="clock">10:30</div><div class="dot"></div><div class="card">
+<h3 data-zh='貓空纜車和茶館&lt;span class="zh"&gt;貓空纜車&lt;/span&gt;'>猫空ロープウェイと茶館<span class="zh">貓空纜車</span></h3>
+<p data-zh="從捷運文湖線動物園站搭纜車上山。地板透明的水晶車廂很受歡迎。山上一帶都是&lt;strong&gt;木柵鐵觀音&lt;/strong&gt;的茶園和茶館，可以一邊俯瞰台北市區一邊喝茶。週一停駛，假日會排隊，所以上午去最好。">MRT文湖線の動物園駅からロープウェイで山上へ。床が透けるクリスタルキャビンが人気。山頂一帯は<strong>木柵鐵觀音</strong>の茶畑と茶館が並び、台北市街を見下ろしながら茶を飲めます。月曜運休、休日は行列するので午前が狙い目。</p>
+<div class="meta"><span class="chip money" data-zh="來回 約NT$240">往復 NT$240前後</span><span class="chip time" data-zh="停留3小時">滞在3時間</span><span class="chip" data-zh="週一停駛">月曜運休</span></div>
+<div class="links"><a data-zh="貓空纜車 官網" href="https://www.gondola.taipei/" rel="noopener" target="_blank">貓空纜車 公式</a><a data-zh="貓空看地圖" href="https://www.google.com/maps/search/?api=1&amp;query=%E8%B2%93%E7%A9%BA%20%E8%8C%B6%E9%A4%A8" rel="noopener" target="_blank">貓空を地図で見る</a></div>
+</div></li>
+<li class="plain"><div class="clock">10:30</div><div class="dot"></div><div class="card">
+<h3 data-zh="替代方案：松山文創園區＋興波咖啡">差し替え候補：松山文創園區＋興波咖啡</h3>
+<p data-zh="如果沒力氣爬山了，改成去舊菸廠改建的&lt;strong&gt;松山文創園區&lt;/strong&gt;（免費・捷運國父紀念館站）看設計小物和展覽，再到世界冠軍的咖啡店 &lt;strong&gt;Simple Kaffa 興波咖啡&lt;/strong&gt; 休息一下，這樣收尾也很不錯。">山に登る元気が残っていなければ、旧たばこ工場をリノベした<strong>松山文創園區</strong>（無料・MRT國父紀念館駅）でデザイン雑貨と展示、そして世界チャンピオンのカフェ <strong>Simple Kaffa 興波咖啡</strong> でひと休みという1日も良い締め方です。</p>
+<div class="links"><a data-zh="松山文創園區 官網" href="https://www.songshanculturalpark.org/" rel="noopener" target="_blank">松山文創園區 公式</a><a data-zh="Simple Kaffa 興波咖啡" href="https://www.simplekaffa.com/" rel="noopener" target="_blank">Simple Kaffa 興波咖啡</a></div>
+</div></li>
+<li><div class="clock">14:00</div><div class="dot"></div><div class="card">
+<h3 data-zh='最後補買伴手禮&lt;span class="zh"&gt;微風台北車站・新東陽&lt;/span&gt;'>土産の総仕上げ<span class="zh">微風台北車站・新東陽</span></h3>
+<p data-zh="鳳梨酥就&lt;strong&gt;佳德糕餅&lt;/strong&gt;和&lt;strong&gt;微熱山丘&lt;/strong&gt;最經典。台北車站的商場和地下街可以一次買齊，所以時間不好掌握的最後一天，在車站解決最保險。烏魚子和高山茶也在站內買得到。">パイナップルケーキ（鳳梨酥）は<strong>佳德糕餅</strong>や<strong>微熱山丘</strong>が定番。台北駅の商業施設や地下街でまとめ買いができるので、時間が読めない最終日は駅で完結させるのが安全。カラスミや高山茶も駅ナカで揃います。</p>
+<div class="meta"><span class="chip money" data-zh="看預算">予算しだい</span><span class="chip time" data-zh="1小時">1時間</span></div>
+<div class="links"><a data-zh="佳德糕餅" href="https://www.google.com/maps/search/?api=1&amp;query=%E4%BD%B3%E5%BE%B7%E7%B3%95%E9%A4%85" rel="noopener" target="_blank">佳德糕餅</a><a data-zh="微熱山丘 官網" href="https://www.sunnyhills.com.tw/" rel="noopener" target="_blank">微熱山丘 公式</a></div>
+</div></li>
+<li class="key"><div class="clock">16:30</div><div class="dot"></div><div class="card">
+<h3 data-zh='A1台北車站 → 桃園機場&lt;span class="zh"&gt;機捷 直達車&lt;/span&gt;'>A1台北車站 → 桃園空港<span class="zh">機捷 直達車</span></h3>
+<p data-zh="拿了行李就去搭機場捷運。直達車35分鐘，17:15左右到機場（起飛前3小時）。&lt;strong&gt;桃園機場的出發航廈（第一／第二航廈）要看訂票確認信確認&lt;/strong&gt;。登機證先用App取好，櫃檯就會快很多。">荷物を回収して空港MRTへ。直達車で35分、17:15頃に空港着（出発3時間前）。<strong>桃園空港の出発ターミナル（T1／T2）は予約確認メールで要チェック</strong>。搭乗券は事前にアプリで取得しておくとカウンターが早く済みます。</p>
+<div class="meta"><span class="chip money">NT$160</span><span class="chip time" data-zh="35分鐘">35分</span></div>
+<div class="links"><a data-zh="樂桃航空 官網（線上報到）" href="https://www.flypeach.com/jp" rel="noopener" target="_blank">Peach 公式（オンラインチェックイン）</a><a data-zh="機場捷運 時刻表" href="https://www.tymetro.com.tw/tymetro-new/" rel="noopener" target="_blank">空港MRT 時刻表</a></div>
+</div></li>
+<li class="key"><div class="clock">20:25</div><div class="dot"></div><div class="card">
+<h3 data-zh='台北 → 東京&lt;span class="zh"&gt;起飛&lt;/span&gt;'>台北 → 東京<span class="zh">離陸</span></h3>
+<p data-zh="隔天0:45抵達。為了能在機上睡覺，先在機場把眼罩和外套放到隨身行李最上面會比較輕鬆。剩下的台幣就在機場便利商店花完，或是留一點零錢下次用。">翌0:45着。機内で寝られるように、空港でアイマスクと羽織るものを手荷物の上に出しておくと楽です。残った台湾ドルは空港のコンビニで使い切るか、次回用に小銭だけ残す。</p>
+<div class="meta"><span class="chip" data-zh="含托運行李1件">受託手荷物1個込み</span><span class="chip" data-zh="不可更改・不可退款">変更・返金不可</span></div>
+</div></li>
+</ul>
 </section>
-
 <!-- ============ AIR ============ -->
-<section class="panel" id="air" role="tabpanel" hidden>
-  <div class="dayhead"><div class="daynum">✈</div><div>
-    <h2>往復と羽田空港の使い方</h2>
-    <div class="when">6:00発・0:45着という両端の攻略</div>
-  </div></div>
-  <p class="daysummary">この旅程でいちばん段取りが要るのは、台北ではなく羽田側の深夜・早朝です。往路は<strong>ラウンジで快適に待てる</strong>一方、復路は<strong>ラウンジが一切使えない</strong>——この非対称を前提に組みます。</p>
-
-  <h4 class="sec">往路｜9/23（水）羽田 T3 06:00 発</h4>
-  <ul class="tl">
-    <li class="key"><div class="clock">前夜</div><div class="dot"></div><div class="card">
-      <h3>空港へ入る手段を決める<span class="zh">深夜アクセスバス or 前泊</span></h3>
-      <p>京急・モノレールの始発（5:20前後）では6:00発に間に合いません。<strong>深夜アクセスバス</strong>（都心各所からT3へ、0〜2時台に運行）で入るか、羽田・蒲田・川崎あたりに前泊するかの二択。バスは路線ごとに運行日が異なるので、便が決まった時点で予約を。</p>
-      <div class="meta"><span class="chip time">始発では間に合わない</span><span class="chip money">深夜バス 1,000〜2,000円台</span></div>
-      <div class="links"><a href="https://www.tokyobus.or.jp/accessbus/" target="_blank" rel="noopener">羽田空港 深夜早朝アクセスバス</a><a href="https://www.limousinebus.co.jp/ja/guide/others/accessbus/" target="_blank" rel="noopener">東京空港交通の深夜早朝バス</a></div>
-    </div></li>
-
-    <li><div class="clock">04:00</div><div class="dot"></div><div class="card">
-      <h3>チェックイン・保安検査・出国<span class="zh">羽田空港 第3ターミナル</span></h3>
-      <p>ピーチのカウンターは概ね出発2時間前オープン・<strong>締切は出発50分前</strong>。アプリで事前にオンラインチェックインを済ませ、預ける荷物があれば手荷物カウンターのみ利用。T3は24時間開いていますが、早朝は列が伸びるので余裕をもって。</p>
-      <div class="meta"><span class="chip time">締切 05:10 前後</span><span class="chip">受託手荷物1個込み</span></div>
-      <div class="links"><a href="https://www.flypeach.com/jp" target="_blank" rel="noopener">Peach 公式（オンラインチェックイン・締切）</a><a href="https://tokyo-haneda.com/" target="_blank" rel="noopener">羽田空港 公式（T3案内）</a></div>
-    </div></li>
-
-    <li class="key"><div class="clock">04:45</div><div class="dot"></div><div class="card">
-      <h3>Sky Lounge South でシャワーと朝食<span class="zh">3F・108番ゲート付近</span></h3>
-      <p>T3で<strong>時間帯を問わずプライオリティパスで入れる唯一のラウンジ</strong>。24時間営業で、飲食とアルコールが無料、<strong>シャワーも無料</strong>（受付で登録が必要）。入口・トイレ・シャワーは3階、ラウンジ本体は2階なので、受付後にエレベーターで降ります。深夜バスで来て汗をかいていても、ここでリセットして機内へ。</p>
-      <div class="meta"><span class="chip time">24時間</span><span class="chip money">プライオリティパスで無料</span><span class="chip">シャワー要受付</span></div>
-      <div class="links"><a href="https://www.funtraveller.net/sky-lounge-south-at-haneda-t3/" target="_blank" rel="noopener">Sky Lounge South 実地レポート</a><a href="https://www.trifa.co/ja/column/preparation-tips-travel/haneda-t3-lounge" target="_blank" rel="noopener">羽田T3ラウンジ 比較ガイド</a></div>
-    </div></li>
-
-    <li class="plain"><div class="clock">05:30</div><div class="dot"></div><div class="card">
-      <h3>搭乗 → 06:00 離陸</h3>
-      <p>機内では寝るのが正解。8:35に台北着で、そのまま初日の行程が始まります。</p>
-    </div></li>
-  </ul>
-
-  <h4 class="sec">羽田T3 ラウンジ早見表</h4>
-  <div class="tablewrap"><table>
-    <thead><tr><th>ラウンジ</th><th>プライオリティパス</th><th>営業</th><th>この旅程では</th></tr></thead>
-    <tbody>
-      <tr><td><span class="nm">Sky Lounge South</span><br><span class="zh2">3F・108番ゲート付近</span></td><td>✅ 時間帯の制限なし</td><td>24時間</td><td><strong>往路の本命。</strong>飲食・酒・シャワー無料</td></tr>
-      <tr><td><span class="nm">TIAT LOUNGE</span></td><td>⚠️ 深夜 1:00〜5:00 のみ</td><td>24時間</td><td>6:00発だと入室時間帯を外れる</td></tr>
-      <tr><td><span class="nm">到着後（復路）</span><br><span class="zh2">0:45着のとき</span></td><td>❌ 不可</td><td>—</td><td>出発前3時間以内の搭乗券が条件のため全滅</td></tr>
-    </tbody>
-  </table></div>
-
-  <h4 class="sec">復路｜9/27（日）台北 20:25 発 → 羽田 T3 00:45 着（翌9/28 月）</h4>
-  <div class="alert"><b>0:45着で家に帰る手段は無い、が前提</b>
-    <p>入国・手荷物受取を終えて到着ロビーに出るのは<strong>1:15〜1:30頃</strong>。鉄道の始発は5:20前後なので、ここから<strong>約4時間をどう過ごすか</strong>を出発前に決めておきます。翌日（9/28 月）が仕事なら、始発待ちより宿を取った方が確実です。</p>
-  </div>
-
-  <div class="tablewrap"><table>
-    <thead><tr><th>選択肢</th><th>費用の目安</th><th>良い点</th><th>注意</th></tr></thead>
-    <tbody>
-      <tr><td><span class="nm">① 泉天空の湯で仮眠</span><br><span class="zh2">T3直結・エアポートガーデン12F</span></td><td class="price">約8,800円</td><td>温泉・サウナ・岩盤浴・24時間食事。タオルと館内着つきで手ぶらOK。始発まで居られる</td><td>入館 4,800円＋深夜料金（26:00〜5:00）4,000円。入浴エリアは10:00〜13:00清掃休止</td></tr>
-      <tr><td><span class="nm">② T3直結ホテルに1泊</span><br><span class="zh2">ヴィラフォンテーヌ プレミア羽田空港</span></td><td class="price">1万円台〜</td><td>ベッドで寝られる。同じ建物なので移動ゼロ</td><td>実質5〜6時間の利用。深夜チェックイン可否は要確認</td></tr>
-      <tr><td><span class="nm">③ 深夜アクセスバス</span></td><td class="price">1,000〜2,000円台</td><td>最も安い。都心の主要駅へ</td><td>0:40発などの便は入国手続きで<strong>間に合わない可能性が高い</strong>。1時以降の便があるか要確認</td></tr>
-      <tr><td><span class="nm">④ タクシー</span></td><td class="price">1万円前後〜</td><td>そのまま帰宅できる</td><td>深夜割増あり。距離次第で②より高くなる</td></tr>
-      <tr><td><span class="nm">⑤ 空港で始発待ち</span></td><td class="price">0円</td><td>T3は24時間開いている</td><td>横になれる場所は限られ、消灯もしない。翌日が仕事ならおすすめしない</td></tr>
-    </tbody>
-  </table></div>
-
-  <div class="alert calm"><b>①を取るなら、荷物はこう組む</b>
-    <p>泉天空の湯はタオルと館内着つきなので、<strong>台北で温泉用に持って行くタオルを帰国後にも使い回す必要はありません</strong>。むしろ機内で羽織るもの、コンタクトケースと眼鏡、翌朝の着替えを<strong>機内持ち込み側</strong>に入れておくと、預け荷物を開けずに温泉へ直行できます。</p>
-  </div>
-
-  <h4 class="sec">往復リンク集</h4>
-  <div class="links" style="font-size:13.5px;gap:16px 22px">
-    <a href="https://www.flypeach.com/jp" target="_blank" rel="noopener">Peach 公式・オンラインチェックイン</a>
-    <a href="https://tokyo-haneda.com/" target="_blank" rel="noopener">羽田空港 公式</a>
-    <a href="https://www.funtraveller.net/sky-lounge-south-at-haneda-t3/" target="_blank" rel="noopener">Sky Lounge South レポート</a>
-    <a href="https://www.shopping-sumitomo-rd.com/haneda/spa-izumi/" target="_blank" rel="noopener">泉天空の湯 羽田空港 公式</a>
-    <a href="https://rurubu.jp/andmore/spot/80129052" target="_blank" rel="noopener">泉天空の湯 料金・営業時間</a>
-    <a href="https://www.tokyobus.or.jp/accessbus/" target="_blank" rel="noopener">羽田 深夜早朝アクセスバス</a>
-    <a href="https://norikae.keikyu.co.jp/" target="_blank" rel="noopener">京急 時刻表（始発）</a>
-    <a href="https://www.tokyo-monorail.co.jp/" target="_blank" rel="noopener">東京モノレール</a>
-    <a href="https://www.taoyuan-airport.com/japanese" target="_blank" rel="noopener">桃園空港 公式</a>
-  </div>
+<section class="panel" hidden="" id="air" role="tabpanel">
+<div class="dayhead"><div class="daynum">✈</div><div>
+<h2 data-zh="來回班機與羽田機場的攻略">往復と羽田空港の使い方</h2>
+<div class="when" data-zh="6:00 出發、0:45 抵達，兩頭都要想辦法">6:00発・0:45着という両端の攻略</div>
+</div></div>
+<p class="daysummary" data-zh="這趟行程最需要事先安排的不是台北，而是羽田機場那頭的深夜和清晨。去程&lt;strong&gt;可以在貴賓室舒服地等&lt;/strong&gt;，回程卻&lt;strong&gt;完全用不到貴賓室&lt;/strong&gt;——就以這個落差為前提來安排。">この旅程でいちばん段取りが要るのは、台北ではなく羽田側の深夜・早朝です。往路は<strong>ラウンジで快適に待てる</strong>一方、復路は<strong>ラウンジが一切使えない</strong>——この非対称を前提に組みます。</p>
+<h4 class="sec" data-zh="去程｜9/23（三）羽田機場第3航廈 06:00 起飛">往路｜9/23（水）羽田 T3 06:00 発</h4>
+<ul class="tl">
+<li class="key"><div class="clock">前夜</div><div class="dot"></div><div class="card">
+<h3 data-zh='決定進機場的方式&lt;span class="zh"&gt;深夜巴士 or 前一晚住機場附近&lt;/span&gt;'>空港へ入る手段を決める<span class="zh">深夜アクセスバス or 前泊</span></h3>
+<p data-zh="京急電鐵和單軌電車的首班車（5:20左右）趕不上6:00的班機。只有兩個選擇：搭&lt;strong&gt;深夜接駁巴士&lt;/strong&gt;（從東京市區各處到第3航廈，0〜2點之間發車），或是前一晚住在羽田、蒲田、川崎一帶。巴士各路線的行駛日不同，班機一確定就要先訂。">京急・モノレールの始発（5:20前後）では6:00発に間に合いません。<strong>深夜アクセスバス</strong>（都心各所からT3へ、0〜2時台に運行）で入るか、羽田・蒲田・川崎あたりに前泊するかの二択。バスは路線ごとに運行日が異なるので、便が決まった時点で予約を。</p>
+<div class="meta"><span class="chip time" data-zh="搭首班車趕不上">始発では間に合わない</span><span class="chip money" data-zh="深夜巴士 1,000〜2,000日圓上下">深夜バス 1,000〜2,000円台</span></div>
+<div class="links"><a data-zh="羽田機場 深夜清晨接駁巴士" href="https://www.tokyobus.or.jp/accessbus/" rel="noopener" target="_blank">羽田空港 深夜早朝アクセスバス</a><a data-zh="東京空港交通的深夜清晨巴士" href="https://www.limousinebus.co.jp/ja/guide/others/accessbus/" rel="noopener" target="_blank">東京空港交通の深夜早朝バス</a></div>
+</div></li>
+<li><div class="clock">04:00</div><div class="dot"></div><div class="card">
+<h3 data-zh='報到、安檢、出境&lt;span class="zh"&gt;羽田機場 第3航廈&lt;/span&gt;'>チェックイン・保安検査・出国<span class="zh">羽田空港 第3ターミナル</span></h3>
+<p data-zh="樂桃航空的櫃檯大致上是起飛前2小時開櫃、&lt;strong&gt;起飛前50分鐘截止&lt;/strong&gt;。先用App完成線上報到，有要托運的行李才去行李櫃檯。第3航廈是24小時開放，但清晨排隊會很長，要提早一點。">ピーチのカウンターは概ね出発2時間前オープン・<strong>締切は出発50分前</strong>。アプリで事前にオンラインチェックインを済ませ、預ける荷物があれば手荷物カウンターのみ利用。T3は24時間開いていますが、早朝は列が伸びるので余裕をもって。</p>
+<div class="meta"><span class="chip time" data-zh="約05:10截止">締切 05:10 前後</span><span class="chip" data-zh="含托運行李1件">受託手荷物1個込み</span></div>
+<div class="links"><a data-zh="樂桃航空 官網（線上報到・截止時間）" href="https://www.flypeach.com/jp" rel="noopener" target="_blank">Peach 公式（オンラインチェックイン・締切）</a><a data-zh="羽田機場 官網（第3航廈導覽）" href="https://tokyo-haneda.com/" rel="noopener" target="_blank">羽田空港 公式（T3案内）</a></div>
+</div></li>
+<li class="key"><div class="clock">04:45</div><div class="dot"></div><div class="card">
+<h3 data-zh='在 Sky Lounge South 洗澡和吃早餐&lt;span class="zh"&gt;3F・108號登機門附近&lt;/span&gt;'>Sky Lounge South でシャワーと朝食<span class="zh">3F・108番ゲート付近</span></h3>
+<p data-zh="第3航廈裡&lt;strong&gt;唯一不分時段都能用Priority Pass進去的貴賓室&lt;/strong&gt;。24小時營業，餐飲和酒類免費，&lt;strong&gt;淋浴也免費&lt;/strong&gt;（要在櫃檯登記）。入口、廁所、淋浴間在3樓，貴賓室本體在2樓，登記後要搭電梯下去。就算搭深夜巴士過來流了一身汗，也能在這裡整理好再上飛機。">T3で<strong>時間帯を問わずプライオリティパスで入れる唯一のラウンジ</strong>。24時間営業で、飲食とアルコールが無料、<strong>シャワーも無料</strong>（受付で登録が必要）。入口・トイレ・シャワーは3階、ラウンジ本体は2階なので、受付後にエレベーターで降ります。深夜バスで来て汗をかいていても、ここでリセットして機内へ。</p>
+<div class="meta"><span class="chip time" data-zh="24小時">24時間</span><span class="chip money" data-zh="用Priority Pass免費">プライオリティパスで無料</span><span class="chip" data-zh="淋浴須先登記">シャワー要受付</span></div>
+<div class="links"><a data-zh="Sky Lounge South 實地心得" href="https://www.funtraveller.net/sky-lounge-south-at-haneda-t3/" rel="noopener" target="_blank">Sky Lounge South 実地レポート</a><a data-zh="羽田第3航廈貴賓室 比較指南" href="https://www.trifa.co/ja/column/preparation-tips-travel/haneda-t3-lounge" rel="noopener" target="_blank">羽田T3ラウンジ 比較ガイド</a></div>
+</div></li>
+<li class="plain"><div class="clock">05:30</div><div class="dot"></div><div class="card">
+<h3 data-zh="登機 → 06:00 起飛">搭乗 → 06:00 離陸</h3>
+<p data-zh="在飛機上就睡覺最對。8:35抵達台北，接著直接開始第一天的行程。">機内では寝るのが正解。8:35に台北着で、そのまま初日の行程が始まります。</p>
+</div></li>
+</ul>
+<h4 class="sec" data-zh="羽田第3航廈 貴賓室速查表">羽田T3 ラウンジ早見表</h4>
+<div class="tablewrap"><table>
+<thead><tr><th data-zh="貴賓室">ラウンジ</th><th data-zh="Priority Pass">プライオリティパス</th><th data-zh="營業">営業</th><th data-zh="這趟行程">この旅程では</th></tr></thead>
+<tbody>
+<tr><td data-zh='&lt;span class="nm"&gt;Sky Lounge South&lt;/span&gt;&lt;br/&gt;&lt;span class="zh2"&gt;3F・108號登機門附近&lt;/span&gt;'><span class="nm">Sky Lounge South</span><br/><span class="zh2">3F・108番ゲート付近</span></td><td data-zh="✅ 沒有時段限制">✅ 時間帯の制限なし</td><td data-zh="24小時">24時間</td><td data-zh="&lt;strong&gt;去程首選。&lt;/strong&gt;餐點・酒・淋浴免費"><strong>往路の本命。</strong>飲食・酒・シャワー無料</td></tr>
+<tr><td><span class="nm">TIAT LOUNGE</span></td><td data-zh="⚠️ 只有凌晨 1:00〜5:00">⚠️ 深夜 1:00〜5:00 のみ</td><td data-zh="24小時">24時間</td><td data-zh="6:00 起飛的話會錯過可入場的時段">6:00発だと入室時間帯を外れる</td></tr>
+<tr><td data-zh='&lt;span class="nm"&gt;抵達後（回程）&lt;/span&gt;&lt;br/&gt;&lt;span class="zh2"&gt;0:45 落地的情況&lt;/span&gt;'><span class="nm">到着後（復路）</span><br/><span class="zh2">0:45着のとき</span></td><td data-zh="❌ 不行">❌ 不可</td><td>—</td><td data-zh="條件是出發前3小時內的登機證，所以全部都用不到">出発前3時間以内の搭乗券が条件のため全滅</td></tr>
+</tbody>
+</table></div>
+<h4 class="sec" data-zh="回程｜9/27（日）台北 20:25 起飛 → 羽田機場第3航廈 00:45 抵達（隔天9/28 一）">復路｜9/27（日）台北 20:25 発 → 羽田 T3 00:45 着（翌9/28 月）</h4>
+<div class="alert"><b data-zh="前提是：0:45抵達根本沒有回家的交通工具">0:45着で家に帰る手段は無い、が前提</b>
+<p data-zh="辦完入境、領完行李走到入境大廳大概是&lt;strong&gt;1:15〜1:30左右&lt;/strong&gt;。電車首班車在5:20前後，所以&lt;strong&gt;這大約4小時要怎麼過&lt;/strong&gt;，出發前就要先決定好。如果隔天（9/28 一）要上班，與其等首班車，不如直接訂住宿比較保險。">入国・手荷物受取を終えて到着ロビーに出るのは<strong>1:15〜1:30頃</strong>。鉄道の始発は5:20前後なので、ここから<strong>約4時間をどう過ごすか</strong>を出発前に決めておきます。翌日（9/28 月）が仕事なら、始発待ちより宿を取った方が確実です。</p>
+</div>
+<div class="tablewrap"><table>
+<thead><tr><th data-zh="方案">選択肢</th><th data-zh="費用參考">費用の目安</th><th data-zh="優點">良い点</th><th data-zh="注意">注意</th></tr></thead>
+<tbody>
+<tr><td data-zh='&lt;span class="nm"&gt;① 在泉天空之湯小睡&lt;/span&gt;&lt;br/&gt;&lt;span class="zh2"&gt;直通第3航廈・Airport Garden 12F&lt;/span&gt;'><span class="nm">① 泉天空の湯で仮眠</span><br/><span class="zh2">T3直結・エアポートガーデン12F</span></td><td class="price" data-zh="約8,800円">約8,800円</td><td data-zh="溫泉・三溫暖・岩盤浴・24小時供餐。附毛巾和館內服，空手去也沒問題。可以待到首班車">温泉・サウナ・岩盤浴・24時間食事。タオルと館内着つきで手ぶらOK。始発まで居られる</td><td data-zh="入館 4,800円＋深夜加價（26:00〜5:00）4,000円。泡湯區 10:00〜13:00 清潔時段暫停使用">入館 4,800円＋深夜料金（26:00〜5:00）4,000円。入浴エリアは10:00〜13:00清掃休止</td></tr>
+<tr><td data-zh='&lt;span class="nm"&gt;② 住直通第3航廈的飯店1晚&lt;/span&gt;&lt;br/&gt;&lt;span class="zh2"&gt;Villa Fontaine Premier 羽田機場&lt;/span&gt;'><span class="nm">② T3直結ホテルに1泊</span><br/><span class="zh2">ヴィラフォンテーヌ プレミア羽田空港</span></td><td class="price" data-zh="1萬多円起">1万円台〜</td><td data-zh="可以睡床。同一棟建築，完全不用移動">ベッドで寝られる。同じ建物なので移動ゼロ</td><td data-zh="實際上只用得到5〜6小時。能不能深夜入住要先確認">実質5〜6時間の利用。深夜チェックイン可否は要確認</td></tr>
+<tr><td data-zh='&lt;span class="nm"&gt;③ 深夜聯外巴士&lt;/span&gt;'><span class="nm">③ 深夜アクセスバス</span></td><td class="price" data-zh="1,000〜2,000多円">1,000〜2,000円台</td><td data-zh="最便宜。可到市區主要車站">最も安い。都心の主要駅へ</td><td data-zh="0:40 出發之類的班次，光入境手續就&lt;strong&gt;很可能趕不上&lt;/strong&gt;。要確認有沒有1點以後的班次">0:40発などの便は入国手続きで<strong>間に合わない可能性が高い</strong>。1時以降の便があるか要確認</td></tr>
+<tr><td data-zh='&lt;span class="nm"&gt;④ 計程車&lt;/span&gt;'><span class="nm">④ タクシー</span></td><td class="price" data-zh="1萬円左右起">1万円前後〜</td><td data-zh="可以直接回到家">そのまま帰宅できる</td><td data-zh="有深夜加成。看距離可能比②還貴">深夜割増あり。距離次第で②より高くなる</td></tr>
+<tr><td data-zh='&lt;span class="nm"&gt;⑤ 在機場等首班車&lt;/span&gt;'><span class="nm">⑤ 空港で始発待ち</span></td><td class="price" data-zh="0円">0円</td><td data-zh="第3航廈24小時開放">T3は24時間開いている</td><td data-zh="能躺下的地方很有限，燈也不會關。隔天要上班的話不建議">横になれる場所は限られ、消灯もしない。翌日が仕事ならおすすめしない</td></tr>
+</tbody>
+</table></div>
+<div class="alert calm"><b data-zh="如果選①，行李就這樣打包">①を取るなら、荷物はこう組む</b>
+<p data-zh="泉天空之湯有附毛巾和館內服，所以&lt;strong&gt;在台北泡溫泉用的毛巾，不必想著回國後還要再用一次&lt;/strong&gt;。反而是機上要披的外套、隱形眼鏡盒和眼鏡、隔天早上要換的衣服，先放進&lt;strong&gt;手提行李這邊&lt;/strong&gt;，就能不用打開託運行李直接去泡湯。">泉天空の湯はタオルと館内着つきなので、<strong>台北で温泉用に持って行くタオルを帰国後にも使い回す必要はありません</strong>。むしろ機内で羽織るもの、コンタクトケースと眼鏡、翌朝の着替えを<strong>機内持ち込み側</strong>に入れておくと、預け荷物を開けずに温泉へ直行できます。</p>
+</div>
+<h4 class="sec" data-zh="來回・機場連結整理">往復リンク集</h4>
+<div class="links" style="font-size:13.5px;gap:16px 22px">
+<a data-zh="樂桃航空 官網・線上報到" href="https://www.flypeach.com/jp" rel="noopener" target="_blank">Peach 公式・オンラインチェックイン</a>
+<a data-zh="羽田機場 官網" href="https://tokyo-haneda.com/" rel="noopener" target="_blank">羽田空港 公式</a>
+<a data-zh="Sky Lounge South 心得" href="https://www.funtraveller.net/sky-lounge-south-at-haneda-t3/" rel="noopener" target="_blank">Sky Lounge South レポート</a>
+<a data-zh="泉天空之湯 羽田機場 官網" href="https://www.shopping-sumitomo-rd.com/haneda/spa-izumi/" rel="noopener" target="_blank">泉天空の湯 羽田空港 公式</a>
+<a data-zh="泉天空之湯 費用・營業時間" href="https://rurubu.jp/andmore/spot/80129052" rel="noopener" target="_blank">泉天空の湯 料金・営業時間</a>
+<a data-zh="羽田 深夜清晨接駁巴士" href="https://www.tokyobus.or.jp/accessbus/" rel="noopener" target="_blank">羽田 深夜早朝アクセスバス</a>
+<a data-zh="京急電鐵 時刻表（首班車）" href="https://norikae.keikyu.co.jp/" rel="noopener" target="_blank">京急 時刻表（始発）</a>
+<a data-zh="東京單軌電車" href="https://www.tokyo-monorail.co.jp/" rel="noopener" target="_blank">東京モノレール</a>
+<a data-zh="桃園機場 官網" href="https://www.taoyuan-airport.com/japanese" rel="noopener" target="_blank">桃園空港 公式</a>
+</div>
 </section>
-
 <!-- ============ SNS ============ -->
-<section class="panel" id="sns" role="tabpanel" hidden>
-  <div class="dayhead"><div class="daynum">SNS</div><div>
-    <h2>SNSで下調べする</h2>
-    <div class="when">行列・混雑・夜景の明るさは、動画がいちばん正確</div>
-  </div></div>
-  <p class="daysummary">ガイド記事は「何があるか」を教えてくれますが、<strong>行列の長さ・階段のきつさ・提灯が何時から光るか</strong>は動画のほうが速い。行程に出てくるスポットを、そのままTikTokとInstagramで引けるようにしました。</p>
-
-  <h4 class="sec">まずこの人：@たいわんめし</h4>
-  <div class="card">
-    <h3>たいわんめし<span class="zh">@taiwan_meshi</span></h3>
-    <p>2012年から台湾在住の日本人インフルエンサー。<strong>おしゃれカフェではなくローカル飯</strong>を軸に、リールで週3〜4本のペースで発信しています。「リラックス」がテーマで広告っぽさが無く、フォロワーの約35%が台湾人——つまり<strong>現地の人も納得する店を出している</strong>のが信頼できる理由。魯肉飯や麵線の「◯選」系の投稿が、この旅程の店選びにそのまま効きます。</p>
-    <div class="meta"><span class="chip">Instagram 15万人超</span><span class="chip">在台14年</span><span class="chip">ローカル飯に強い</span></div>
-    <div class="links">
-      <a href="https://www.instagram.com/taiwan_meshi/" target="_blank" rel="noopener">Instagram @taiwan_meshi</a>
-      <a href="https://www.youtube.com/@taiwanmeshi" target="_blank" rel="noopener">YouTube</a>
-      <a href="https://note.com/taiwanmeshi/" target="_blank" rel="noopener">note（台湾の今を書いてる）</a>
-      <a href="https://taipei.keizai.biz/column/64/" target="_blank" rel="noopener">本人インタビュー</a>
-    </div>
-  </div>
-
-  <div class="alert calm" style="margin-top:18px"><b>Day3の永康街に、この人の店がある</b>
-    <p>たいわんめしさんが2025年末にオープンした台湾茶の店 <strong>MESHI to CHA 台灣茶飯</strong>。場所は<strong>永康街12巷8號B</strong>（MRT東門駅5番出口から徒歩5分）、11:00〜18:00・火曜休。<strong>9/25（金）は営業日で、Day3の鼎泰豐→永康街散策のルート上</strong>です。ティーバッグの台湾茶（金萱・鳳梨紅玉など7種）が中心なので、かさばらない土産としても優秀。自身の茶ブランドが<strong>香日子</strong>です。</p>
-    <div class="links" style="margin-top:8px">
-      <a href="https://www.instagram.com/xiangrizi_tw/" target="_blank" rel="noopener">香日子 @xiangrizi_tw</a>
-      <a href="https://www.google.com/maps/search/?api=1&amp;query=MESHI%20to%20CHA%20%E5%8F%B0%E7%81%A3%E8%8C%B6%E9%A3%AF%20%E6%B0%B8%E5%BA%B7%E8%A1%9712%E5%B7%B78%E8%99%9F" target="_blank" rel="noopener">MESHI to CHA を地図で見る</a>
-      <a href="https://taipei.keizai.biz/headline/649" target="_blank" rel="noopener">開店ニュース</a>
-      <a href="https://www.taipeinavi.com/special/80018209" target="_blank" rel="noopener">台北ナビの店レポート</a>
-    </div>
-  </div>
-
-  <h4 class="sec">スポット別・タップして動画を見る</h4>
-  <div class="tablewrap"><table>
-    <thead><tr><th>スポット</th><th>何が分かるか</th><th>開く</th></tr></thead>
-    <tbody>
-      <tr><td><span class="nm">九份</span><br><span class="zh2">九份老街</span></td><td>提灯の夜景と混雑具合が動画でよく分かる</td><td><a href="https://www.tiktok.com/search?q=%E4%B9%9D%E4%BB%BD%E8%80%81%E8%A1%97" target="_blank" rel="noopener">TikTok</a> ／ <a href="https://www.tiktok.com/tag/%E4%B9%9D%E4%BB%BD" target="_blank" rel="noopener">タグ</a> ／ <a href="https://www.instagram.com/explore/tags/%E4%B9%9D%E4%BB%BD/" target="_blank" rel="noopener">Instagram</a></td></tr>
-      <tr><td><span class="nm">十分</span><br><span class="zh2">十分老街 天燈</span></td><td>ランタンの上げ方と料金相場をここで確認</td><td><a href="https://www.tiktok.com/search?q=%E5%8D%81%E5%88%86%E8%80%81%E8%A1%97%20%E5%A4%A9%E7%87%88" target="_blank" rel="noopener">TikTok</a> ／ <a href="https://www.tiktok.com/tag/%E5%8D%81%E5%88%86" target="_blank" rel="noopener">タグ</a> ／ <a href="https://www.instagram.com/explore/tags/%E5%8D%81%E5%88%86/" target="_blank" rel="noopener">Instagram</a></td></tr>
-      <tr><td><span class="nm">寧夏夜市</span><br><span class="zh2">寧夏夜市</span></td><td>Day1の夜。行列している屋台が一目で分かる</td><td><a href="https://www.tiktok.com/search?q=%E5%AF%A7%E5%A4%8F%E5%A4%9C%E5%B8%82" target="_blank" rel="noopener">TikTok</a> ／ <a href="https://www.tiktok.com/tag/%E5%AF%A7%E5%A4%8F%E5%A4%9C%E5%B8%82" target="_blank" rel="noopener">タグ</a> ／ <a href="https://www.instagram.com/explore/tags/%E5%AF%A7%E5%A4%8F%E5%A4%9C%E5%B8%82/" target="_blank" rel="noopener">Instagram</a></td></tr>
-      <tr><td><span class="nm">饒河街夜市</span><br><span class="zh2">饒河街夜市</span></td><td>胡椒餅の焼き方を見てから行くと楽しい</td><td><a href="https://www.tiktok.com/search?q=%E9%A5%92%E6%B2%B3%E8%A1%97%E5%A4%9C%E5%B8%82" target="_blank" rel="noopener">TikTok</a> ／ <a href="https://www.tiktok.com/tag/%E9%A5%92%E6%B2%B3%E8%A1%97%E5%A4%9C%E5%B8%82" target="_blank" rel="noopener">タグ</a> ／ <a href="https://www.instagram.com/explore/tags/%E9%A5%92%E6%B2%B3%E8%A1%97%E5%A4%9C%E5%B8%82/" target="_blank" rel="noopener">Instagram</a></td></tr>
-      <tr><td><span class="nm">士林夜市</span><br><span class="zh2">士林夜市</span></td><td>土曜の混雑度合いを事前に把握</td><td><a href="https://www.tiktok.com/search?q=%E5%A3%AB%E6%9E%97%E5%A4%9C%E5%B8%82" target="_blank" rel="noopener">TikTok</a> ／ <a href="https://www.tiktok.com/tag/%E5%A3%AB%E6%9E%97%E5%A4%9C%E5%B8%82" target="_blank" rel="noopener">タグ</a> ／ <a href="https://www.instagram.com/explore/tags/%E5%A3%AB%E6%9E%97%E5%A4%9C%E5%B8%82/" target="_blank" rel="noopener">Instagram</a></td></tr>
-      <tr><td><span class="nm">北投温泉</span><br><span class="zh2">北投溫泉</span></td><td>施設ごとの浴場の様子と作法</td><td><a href="https://www.tiktok.com/search?q=%E5%8C%97%E6%8A%95%E6%BA%AB%E6%B3%89" target="_blank" rel="noopener">TikTok</a> ／ <a href="https://www.tiktok.com/tag/%E5%8C%97%E6%8A%95%E6%B8%A9%E6%B3%89" target="_blank" rel="noopener">タグ</a> ／ <a href="https://www.instagram.com/explore/tags/%E5%8C%97%E6%8A%95%E6%B8%A9%E6%B3%89/" target="_blank" rel="noopener">Instagram</a></td></tr>
-      <tr><td><span class="nm">象山</span><br><span class="zh2">象山 台北101</span></td><td>日没時刻と展望地の混み具合</td><td><a href="https://www.tiktok.com/search?q=%E8%B1%A1%E5%B1%B1%20%E5%8F%B0%E5%8C%97101" target="_blank" rel="noopener">TikTok</a> ／ <a href="https://www.tiktok.com/tag/%E8%B1%A1%E5%B1%B1" target="_blank" rel="noopener">タグ</a> ／ <a href="https://www.instagram.com/explore/tags/%E8%B1%A1%E5%B1%B1/" target="_blank" rel="noopener">Instagram</a></td></tr>
-      <tr><td><span class="nm">迪化街</span><br><span class="zh2">迪化街 大稻埕</span></td><td>土産の値段感と店の雰囲気</td><td><a href="https://www.tiktok.com/search?q=%E8%BF%AA%E5%8C%96%E8%A1%97%20%E5%A4%A7%E7%A8%BB%E5%9F%95" target="_blank" rel="noopener">TikTok</a> ／ <a href="https://www.tiktok.com/tag/%E8%BF%AA%E5%8C%96%E8%A1%97" target="_blank" rel="noopener">タグ</a> ／ <a href="https://www.instagram.com/explore/tags/%E8%BF%AA%E5%8C%96%E8%A1%97/" target="_blank" rel="noopener">Instagram</a></td></tr>
-      <tr><td><span class="nm">猫空</span><br><span class="zh2">貓空纜車</span></td><td>ロープウェイの行列と茶館の眺め</td><td><a href="https://www.tiktok.com/search?q=%E8%B2%93%E7%A9%BA%E7%BA%9C%E8%BB%8A" target="_blank" rel="noopener">TikTok</a> ／ <a href="https://www.tiktok.com/tag/%E7%8C%AB%E7%A9%BA" target="_blank" rel="noopener">タグ</a> ／ <a href="https://www.instagram.com/explore/tags/%E7%8C%AB%E7%A9%BA/" target="_blank" rel="noopener">Instagram</a></td></tr>
-      <tr><td><span class="nm">鼎泰豐</span><br><span class="zh2">鼎泰豐 小籠包</span></td><td>待ち時間と注文の流れ</td><td><a href="https://www.tiktok.com/search?q=%E9%BC%8E%E6%B3%B0%E8%B1%90%20%E5%B0%8F%E7%B1%A0%E5%8C%85" target="_blank" rel="noopener">TikTok</a> ／ <a href="https://www.tiktok.com/tag/%E9%BC%8E%E6%B3%B0%E8%B1%90" target="_blank" rel="noopener">タグ</a> ／ <a href="https://www.instagram.com/explore/tags/%E9%BC%8E%E6%B3%B0%E8%B1%90/" target="_blank" rel="noopener">Instagram</a></td></tr>
-      <tr><td><span class="nm">阜杭豆漿</span><br><span class="zh2">阜杭豆漿</span></td><td>行列の長さと注文のコツ</td><td><a href="https://www.tiktok.com/search?q=%E9%98%9C%E6%9D%AD%E8%B1%86%E6%BC%BF" target="_blank" rel="noopener">TikTok</a> ／ <a href="https://www.tiktok.com/tag/%E9%98%9C%E6%9D%AD%E8%B1%86%E6%BC%BF" target="_blank" rel="noopener">タグ</a> ／ <a href="https://www.instagram.com/explore/tags/%E9%98%9C%E6%9D%AD%E8%B1%86%E6%BC%BF/" target="_blank" rel="noopener">Instagram</a></td></tr>
-    </tbody>
-  </table></div>
-
-  <h4 class="sec">ハッシュタグ（TikTok）</h4>
-  <div class="links" style="font-size:13.5px;gap:12px 18px"><a href="https://www.tiktok.com/tag/%E5%8F%B0%E6%B9%BE%E6%97%85%E8%A1%8C" target="_blank" rel="noopener">#台湾旅行</a> <a href="https://www.tiktok.com/tag/%E5%8F%B0%E5%8C%97%E3%82%B0%E3%83%AB%E3%83%A1" target="_blank" rel="noopener">#台北グルメ</a> <a href="https://www.tiktok.com/tag/%E5%8F%B0%E6%B9%BE%E3%82%B0%E3%83%AB%E3%83%A1" target="_blank" rel="noopener">#台湾グルメ</a> <a href="https://www.tiktok.com/tag/%E4%B9%9D%E4%BB%BD" target="_blank" rel="noopener">#九份</a> <a href="https://www.tiktok.com/tag/%E5%8F%B0%E5%8C%97%E6%97%85%E8%A1%8C" target="_blank" rel="noopener">#台北旅行</a> <a href="https://www.tiktok.com/tag/%E5%8F%B0%E6%B9%BE%E5%A4%9C%E5%B8%82" target="_blank" rel="noopener">#台湾夜市</a> <a href="https://www.tiktok.com/tag/%E5%8F%B0%E6%B9%BE%E3%81%8A%E3%81%99%E3%81%99%E3%82%81" target="_blank" rel="noopener">#台湾おすすめ</a></div>
-
-  <h4 class="sec">探し方のコツ</h4>
-  <div class="grid2">
-    <div class="card"><h3>中国語で検索する</h3>
-      <p>「九份」より<strong>「九份老街」</strong>、「北投温泉」より<strong>「北投溫泉」</strong>。繁体字で引くと現地ユーザーの直近の投稿が出てきて、日本語だと拾えない<strong>今の混雑や値上げ</strong>が分かります。上の表のTikTok検索リンクは中国語表記にしてあります。</p>
-    </div>
-    <div class="card"><h3>台湾はInstagram・Threadsが強い</h3>
-      <p>台湾でのTikTokはZ世代中心で、<strong>店探しの主戦場はInstagramとGoogleマップ</strong>。「この店、今もやってる？」を確かめたいときは、Googleマップの最新クチコミ写真がいちばん速いです。</p>
-    </div>
-    <div class="card"><h3>保存より、スクショ</h3>
-      <p>気になった店は動画を保存するだけだと現地で辿り直せません。<strong>店名（繁体字）をスクショしてGoogleマップに保存</strong>しておくのが確実。台湾では店名を漢字で見せれば通じます。</p>
-    </div>
-    <div class="card"><h3>文字の情報源も一つ持つ</h3>
-      <p>動画は雰囲気に強く、営業時間や休業日には弱い。<strong>台北ナビ</strong>（日本語・更新が早い）と<strong>台北経済新聞</strong>（新店オープン情報）を合わせて見ると穴が埋まります。</p>
-      <div class="links"><a href="https://www.taipeinavi.com/" target="_blank" rel="noopener">台北ナビ</a><a href="https://taipei.keizai.biz/" target="_blank" rel="noopener">台北経済新聞</a></div>
-    </div>
-  </div>
+<section class="panel" hidden="" id="sns" role="tabpanel">
+<div class="dayhead"><div class="daynum">SNS</div><div>
+<h2 data-zh="用社群先做功課">SNSで下調べする</h2>
+<div class="when" data-zh="排隊、人潮、夜景多亮，看影片最準">行列・混雑・夜景の明るさは、動画がいちばん正確</div>
+</div></div>
+<p class="daysummary" data-zh="旅遊文章會告訴你「有什麼」，但&lt;strong&gt;要排多久、階梯有多陡、燈籠幾點開始亮&lt;/strong&gt;，看影片比較快。所以把行程裡出現的景點，都做成可以直接在 TikTok 和 Instagram 搜尋的樣子。">ガイド記事は「何があるか」を教えてくれますが、<strong>行列の長さ・階段のきつさ・提灯が何時から光るか</strong>は動画のほうが速い。行程に出てくるスポットを、そのままTikTokとInstagramで引けるようにしました。</p>
+<h4 class="sec" data-zh="先追這一位：@たいわんめし">まずこの人：@たいわんめし</h4>
+<div class="card">
+<h3 data-zh='たいわんめし&lt;span class="zh"&gt;@taiwan_meshi&lt;/span&gt;'>たいわんめし<span class="zh">@taiwan_meshi</span></h3>
+<p data-zh="2012年開始住在台灣的日本人網紅。主軸&lt;strong&gt;不是網美咖啡廳而是在地小吃&lt;/strong&gt;，用Reels一週發3〜4支。主題是「放鬆」，沒有廣告感，粉絲約35%是台灣人——也就是說&lt;strong&gt;他介紹的店連在地人都認同&lt;/strong&gt;，這才是可信的理由。他那些滷肉飯、麵線的「精選幾間」系列貼文，直接就能用來挑這趟行程要吃的店。">2012年から台湾在住の日本人インフルエンサー。<strong>おしゃれカフェではなくローカル飯</strong>を軸に、リールで週3〜4本のペースで発信しています。「リラックス」がテーマで広告っぽさが無く、フォロワーの約35%が台湾人——つまり<strong>現地の人も納得する店を出している</strong>のが信頼できる理由。魯肉飯や麵線の「◯選」系の投稿が、この旅程の店選びにそのまま効きます。</p>
+<div class="meta"><span class="chip" data-zh="Instagram 超過15萬人">Instagram 15万人超</span><span class="chip" data-zh="在台14年">在台14年</span><span class="chip" data-zh="擅長在地小吃">ローカル飯に強い</span></div>
+<div class="links">
+<a href="https://www.instagram.com/taiwan_meshi/" rel="noopener" target="_blank">Instagram @taiwan_meshi</a>
+<a href="https://www.youtube.com/@taiwanmeshi" rel="noopener" target="_blank">YouTube</a>
+<a data-zh="note（寫台灣現況）" href="https://note.com/taiwanmeshi/" rel="noopener" target="_blank">note（台湾の今を書いてる）</a>
+<a data-zh="本人專訪" href="https://taipei.keizai.biz/column/64/" rel="noopener" target="_blank">本人インタビュー</a>
+</div>
+</div>
+<div class="alert calm" style="margin-top:18px"><b data-zh="Day3的永康街，就有這位介紹過的店">Day3の永康街に、この人の店がある</b>
+<p data-zh="たいわんめし在2025年底開的台灣茶店 &lt;strong&gt;MESHI to CHA 台灣茶飯&lt;/strong&gt;。地點在&lt;strong&gt;永康街12巷8號B&lt;/strong&gt;（捷運東門站5號出口步行5分鐘），11:00〜18:00、週二休。&lt;strong&gt;9/25（五）有營業，剛好在Day3 鼎泰豐→永康街散步的路線上&lt;/strong&gt;。主打茶包式的台灣茶（金萱、鳳梨紅玉等7種），當伴手禮也不佔行李空間。他自己的茶品牌是&lt;strong&gt;香日子&lt;/strong&gt;。">たいわんめしさんが2025年末にオープンした台湾茶の店 <strong>MESHI to CHA 台灣茶飯</strong>。場所は<strong>永康街12巷8號B</strong>（MRT東門駅5番出口から徒歩5分）、11:00〜18:00・火曜休。<strong>9/25（金）は営業日で、Day3の鼎泰豐→永康街散策のルート上</strong>です。ティーバッグの台湾茶（金萱・鳳梨紅玉など7種）が中心なので、かさばらない土産としても優秀。自身の茶ブランドが<strong>香日子</strong>です。</p>
+<div class="links" style="margin-top:8px">
+<a data-zh="香日子 @xiangrizi_tw" href="https://www.instagram.com/xiangrizi_tw/" rel="noopener" target="_blank">香日子 @xiangrizi_tw</a>
+<a data-zh="MESHI to CHA 看地圖" href="https://www.google.com/maps/search/?api=1&amp;query=MESHI%20to%20CHA%20%E5%8F%B0%E7%81%A3%E8%8C%B6%E9%A3%AF%20%E6%B0%B8%E5%BA%B7%E8%A1%9712%E5%B7%B78%E8%99%9F" rel="noopener" target="_blank">MESHI to CHA を地図で見る</a>
+<a data-zh="開幕新聞" href="https://taipei.keizai.biz/headline/649" rel="noopener" target="_blank">開店ニュース</a>
+<a data-zh="台北Navi的店家報導" href="https://www.taipeinavi.com/special/80018209" rel="noopener" target="_blank">台北ナビの店レポート</a>
+</div>
+</div>
+<h4 class="sec" data-zh="依景點分類・點一下看影片">スポット別・タップして動画を見る</h4>
+<div class="tablewrap"><table>
+<thead><tr><th data-zh="景點">スポット</th><th data-zh="能看到什麼">何が分かるか</th><th data-zh="開啟">開く</th></tr></thead>
+<tbody>
+<tr><td data-zh='&lt;span class="nm"&gt;九份&lt;/span&gt;&lt;br/&gt;&lt;span class="zh2"&gt;九份老街&lt;/span&gt;'><span class="nm">九份</span><br/><span class="zh2">九份老街</span></td><td data-zh="燈籠夜景和人潮狀況，看影片最清楚">提灯の夜景と混雑具合が動画でよく分かる</td><td data-zh='&lt;a href="https://www.tiktok.com/search?q=%E4%B9%9D%E4%BB%BD%E8%80%81%E8%A1%97" rel="noopener" target="_blank"&gt;TikTok&lt;/a&gt; ／ &lt;a href="https://www.tiktok.com/tag/%E4%B9%9D%E4%BB%BD" rel="noopener" target="_blank"&gt;標籤&lt;/a&gt; ／ &lt;a href="https://www.instagram.com/explore/tags/%E4%B9%9D%E4%BB%BD/" rel="noopener" target="_blank"&gt;Instagram&lt;/a&gt;'><a href="https://www.tiktok.com/search?q=%E4%B9%9D%E4%BB%BD%E8%80%81%E8%A1%97" rel="noopener" target="_blank">TikTok</a> ／ <a href="https://www.tiktok.com/tag/%E4%B9%9D%E4%BB%BD" rel="noopener" target="_blank">タグ</a> ／ <a href="https://www.instagram.com/explore/tags/%E4%B9%9D%E4%BB%BD/" rel="noopener" target="_blank">Instagram</a></td></tr>
+<tr><td data-zh='&lt;span class="nm"&gt;十分&lt;/span&gt;&lt;br/&gt;&lt;span class="zh2"&gt;十分老街 天燈&lt;/span&gt;'><span class="nm">十分</span><br/><span class="zh2">十分老街 天燈</span></td><td data-zh="天燈怎麼放、行情價多少，在這裡先確認">ランタンの上げ方と料金相場をここで確認</td><td data-zh='&lt;a href="https://www.tiktok.com/search?q=%E5%8D%81%E5%88%86%E8%80%81%E8%A1%97%20%E5%A4%A9%E7%87%88" rel="noopener" target="_blank"&gt;TikTok&lt;/a&gt; ／ &lt;a href="https://www.tiktok.com/tag/%E5%8D%81%E5%88%86" rel="noopener" target="_blank"&gt;標籤&lt;/a&gt; ／ &lt;a href="https://www.instagram.com/explore/tags/%E5%8D%81%E5%88%86/" rel="noopener" target="_blank"&gt;Instagram&lt;/a&gt;'><a href="https://www.tiktok.com/search?q=%E5%8D%81%E5%88%86%E8%80%81%E8%A1%97%20%E5%A4%A9%E7%87%88" rel="noopener" target="_blank">TikTok</a> ／ <a href="https://www.tiktok.com/tag/%E5%8D%81%E5%88%86" rel="noopener" target="_blank">タグ</a> ／ <a href="https://www.instagram.com/explore/tags/%E5%8D%81%E5%88%86/" rel="noopener" target="_blank">Instagram</a></td></tr>
+<tr><td data-zh='&lt;span class="nm"&gt;寧夏夜市&lt;/span&gt;&lt;br/&gt;&lt;span class="zh2"&gt;寧夏夜市&lt;/span&gt;'><span class="nm">寧夏夜市</span><br/><span class="zh2">寧夏夜市</span></td><td data-zh="Day1 的晚上。哪些攤位在排隊一看就知道">Day1の夜。行列している屋台が一目で分かる</td><td data-zh='&lt;a href="https://www.tiktok.com/search?q=%E5%AF%A7%E5%A4%8F%E5%A4%9C%E5%B8%82" rel="noopener" target="_blank"&gt;TikTok&lt;/a&gt; ／ &lt;a href="https://www.tiktok.com/tag/%E5%AF%A7%E5%A4%8F%E5%A4%9C%E5%B8%82" rel="noopener" target="_blank"&gt;標籤&lt;/a&gt; ／ &lt;a href="https://www.instagram.com/explore/tags/%E5%AF%A7%E5%A4%8F%E5%A4%9C%E5%B8%82/" rel="noopener" target="_blank"&gt;Instagram&lt;/a&gt;'><a href="https://www.tiktok.com/search?q=%E5%AF%A7%E5%A4%8F%E5%A4%9C%E5%B8%82" rel="noopener" target="_blank">TikTok</a> ／ <a href="https://www.tiktok.com/tag/%E5%AF%A7%E5%A4%8F%E5%A4%9C%E5%B8%82" rel="noopener" target="_blank">タグ</a> ／ <a href="https://www.instagram.com/explore/tags/%E5%AF%A7%E5%A4%8F%E5%A4%9C%E5%B8%82/" rel="noopener" target="_blank">Instagram</a></td></tr>
+<tr><td data-zh='&lt;span class="nm"&gt;饒河街夜市&lt;/span&gt;&lt;br/&gt;&lt;span class="zh2"&gt;饒河街夜市&lt;/span&gt;'><span class="nm">饒河街夜市</span><br/><span class="zh2">饒河街夜市</span></td><td data-zh="先看過胡椒餅怎麼烤再去，會更有趣">胡椒餅の焼き方を見てから行くと楽しい</td><td data-zh='&lt;a href="https://www.tiktok.com/search?q=%E9%A5%92%E6%B2%B3%E8%A1%97%E5%A4%9C%E5%B8%82" rel="noopener" target="_blank"&gt;TikTok&lt;/a&gt; ／ &lt;a href="https://www.tiktok.com/tag/%E9%A5%92%E6%B2%B3%E8%A1%97%E5%A4%9C%E5%B8%82" rel="noopener" target="_blank"&gt;標籤&lt;/a&gt; ／ &lt;a href="https://www.instagram.com/explore/tags/%E9%A5%92%E6%B2%B3%E8%A1%97%E5%A4%9C%E5%B8%82/" rel="noopener" target="_blank"&gt;Instagram&lt;/a&gt;'><a href="https://www.tiktok.com/search?q=%E9%A5%92%E6%B2%B3%E8%A1%97%E5%A4%9C%E5%B8%82" rel="noopener" target="_blank">TikTok</a> ／ <a href="https://www.tiktok.com/tag/%E9%A5%92%E6%B2%B3%E8%A1%97%E5%A4%9C%E5%B8%82" rel="noopener" target="_blank">タグ</a> ／ <a href="https://www.instagram.com/explore/tags/%E9%A5%92%E6%B2%B3%E8%A1%97%E5%A4%9C%E5%B8%82/" rel="noopener" target="_blank">Instagram</a></td></tr>
+<tr><td data-zh='&lt;span class="nm"&gt;士林夜市&lt;/span&gt;&lt;br/&gt;&lt;span class="zh2"&gt;士林夜市&lt;/span&gt;'><span class="nm">士林夜市</span><br/><span class="zh2">士林夜市</span></td><td data-zh="事先掌握週六的人潮程度">土曜の混雑度合いを事前に把握</td><td data-zh='&lt;a href="https://www.tiktok.com/search?q=%E5%A3%AB%E6%9E%97%E5%A4%9C%E5%B8%82" rel="noopener" target="_blank"&gt;TikTok&lt;/a&gt; ／ &lt;a href="https://www.tiktok.com/tag/%E5%A3%AB%E6%9E%97%E5%A4%9C%E5%B8%82" rel="noopener" target="_blank"&gt;標籤&lt;/a&gt; ／ &lt;a href="https://www.instagram.com/explore/tags/%E5%A3%AB%E6%9E%97%E5%A4%9C%E5%B8%82/" rel="noopener" target="_blank"&gt;Instagram&lt;/a&gt;'><a href="https://www.tiktok.com/search?q=%E5%A3%AB%E6%9E%97%E5%A4%9C%E5%B8%82" rel="noopener" target="_blank">TikTok</a> ／ <a href="https://www.tiktok.com/tag/%E5%A3%AB%E6%9E%97%E5%A4%9C%E5%B8%82" rel="noopener" target="_blank">タグ</a> ／ <a href="https://www.instagram.com/explore/tags/%E5%A3%AB%E6%9E%97%E5%A4%9C%E5%B8%82/" rel="noopener" target="_blank">Instagram</a></td></tr>
+<tr><td data-zh='&lt;span class="nm"&gt;北投溫泉&lt;/span&gt;&lt;br/&gt;&lt;span class="zh2"&gt;北投溫泉&lt;/span&gt;'><span class="nm">北投温泉</span><br/><span class="zh2">北投溫泉</span></td><td data-zh="各家設施的浴場樣貌和泡湯規矩">施設ごとの浴場の様子と作法</td><td data-zh='&lt;a href="https://www.tiktok.com/search?q=%E5%8C%97%E6%8A%95%E6%BA%AB%E6%B3%89" rel="noopener" target="_blank"&gt;TikTok&lt;/a&gt; ／ &lt;a href="https://www.tiktok.com/tag/%E5%8C%97%E6%8A%95%E6%B8%A9%E6%B3%89" rel="noopener" target="_blank"&gt;標籤&lt;/a&gt; ／ &lt;a href="https://www.instagram.com/explore/tags/%E5%8C%97%E6%8A%95%E6%B8%A9%E6%B3%89/" rel="noopener" target="_blank"&gt;Instagram&lt;/a&gt;'><a href="https://www.tiktok.com/search?q=%E5%8C%97%E6%8A%95%E6%BA%AB%E6%B3%89" rel="noopener" target="_blank">TikTok</a> ／ <a href="https://www.tiktok.com/tag/%E5%8C%97%E6%8A%95%E6%B8%A9%E6%B3%89" rel="noopener" target="_blank">タグ</a> ／ <a href="https://www.instagram.com/explore/tags/%E5%8C%97%E6%8A%95%E6%B8%A9%E6%B3%89/" rel="noopener" target="_blank">Instagram</a></td></tr>
+<tr><td data-zh='&lt;span class="nm"&gt;象山&lt;/span&gt;&lt;br/&gt;&lt;span class="zh2"&gt;象山 台北101&lt;/span&gt;'><span class="nm">象山</span><br/><span class="zh2">象山 台北101</span></td><td data-zh="日落時間和觀景點的人潮狀況">日没時刻と展望地の混み具合</td><td data-zh='&lt;a href="https://www.tiktok.com/search?q=%E8%B1%A1%E5%B1%B1%20%E5%8F%B0%E5%8C%97101" rel="noopener" target="_blank"&gt;TikTok&lt;/a&gt; ／ &lt;a href="https://www.tiktok.com/tag/%E8%B1%A1%E5%B1%B1" rel="noopener" target="_blank"&gt;標籤&lt;/a&gt; ／ &lt;a href="https://www.instagram.com/explore/tags/%E8%B1%A1%E5%B1%B1/" rel="noopener" target="_blank"&gt;Instagram&lt;/a&gt;'><a href="https://www.tiktok.com/search?q=%E8%B1%A1%E5%B1%B1%20%E5%8F%B0%E5%8C%97101" rel="noopener" target="_blank">TikTok</a> ／ <a href="https://www.tiktok.com/tag/%E8%B1%A1%E5%B1%B1" rel="noopener" target="_blank">タグ</a> ／ <a href="https://www.instagram.com/explore/tags/%E8%B1%A1%E5%B1%B1/" rel="noopener" target="_blank">Instagram</a></td></tr>
+<tr><td data-zh='&lt;span class="nm"&gt;迪化街&lt;/span&gt;&lt;br/&gt;&lt;span class="zh2"&gt;迪化街 大稻埕&lt;/span&gt;'><span class="nm">迪化街</span><br/><span class="zh2">迪化街 大稻埕</span></td><td data-zh="伴手禮的價位感和店家氛圍">土産の値段感と店の雰囲気</td><td data-zh='&lt;a href="https://www.tiktok.com/search?q=%E8%BF%AA%E5%8C%96%E8%A1%97%20%E5%A4%A7%E7%A8%BB%E5%9F%95" rel="noopener" target="_blank"&gt;TikTok&lt;/a&gt; ／ &lt;a href="https://www.tiktok.com/tag/%E8%BF%AA%E5%8C%96%E8%A1%97" rel="noopener" target="_blank"&gt;標籤&lt;/a&gt; ／ &lt;a href="https://www.instagram.com/explore/tags/%E8%BF%AA%E5%8C%96%E8%A1%97/" rel="noopener" target="_blank"&gt;Instagram&lt;/a&gt;'><a href="https://www.tiktok.com/search?q=%E8%BF%AA%E5%8C%96%E8%A1%97%20%E5%A4%A7%E7%A8%BB%E5%9F%95" rel="noopener" target="_blank">TikTok</a> ／ <a href="https://www.tiktok.com/tag/%E8%BF%AA%E5%8C%96%E8%A1%97" rel="noopener" target="_blank">タグ</a> ／ <a href="https://www.instagram.com/explore/tags/%E8%BF%AA%E5%8C%96%E8%A1%97/" rel="noopener" target="_blank">Instagram</a></td></tr>
+<tr><td data-zh='&lt;span class="nm"&gt;貓空&lt;/span&gt;&lt;br/&gt;&lt;span class="zh2"&gt;貓空纜車&lt;/span&gt;'><span class="nm">猫空</span><br/><span class="zh2">貓空纜車</span></td><td data-zh="纜車排隊情況和茶館的景色">ロープウェイの行列と茶館の眺め</td><td data-zh='&lt;a href="https://www.tiktok.com/search?q=%E8%B2%93%E7%A9%BA%E7%BA%9C%E8%BB%8A" rel="noopener" target="_blank"&gt;TikTok&lt;/a&gt; ／ &lt;a href="https://www.tiktok.com/tag/%E7%8C%AB%E7%A9%BA" rel="noopener" target="_blank"&gt;標籤&lt;/a&gt; ／ &lt;a href="https://www.instagram.com/explore/tags/%E7%8C%AB%E7%A9%BA/" rel="noopener" target="_blank"&gt;Instagram&lt;/a&gt;'><a href="https://www.tiktok.com/search?q=%E8%B2%93%E7%A9%BA%E7%BA%9C%E8%BB%8A" rel="noopener" target="_blank">TikTok</a> ／ <a href="https://www.tiktok.com/tag/%E7%8C%AB%E7%A9%BA" rel="noopener" target="_blank">タグ</a> ／ <a href="https://www.instagram.com/explore/tags/%E7%8C%AB%E7%A9%BA/" rel="noopener" target="_blank">Instagram</a></td></tr>
+<tr><td data-zh='&lt;span class="nm"&gt;鼎泰豐&lt;/span&gt;&lt;br/&gt;&lt;span class="zh2"&gt;鼎泰豐 小籠包&lt;/span&gt;'><span class="nm">鼎泰豐</span><br/><span class="zh2">鼎泰豐 小籠包</span></td><td data-zh="等候時間和點餐流程">待ち時間と注文の流れ</td><td data-zh='&lt;a href="https://www.tiktok.com/search?q=%E9%BC%8E%E6%B3%B0%E8%B1%90%20%E5%B0%8F%E7%B1%A0%E5%8C%85" rel="noopener" target="_blank"&gt;TikTok&lt;/a&gt; ／ &lt;a href="https://www.tiktok.com/tag/%E9%BC%8E%E6%B3%B0%E8%B1%90" rel="noopener" target="_blank"&gt;標籤&lt;/a&gt; ／ &lt;a href="https://www.instagram.com/explore/tags/%E9%BC%8E%E6%B3%B0%E8%B1%90/" rel="noopener" target="_blank"&gt;Instagram&lt;/a&gt;'><a href="https://www.tiktok.com/search?q=%E9%BC%8E%E6%B3%B0%E8%B1%90%20%E5%B0%8F%E7%B1%A0%E5%8C%85" rel="noopener" target="_blank">TikTok</a> ／ <a href="https://www.tiktok.com/tag/%E9%BC%8E%E6%B3%B0%E8%B1%90" rel="noopener" target="_blank">タグ</a> ／ <a href="https://www.instagram.com/explore/tags/%E9%BC%8E%E6%B3%B0%E8%B1%90/" rel="noopener" target="_blank">Instagram</a></td></tr>
+<tr><td data-zh='&lt;span class="nm"&gt;阜杭豆漿&lt;/span&gt;&lt;br/&gt;&lt;span class="zh2"&gt;阜杭豆漿&lt;/span&gt;'><span class="nm">阜杭豆漿</span><br/><span class="zh2">阜杭豆漿</span></td><td data-zh="排隊時間與點餐訣竅">行列の長さと注文のコツ</td><td data-zh='&lt;a href="https://www.tiktok.com/search?q=%E9%98%9C%E6%9D%AD%E8%B1%86%E6%BC%BF" rel="noopener" target="_blank"&gt;TikTok&lt;/a&gt; ／ &lt;a href="https://www.tiktok.com/tag/%E9%98%9C%E6%9D%AD%E8%B1%86%E6%BC%BF" rel="noopener" target="_blank"&gt;標籤&lt;/a&gt; ／ &lt;a href="https://www.instagram.com/explore/tags/%E9%98%9C%E6%9D%AD%E8%B1%86%E6%BC%BF/" rel="noopener" target="_blank"&gt;Instagram&lt;/a&gt;'><a href="https://www.tiktok.com/search?q=%E9%98%9C%E6%9D%AD%E8%B1%86%E6%BC%BF" rel="noopener" target="_blank">TikTok</a> ／ <a href="https://www.tiktok.com/tag/%E9%98%9C%E6%9D%AD%E8%B1%86%E6%BC%BF" rel="noopener" target="_blank">タグ</a> ／ <a href="https://www.instagram.com/explore/tags/%E9%98%9C%E6%9D%AD%E8%B1%86%E6%BC%BF/" rel="noopener" target="_blank">Instagram</a></td></tr>
+</tbody>
+</table></div>
+<h4 class="sec" data-zh="主題標籤（TikTok）">ハッシュタグ（TikTok）</h4>
+<div class="links" style="font-size:13.5px;gap:12px 18px"><a data-zh="#台灣旅行" href="https://www.tiktok.com/tag/%E5%8F%B0%E6%B9%BE%E6%97%85%E8%A1%8C" rel="noopener" target="_blank">#台湾旅行</a> <a data-zh="#台北美食" href="https://www.tiktok.com/tag/%E5%8F%B0%E5%8C%97%E3%82%B0%E3%83%AB%E3%83%A1" rel="noopener" target="_blank">#台北グルメ</a> <a data-zh="#台灣美食" href="https://www.tiktok.com/tag/%E5%8F%B0%E6%B9%BE%E3%82%B0%E3%83%AB%E3%83%A1" rel="noopener" target="_blank">#台湾グルメ</a> <a data-zh="#九份" href="https://www.tiktok.com/tag/%E4%B9%9D%E4%BB%BD" rel="noopener" target="_blank">#九份</a> <a data-zh="#台北旅行" href="https://www.tiktok.com/tag/%E5%8F%B0%E5%8C%97%E6%97%85%E8%A1%8C" rel="noopener" target="_blank">#台北旅行</a> <a data-zh="#台灣夜市" href="https://www.tiktok.com/tag/%E5%8F%B0%E6%B9%BE%E5%A4%9C%E5%B8%82" rel="noopener" target="_blank">#台湾夜市</a> <a data-zh="#台灣推薦" href="https://www.tiktok.com/tag/%E5%8F%B0%E6%B9%BE%E3%81%8A%E3%81%99%E3%81%99%E3%82%81" rel="noopener" target="_blank">#台湾おすすめ</a></div>
+<h4 class="sec" data-zh="搜尋小技巧">探し方のコツ</h4>
+<div class="grid2">
+<div class="card"><h3 data-zh="用中文搜尋">中国語で検索する</h3>
+<p data-zh="搜尋時比起「九份」不如打&lt;strong&gt;「九份老街」&lt;/strong&gt;，比起日文的「北投温泉」不如打&lt;strong&gt;「北投溫泉」&lt;/strong&gt;。用繁體字搜就會跑出當地使用者最近的貼文，能看到用日文查不到的&lt;strong&gt;目前的人潮和漲價狀況&lt;/strong&gt;。上面表格裡的TikTok搜尋連結都已經改成中文了。">「九份」より<strong>「九份老街」</strong>、「北投温泉」より<strong>「北投溫泉」</strong>。繁体字で引くと現地ユーザーの直近の投稿が出てきて、日本語だと拾えない<strong>今の混雑や値上げ</strong>が分かります。上の表のTikTok検索リンクは中国語表記にしてあります。</p>
+</div>
+<div class="card"><h3 data-zh="台灣的 Instagram 和 Threads 很強">台湾はInstagram・Threadsが強い</h3>
+<p data-zh="在台灣，TikTok主要是Z世代在用，&lt;strong&gt;找店的主戰場是Instagram和Google地圖&lt;/strong&gt;。想確認「這間店現在還有在開嗎？」的時候，看Google地圖上最新的評論照片最快。">台湾でのTikTokはZ世代中心で、<strong>店探しの主戦場はInstagramとGoogleマップ</strong>。「この店、今もやってる？」を確かめたいときは、Googleマップの最新クチコミ写真がいちばん速いです。</p>
+</div>
+<div class="card"><h3 data-zh="與其收藏，不如截圖">保存より、スクショ</h3>
+<p data-zh="看到想去的店，只把影片存起來，到了現場其實找不回來。&lt;strong&gt;把店名（繁體字）截圖下來並存到Google地圖&lt;/strong&gt;比較保險。在台灣只要把店名的漢字拿給人看就通了。">気になった店は動画を保存するだけだと現地で辿り直せません。<strong>店名（繁体字）をスクショしてGoogleマップに保存</strong>しておくのが確実。台湾では店名を漢字で見せれば通じます。</p>
+</div>
+<div class="card"><h3 data-zh="也留一個文字類的資訊來源">文字の情報源も一つ持つ</h3>
+<p data-zh="影片很會拍氣氛，但營業時間和公休日就不太可靠。搭配&lt;strong&gt;台北Navi&lt;/strong&gt;（日文、更新很快）和&lt;strong&gt;台北經濟新聞&lt;/strong&gt;（新店開幕資訊）一起看，就能把漏掉的資訊補齊。">動画は雰囲気に強く、営業時間や休業日には弱い。<strong>台北ナビ</strong>（日本語・更新が早い）と<strong>台北経済新聞</strong>（新店オープン情報）を合わせて見ると穴が埋まります。</p>
+<div class="links"><a data-zh="台北Navi" href="https://www.taipeinavi.com/" rel="noopener" target="_blank">台北ナビ</a><a data-zh="台北經濟新聞" href="https://taipei.keizai.biz/" rel="noopener" target="_blank">台北経済新聞</a></div>
+</div>
+</div>
 </section>
-
+<!-- ============ ASK ============ -->
+<section class="panel" id="ask" role="tabpanel" hidden>
+<div class="dayhead"><div class="daynum">?</div><div>
+<h2 data-zh="想請台灣朋友幫我確認的地方">台湾の友達に聞きたいこと</h2>
+<div class="when" data-zh="右上可以切換日文／繁體中文">右上のボタンで日本語⇄繁體中文を切り替え</div>
+</div></div>
+<p class="daysummary" data-zh="這是我第一次來台灣，行程都是查資料排的，所以很可能有「當地人不會這樣走」的地方。以下幾點特別想聽你的意見——直接跟我說「這個不行」也完全沒問題。">初めての台湾で、ネットの情報だけで組んだ日程です。現地の人から見ると「そうはしない」という部分があるはずなので、以下の点について意見をもらえると嬉しいです。「これはダメ」と率直に言ってもらって大丈夫です。</p>
+<ul class="asklist">
+<li><div><h3 data-zh="九份和十分，這個順序對嗎？">九份と十分、この順番で合ってる？</h3><p data-zh="上午在十分放天燈 → 經瑞芳 → 15:00 到九份，等 18:00 亮燈。如果反過來比較好，想聽你的理由。">十分でランタン（午前）→ 瑞芳経由 → 九份（15:00着、18:00の提灯狙い）という順番にしました。逆のほうがいい理由があれば教えてほしい。</p></div></li>
+<li><div><h3 data-zh="中秋連假（9/25〜28）有哪裡最好避開？">中秋連休（9/25〜28）、避けたほうがいい場所は？</h3><p data-zh="我後面三天剛好卡到連假。故宮、台北101、饒河街、士林在連假會不會太可怕？需要改時段嗎？">滞在の後半3日が連休と重なります。故宮・台北101・饒河街・士林あたりは連休だと厳しい？時間をずらすべき？</p></div></li>
+<li><div><h3 data-zh="北投溫泉，瀧乃湯還是千禧湯？">北投の温泉、瀧乃湯と千禧湯どっち？</h3><p data-zh="第一次來台灣，裸湯的公共浴場會不會太硬派？還是穿泳衣的露天比較保險？千禧湯整修好了嗎？">初台湾で裸の共同浴場はハードルが高いか、水着の露天のほうが無難か。千禧湯は改修から再開してる？</p></div></li>
+<li><div><h3 data-zh="我選的這些店，現在還推薦嗎？">この店選び、今もおすすめ？</h3><p data-zh="阿宗麵線、阜杭豆漿、矮仔財滷肉飯、林東芳牛肉麵、金峰。想知道有沒有變成觀光價，或是口味走鐘了。">阿宗麵線・阜杭豆漿・矮仔財滷肉飯・林東芳牛肉麵・金峰。観光地価格になっていたり、味が落ちていたりしないか気になる。</p></div></li>
+<li><div><h3 data-zh="從九份回台北，公車還是火車？">九份からの帰り、バスと電車どっち？</h3><p data-zh="本來想搭 1062 直接回忠孝復興，但連假會塞車的話，是不是回瑞芳搭火車比較準？">1062番バスで忠孝復興まで直帰する予定だけど、連休の渋滞を考えると瑞芳から台鐵のほうが読める？</p></div></li>
+<li><div><h3 data-zh="夜市現在哪一個最值得去？">夜市、今いちばんはどれ？</h3><p data-zh="我排了寧夏（走路就到）、饒河街、士林。你們現在最常去哪個？要不要換掉其中一個？">寧夏（ホテル徒歩圏）・饒河街・士林を入れました。地元の人が今いちばん行くのはどこ？入れ替えたほうがいい？</p></div></li>
+<li><div><h3 data-zh="一天 NT$1,500〜2,000 夠嗎？">1日 NT$1,500〜2,000 で足りる？</h3><p data-zh="這是吃、交通、門票的預算。太寬鬆或太緊的話請跟我說。">飲食＋交通＋入場料の想定です。ゆるすぎ／足りなすぎがあれば教えてほしい。</p></div></li>
+<li><div><h3 data-zh="有沒有我漏掉的？">これは抜けてる、というものある？</h3><p data-zh="如果有「第一次來台灣不吃這個不行」或「不去這裡太可惜」的，我可以重排行程。">「初台湾でこれを食べずに帰るな」「ここに行かないのは損」というものがあれば、日程を組み替えます。</p></div></li>
+<li><div><h3 data-zh="台北車站旁的青旅，還可以嗎？">台北車站そばのドミトリー、大丈夫？</h3><p data-zh="住 Cattail pocket Inn（大同區，離台北車站 700m）四晚。那一帶晚上的感覺怎麼樣？">Cattail pocket Inn（大同區、台北車站から700m）に4泊。夜のあの辺りの雰囲気はどう？</p></div></li>
+</ul>
+<div class="alert calm" style="margin-top:22px"><b data-zh="行程的全貌在上面的分頁">日程の全体は上のタブから</b>
+<p data-zh="Day1〜Day5 是每天的時間表，「想吃的東西」是餐廳清單，「基本資訊」是交通和預算。看到覺得怪的地方，跟我說是哪一天的哪個時段就可以了。">Day1〜Day5に毎日のタイムライン、「食べたい物」に店のリスト、「基本情報」に交通と予算があります。気になる箇所があれば「何日目の何時のところ」と教えてもらえれば直します。</p>
+</div>
+</section>
 <!-- ============ BASE ============ -->
-<section class="panel" id="base" role="tabpanel" hidden>
-  <div class="dayhead"><div class="daynum">i</div><div>
-    <h2>初台湾のための基本情報</h2>
-    <div class="when">出発前に片付けておきたいこと</div>
-  </div></div>
-
-  <h4 class="sec">予約済みの内容</h4>
-  <div class="grid2">
-    <div class="card"><h3>宿<span class="zh">Cattail pocket Inn</span></h3>
-      <p>9/23（水）〜9/27（日）4泊1室。ベーシック共用ドミトリー（男女共用・シングルベッド10台・禁煙・シティビュー）。台北駅から約700m、大同區。返金不可。</p>
-      <div class="meta"><span class="chip">★★／評価 8.6</span><span class="chip">MRT西門 1.1km</span></div>
-      <div class="links"><a href="https://www.google.com/maps/search/?api=1&amp;query=Cattail%20pocket%20Inn%20Taipei" target="_blank" rel="noopener">地図</a><a href="https://www.hotels.com/ho3270287264/cattail-pocket-inn-taipei-taiwan/" target="_blank" rel="noopener">施設情報</a></div>
-    </div>
-    <div class="card"><h3>航空券<span class="zh">ピーチ 往復</span></h3>
-      <p>往路 9/23 東京 06:00 → 台北 08:35（3h35m）／復路 9/27 台北 20:25 → 東京 00:45+1（3h20m）。Standard運賃、機内持込＋受託手荷物1個込み、<strong>返金不可・変更不可</strong>。座席は予約後にピーチへ直接問い合わせ。</p>
-      <div class="links"><a href="https://www.flypeach.com/jp" target="_blank" rel="noopener">Peach 公式</a></div>
-    </div>
-  </div>
-
-  <h4 class="sec">お金・通信・入国</h4>
-  <div class="grid2">
-    <div class="card"><h3>悠遊カード<span class="zh">EasyCard</span></h3>
-      <p>MRT・バス・台鐵区間車・コンビニまで使える交通ICカード。空港駅やコンビニで購入し、NT$500ほどチャージしておけば数日持ちます。九份のバスもこれでOK。</p>
-      <div class="links"><a href="https://www.easycard.com.tw/" target="_blank" rel="noopener">悠遊カード 公式</a></div>
-    </div>
-    <div class="card"><h3>現金とカード</h3>
-      <p>屋台・老街・地元食堂は現金が主。1日 NT$1,500〜2,000（約7,000〜9,500円）を目安に。デパート・チェーン店・MRTはカードや電子決済が使えます。空港ATMでの海外キャッシングも選択肢。</p>
-    </div>
-    <div class="card"><h3>SIM・eSIM</h3>
-      <p>空港の各キャリアカウンターで数日間の無制限プランが手軽（NT$300〜500程度）。事前にeSIMを買っておけば到着直後から使えて、カウンターの行列も回避できます。</p>
-    </div>
-    <div class="card"><h3>入国手続き</h3>
-      <p>日本国籍は90日以内の観光ビザ免除、パスポートの残存有効期間は帰国日まであればOK。入国カードは<strong>オンライン（入國登記表）で事前に提出</strong>すると到着後の記入が不要になります。</p>
-      <div class="links"><a href="https://www.immigration.gov.tw/" target="_blank" rel="noopener">台湾移民署（オンライン入国カード）</a><a href="https://www.mofa.go.jp/mofaj/toko/index.html" target="_blank" rel="noopener">外務省 海外安全情報</a></div>
-    </div>
-  </div>
-
-  <h4 class="sec">レート換算（出発前にレートを更新して使う）</h4>
-  <div class="conv">
-    <div class="row">
-      <input id="twd" type="number" inputmode="decimal" value="200" aria-label="台湾ドル">
-      <span class="unit">NT$</span>
-      <span class="unit">×</span>
-      <input id="rate" class="rate" type="number" inputmode="decimal" step="0.05" value="4.8" aria-label="1台湾ドルあたりの円">
-      <span class="unit">円/NT$</span>
-      <span class="unit">=</span>
-      <span class="eq" id="jpy">960</span><span class="unit">円</span>
-    </div>
-    <p class="hint">初期値のレートは目安です。屋台1品 NT$50〜100／魯肉飯 NT$40〜60／MRT 1区間 NT$20〜／空港MRT NT$160／九份の茶楼 NT$300〜500 が体感の物差しになります。</p>
-  </div>
-
-  <h4 class="sec">9月下旬の台北</h4>
-  <dl class="facts">
-    <dt>気温</dt><dd>最高30〜33℃／最低25℃前後。まだ夏の暑さ。半袖＋薄い羽織り、室内の強い冷房対策に長袖1枚。</dd>
-    <dt>雨</dt><dd>にわか雨と台風の可能性がある時期。折りたたみ傘は必携。台風接近時は運航情報を必ず確認。</dd>
-    <dt>日の入り</dt><dd>17:50〜18:00頃。九份の提灯狙いはこの時間から逆算。</dd>
-    <dt>服装</dt><dd>廟や博物館に服装制限はほぼ無し。九份・象山の階段があるのでスニーカー推奨。</dd>
-    <dt>祝日</dt><dd><strong>中秋節（9/25 金）＋教師節（9/28 月）で 9/25〜9/28 は台湾の4連休。</strong>滞在の後半3日がまるごと連休に重なります。郊外・観光地・人気店は相当な混雑を見込んでください。中秋節は家族でBBQをする習慣があり、街のあちこちで炭火の匂いがします。</dd>
-  </dl>
-
-  <h4 class="sec">覚えておくと効く中国語</h4>
-  <dl class="facts">
-    <dt>謝謝</dt><dd>シエシエ／ありがとう</dd>
-    <dt>這個</dt><dd>ジェーガ／「これ」。屋台は指差し＋これで完結</dd>
-    <dt>多少錢</dt><dd>ドゥオシャオチエン／いくらですか</dd>
-    <dt>不要香菜</dt><dd>ブーヤオ シャンツァイ／パクチー抜きで</dd>
-    <dt>輕一點</dt><dd>チンイーディエン／（マッサージで）やさしくして</dd>
-    <dt>內用／外帶</dt><dd>ネイヨン／ワイダイ＝店内で／持ち帰り</dd>
-  </dl>
-
-  <h4 class="sec">公式・便利リンク</h4>
-  <div class="links" style="font-size:13.5px;gap:16px 22px">
-    <a href="https://www.travel.taipei/ja" target="_blank" rel="noopener">台北観光サイト（日本語）</a>
-    <a href="https://jp.taiwan.net.tw/" target="_blank" rel="noopener">台湾観光庁</a>
-    <a href="https://www.metro.taipei/" target="_blank" rel="noopener">台北MRT</a>
-    <a href="https://www.railway.gov.tw/tra-tip-web/tip" target="_blank" rel="noopener">台鐵 時刻表</a>
-    <a href="https://www.cwa.gov.tw/eng/" target="_blank" rel="noopener">中央気象署（天気・台風）</a>
-    <a href="https://www.taipeinavi.com/" target="_blank" rel="noopener">台北ナビ</a>
-    <a href="https://guide.michelin.com/tw/zh_TW/taipei-region/taipei/restaurants" target="_blank" rel="noopener">ミシュラン台北</a>
-  </div>
+<section class="panel" hidden="" id="base" role="tabpanel">
+<div class="dayhead"><div class="daynum">i</div><div>
+<h2 data-zh="第一次來台灣的基本資訊">初台湾のための基本情報</h2>
+<div class="when" data-zh="出發前想先處理好的事">出発前に片付けておきたいこと</div>
+</div></div>
+<h4 class="sec" data-zh="已預訂的內容">予約済みの内容</h4>
+<div class="grid2">
+<div class="card"><h3 data-zh='住宿&lt;span class="zh"&gt;Cattail pocket Inn&lt;/span&gt;'>宿<span class="zh">Cattail pocket Inn</span></h3>
+<p data-zh="9/23（三）〜9/27（日）4晚1間。基本混合宿舍房（男女混住・單人床10張・禁菸・城市景觀）。距台北車站約700公尺，大同區。不可退款。">9/23（水）〜9/27（日）4泊1室。ベーシック共用ドミトリー（男女共用・シングルベッド10台・禁煙・シティビュー）。台北駅から約700m、大同區。返金不可。</p>
+<div class="meta"><span class="chip" data-zh="★★／評分 8.6">★★／評価 8.6</span><span class="chip" data-zh="捷運西門 1.1km">MRT西門 1.1km</span></div>
+<div class="links"><a data-zh="地圖" href="https://www.google.com/maps/search/?api=1&amp;query=Cattail%20pocket%20Inn%20Taipei" rel="noopener" target="_blank">地図</a><a data-zh="設施資訊" href="https://www.hotels.com/ho3270287264/cattail-pocket-inn-taipei-taiwan/" rel="noopener" target="_blank">施設情報</a></div>
+</div>
+<div class="card"><h3 data-zh='機票&lt;span class="zh"&gt;樂桃航空 來回&lt;/span&gt;'>航空券<span class="zh">ピーチ 往復</span></h3>
+<p data-zh="去程 9/23 東京 06:00 → 台北 08:35（3小時35分）／回程 9/27 台北 20:25 → 東京 00:45+1（3小時20分）。Standard票價，含隨身行李＋托運行李1件，&lt;strong&gt;不可退款・不可更改&lt;/strong&gt;。座位要在訂位後直接向樂桃航空詢問。">往路 9/23 東京 06:00 → 台北 08:35（3h35m）／復路 9/27 台北 20:25 → 東京 00:45+1（3h20m）。Standard運賃、機内持込＋受託手荷物1個込み、<strong>返金不可・変更不可</strong>。座席は予約後にピーチへ直接問い合わせ。</p>
+<div class="links"><a data-zh="樂桃航空 官網" href="https://www.flypeach.com/jp" rel="noopener" target="_blank">Peach 公式</a></div>
+</div>
+</div>
+<h4 class="sec" data-zh="錢・網路・入境">お金・通信・入国</h4>
+<div class="grid2">
+<div class="card"><h3 data-zh='悠遊卡&lt;span class="zh"&gt;EasyCard&lt;/span&gt;'>悠遊カード<span class="zh">EasyCard</span></h3>
+<p data-zh="捷運、公車、台鐵區間車，連便利商店都能用的交通IC卡。在機場站或便利商店買，加值NT$500左右就能撐好幾天。去九份的公車也可以用這張。">MRT・バス・台鐵区間車・コンビニまで使える交通ICカード。空港駅やコンビニで購入し、NT$500ほどチャージしておけば数日持ちます。九份のバスもこれでOK。</p>
+<div class="links"><a data-zh="悠遊卡 官網" href="https://www.easycard.com.tw/" rel="noopener" target="_blank">悠遊カード 公式</a></div>
+</div>
+<div class="card"><h3 data-zh="現金和信用卡">現金とカード</h3>
+<p data-zh="路邊攤、老街、在地小吃店主要收現金。一天大概準備 NT$1,500〜2,000（約7,000〜9,500日圓）。百貨公司、連鎖店、捷運可以刷卡或用電子支付。也可以在機場ATM直接提領現金。">屋台・老街・地元食堂は現金が主。1日 NT$1,500〜2,000（約7,000〜9,500円）を目安に。デパート・チェーン店・MRTはカードや電子決済が使えます。空港ATMでの海外キャッシングも選択肢。</p>
+</div>
+<div class="card"><h3>SIM・eSIM</h3>
+<p data-zh="在機場各家電信業者的櫃檯辦幾天的無限方案最方便（NT$300〜500左右）。事先買好eSIM的話，一下飛機就能用，也不必排櫃檯。">空港の各キャリアカウンターで数日間の無制限プランが手軽（NT$300〜500程度）。事前にeSIMを買っておけば到着直後から使えて、カウンターの行列も回避できます。</p>
+</div>
+<div class="card"><h3 data-zh="入境手續">入国手続き</h3>
+<p data-zh="日本國籍90天以內觀光免簽，護照效期只要到回國日之前都還有效就OK。入境卡&lt;strong&gt;先在網路上（入國登記表）預先送出&lt;/strong&gt;，到了就不用再填寫。">日本国籍は90日以内の観光ビザ免除、パスポートの残存有効期間は帰国日まであればOK。入国カードは<strong>オンライン（入國登記表）で事前に提出</strong>すると到着後の記入が不要になります。</p>
+<div class="links"><a data-zh="台灣移民署（線上入國登記表）" href="https://www.immigration.gov.tw/" rel="noopener" target="_blank">台湾移民署（オンライン入国カード）</a><a data-zh="日本外務省 海外安全資訊" href="https://www.mofa.go.jp/mofaj/toko/index.html" rel="noopener" target="_blank">外務省 海外安全情報</a></div>
+</div>
+</div>
+<h4 class="sec" data-zh="匯率換算（出發前更新匯率再用）">レート換算（出発前にレートを更新して使う）</h4>
+<div class="conv">
+<div class="row">
+<input aria-label="台湾ドル" id="twd" inputmode="decimal" type="number" value="200"/>
+<span class="unit">NT$</span>
+<span class="unit">×</span>
+<input aria-label="1台湾ドルあたりの円" class="rate" id="rate" inputmode="decimal" step="0.05" type="number" value="4.8"/>
+<span class="unit" data-zh="日圓/NT$">円/NT$</span>
+<span class="unit">=</span>
+<span class="eq" id="jpy">960</span><span class="unit" data-zh="日圓">円</span>
+</div>
+<p class="hint" data-zh="預設匯率只是參考。攤販一份 NT$50〜100／滷肉飯 NT$40〜60／捷運一站 NT$20 起／機場捷運 NT$160／九份茶樓 NT$300〜500，大概是這樣的物價感覺。">初期値のレートは目安です。屋台1品 NT$50〜100／魯肉飯 NT$40〜60／MRT 1区間 NT$20〜／空港MRT NT$160／九份の茶楼 NT$300〜500 が体感の物差しになります。</p>
+</div>
+<h4 class="sec" data-zh="9月下旬的台北">9月下旬の台北</h4>
+<dl class="facts">
+<dt data-zh="氣溫">気温</dt><dd data-zh="最高30〜33℃／最低25℃左右，還是夏天的熱度。短袖＋薄外套，室內冷氣強，再帶一件長袖。">最高30〜33℃／最低25℃前後。まだ夏の暑さ。半袖＋薄い羽織り、室内の強い冷房対策に長袖1枚。</dd>
+<dt data-zh="雨">雨</dt><dd data-zh="這個時期可能有午後雷陣雨和颱風，折傘一定要帶。颱風接近時務必確認班機動態。">にわか雨と台風の可能性がある時期。折りたたみ傘は必携。台風接近時は運航情報を必ず確認。</dd>
+<dt data-zh="日落">日の入り</dt><dd data-zh="大約 17:50〜18:00。想拍九份的燈籠，就從這個時間往前推算。">17:50〜18:00頃。九份の提灯狙いはこの時間から逆算。</dd>
+<dt data-zh="服裝">服装</dt><dd data-zh="廟宇和博物館基本上沒有服裝規定。九份、象山都要爬階梯，建議穿運動鞋。">廟や博物館に服装制限はほぼ無し。九份・象山の階段があるのでスニーカー推奨。</dd>
+<dt data-zh="假日">祝日</dt><dd data-zh="&lt;strong&gt;中秋節（9/25 五）＋教師節（9/28 一），9/25〜9/28 是台灣的四天連假。&lt;/strong&gt;行程後半三天整個撞上連假，郊區、觀光景點和熱門店家都會相當擁擠，請先做好心理準備。中秋節有全家烤肉的習慣，街上到處都聞得到炭火味。"><strong>中秋節（9/25 金）＋教師節（9/28 月）で 9/25〜9/28 は台湾の4連休。</strong>滞在の後半3日がまるごと連休に重なります。郊外・観光地・人気店は相当な混雑を見込んでください。中秋節は家族でBBQをする習慣があり、街のあちこちで炭火の匂いがします。</dd>
+</dl>
+<h4 class="sec" data-zh="記起來很好用的中文">覚えておくと効く中国語</h4>
+<dl class="facts">
+<dt data-zh="謝謝">謝謝</dt><dd data-zh="Xièxie／謝謝">シエシエ／ありがとう</dd>
+<dt data-zh="這個">這個</dt><dd data-zh="Zhège／「這個」。在攤販用手指＋這句就搞定">ジェーガ／「これ」。屋台は指差し＋これで完結</dd>
+<dt data-zh="多少錢">多少錢</dt><dd data-zh="Duōshǎo qián／多少錢">ドゥオシャオチエン／いくらですか</dd>
+<dt data-zh="不要香菜">不要香菜</dt><dd data-zh="Bùyào xiāngcài／不要加香菜">ブーヤオ シャンツァイ／パクチー抜きで</dd>
+<dt data-zh="輕一點">輕一點</dt><dd data-zh="Qīng yīdiǎn／（按摩時）請輕一點">チンイーディエン／（マッサージで）やさしくして</dd>
+<dt data-zh="內用／外帶">內用／外帶</dt><dd data-zh="Nèiyòng／Wàidài＝內用／外帶">ネイヨン／ワイダイ＝店内で／持ち帰り</dd>
+</dl>
+<h4 class="sec" data-zh="官網・實用連結">公式・便利リンク</h4>
+<div class="links" style="font-size:13.5px;gap:16px 22px">
+<a data-zh="台北旅遊網（日文）" href="https://www.travel.taipei/ja" rel="noopener" target="_blank">台北観光サイト（日本語）</a>
+<a data-zh="台灣觀光署" href="https://jp.taiwan.net.tw/" rel="noopener" target="_blank">台湾観光庁</a>
+<a data-zh="台北捷運" href="https://www.metro.taipei/" rel="noopener" target="_blank">台北MRT</a>
+<a data-zh="台鐵 時刻表" href="https://www.railway.gov.tw/tra-tip-web/tip" rel="noopener" target="_blank">台鐵 時刻表</a>
+<a data-zh="中央氣象署（天氣・颱風）" href="https://www.cwa.gov.tw/eng/" rel="noopener" target="_blank">中央気象署（天気・台風）</a>
+<a data-zh="台北Navi" href="https://www.taipeinavi.com/" rel="noopener" target="_blank">台北ナビ</a>
+<a data-zh="米其林台北" href="https://guide.michelin.com/tw/zh_TW/taipei-region/taipei/restaurants" rel="noopener" target="_blank">ミシュラン台北</a>
+</div>
 </section>
-
 <!-- ============ EAT ============ -->
-<section class="panel" id="eat" role="tabpanel" hidden>
-  <div class="dayhead"><div class="daynum">食</div><div>
-    <h2>食べたい物リスト</h2>
-    <div class="when">日程に組み込んだ物＋余力があれば</div>
-  </div></div>
-  <p class="daysummary">台湾は1食が安いので、少量を何度も食べるのが正解です。夜市は1店で満腹にせず1品ずつ。下の表は行程に入っている店（★）と、時間が余ったときの候補です。</p>
-
-  <h4 class="sec">これは押さえたい</h4>
-  <div class="tablewrap"><table>
-    <thead><tr><th>料理</th><th>店・場所</th><th>目安</th><th>いつ</th></tr></thead>
-    <tbody>
-      <tr><td><span class="nm">麵線</span><br><span class="zh2">とろみスープの細麵</span></td><td>阿宗麵線（西門）<br><a href="https://www.google.com/maps/search/?api=1&amp;query=%E9%98%BF%E5%AE%97%E9%BA%B5%E7%B7%9A%20%E8%A5%BF%E9%96%80" target="_blank" rel="noopener">地図</a></td><td class="price">NT$60</td><td>★ Day1 昼</td></tr>
-      <tr><td><span class="nm">厚餅夾蛋・鹹豆漿</span><br><span class="zh2">台湾式の朝食</span></td><td>阜杭豆漿（華山市場2F）<br><a href="https://www.google.com/maps/search/?api=1&amp;query=%E9%98%9C%E6%9D%AD%E8%B1%86%E6%BC%BF" target="_blank" rel="noopener">地図</a></td><td class="price">NT$100</td><td>★ Day2 朝</td></tr>
-      <tr><td><span class="nm">芋圓</span><br><span class="zh2">タロイモ団子・海の見える席</span></td><td>阿柑姨芋圓（九份）<br><a href="https://www.google.com/maps/search/?api=1&amp;query=%E9%98%BF%E6%9F%91%E5%A7%A8%E8%8A%8B%E5%9C%93" target="_blank" rel="noopener">地図</a></td><td class="price">NT$60</td><td>★ Day2 夕</td></tr>
-      <tr><td><span class="nm">台湾茶（茶楼）</span><br><span class="zh2">提灯の赤い木造建築</span></td><td>阿妹茶樓（九份）<br><a href="https://www.google.com/maps/search/?api=1&amp;query=%E9%98%BF%E5%A6%B9%E8%8C%B6%E6%A8%93" target="_blank" rel="noopener">地図</a></td><td class="price">NT$300〜500</td><td>★ Day2 夕</td></tr>
-      <tr><td><span class="nm">小籠包</span><br><span class="zh2">言うまでもない一皿</span></td><td>鼎泰豐 信義本店（東門）<br><a href="https://www.dintaifung.com.tw/" target="_blank" rel="noopener">公式</a></td><td class="price">NT$500〜700</td><td>★ Day3 昼</td></tr>
-      <tr><td><span class="nm">胡椒餅</span><br><span class="zh2">窯焼きの肉包</span></td><td>福州世祖胡椒餅（饒河街）<br><a href="https://www.google.com/maps/search/?api=1&amp;query=%E7%A6%8F%E5%B7%9E%E4%B8%96%E7%A5%96%E8%83%A1%E6%A4%92%E9%A4%85" target="_blank" rel="noopener">地図</a></td><td class="price">NT$60</td><td>★ Day3 夜</td></tr>
-      <tr><td><span class="nm">魯肉飯</span><br><span class="zh2">台湾のソウルフード</span></td><td>矮仔財滷肉飯（北投市場）<br><a href="https://www.google.com/maps/search/?api=1&amp;query=%E7%9F%AE%E4%BB%94%E8%B2%A1%E6%BB%B7%E8%82%89%E9%A3%AF" target="_blank" rel="noopener">地図</a></td><td class="price">NT$150</td><td>★ Day4 昼</td></tr>
-      <tr><td><span class="nm">揚げタロイモ団子</span><br><span class="zh2">ビブグルマンの屋台</span></td><td>劉芋仔（寧夏夜市）<br><a href="https://www.google.com/maps/search/?api=1&amp;query=%E5%8A%89%E8%8A%8B%E4%BB%94%20%E5%AF%A7%E5%A4%8F%E5%A4%9C%E5%B8%82" target="_blank" rel="noopener">地図</a></td><td class="price">NT$30</td><td>★ Day1 夜</td></tr>
-    </tbody>
-  </table></div>
-
-  <h4 class="sec">余力があれば</h4>
-  <div class="tablewrap"><table>
-    <thead><tr><th>料理</th><th>店・場所</th><th>目安</th><th>メモ</th></tr></thead>
-    <tbody>
-      <tr><td><span class="nm">牛肉麵</span></td><td>林東芳牛肉麵（忠孝復興）<br><a href="https://www.google.com/maps/search/?api=1&amp;query=%E6%9E%97%E6%9D%B1%E8%8A%B3%E7%89%9B%E8%82%89%E9%9C%B5" target="_blank" rel="noopener">地図</a></td><td class="price">NT$200</td><td>Day2の帰着が忠孝復興なので合流しやすい</td></tr>
-      <tr><td><span class="nm">魯肉飯・排骨</span></td><td>金峰魯肉飯（中正紀念堂）<br><a href="https://www.google.com/maps/search/?api=1&amp;query=%E9%87%91%E5%B3%B0%E9%AD%AF%E8%82%89%E9%A3%AF" target="_blank" rel="noopener">地図</a></td><td class="price">NT$120</td><td>Day1の中正紀念堂とセットにできる</td></tr>
-      <tr><td><span class="nm">マンゴーかき氷</span></td><td>思慕昔（永康街）<br><a href="https://www.google.com/maps/search/?api=1&amp;query=%E6%80%9D%E6%85%95%E6%98%94%20%E6%B0%B8%E5%BA%B7%E8%A1%97" target="_blank" rel="noopener">地図</a></td><td class="price">NT$200</td><td>マンゴーは旬の終盤。要確認</td></tr>
-      <tr><td><span class="nm">スペシャルティ珈琲</span></td><td>Simple Kaffa 興波咖啡<br><a href="https://www.simplekaffa.com/" target="_blank" rel="noopener">公式</a></td><td class="price">NT$180</td><td>世界チャンピオンの店。Day5の候補</td></tr>
-      <tr><td><span class="nm">杏仁豆腐</span></td><td>夏樹甜品（迪化街）<br><a href="https://www.google.com/maps/search/?api=1&amp;query=%E5%A4%8F%E6%A8%B9%E7%94%9C%E5%93%81" target="_blank" rel="noopener">地図</a></td><td class="price">NT$70</td><td>Day4の大稻埕散策の途中に</td></tr>
-      <tr><td><span class="nm">鳳梨酥（土産）</span></td><td>佳德糕餅／微熱山丘<br><a href="https://www.sunnyhills.com.tw/" target="_blank" rel="noopener">公式</a></td><td class="price">NT$400〜</td><td>Day5にまとめ買い</td></tr>
-      <tr><td><span class="nm">タピオカミルクティー</span></td><td>春水堂／五十嵐／可不可</td><td class="price">NT$60</td><td>甘さ・氷の量を指定（微糖／少冰）</td></tr>
-    </tbody>
-  </table></div>
+<section class="panel" hidden="" id="eat" role="tabpanel">
+<div class="dayhead"><div class="daynum">食</div><div>
+<h2 data-zh="想吃的清單">食べたい物リスト</h2>
+<div class="when" data-zh="已排進行程的＋有餘力再加的">日程に組み込んだ物＋余力があれば</div>
+</div></div>
+<p class="daysummary" data-zh="台灣一餐很便宜，所以少量多餐才是正解。夜市不要在一家就吃飽，一攤點一樣。下面的表格是已排進行程的店（★），以及有多的時間時的候補。">台湾は1食が安いので、少量を何度も食べるのが正解です。夜市は1店で満腹にせず1品ずつ。下の表は行程に入っている店（★）と、時間が余ったときの候補です。</p>
+<h4 class="sec" data-zh="這些一定要帶">これは押さえたい</h4>
+<div class="tablewrap"><table>
+<thead><tr><th data-zh="料理">料理</th><th data-zh="店家・地點">店・場所</th><th data-zh="價格參考">目安</th><th data-zh="何時">いつ</th></tr></thead>
+<tbody>
+<tr><td data-zh='&lt;span class="nm"&gt;麵線&lt;/span&gt;&lt;br/&gt;&lt;span class="zh2"&gt;濃稠湯頭的細麵&lt;/span&gt;'><span class="nm">麵線</span><br/><span class="zh2">とろみスープの細麵</span></td><td data-zh='阿宗麵線（西門）&lt;br/&gt;&lt;a href="https://www.google.com/maps/search/?api=1&amp;amp;query=%E9%98%BF%E5%AE%97%E9%BA%B5%E7%B7%9A%20%E8%A5%BF%E9%96%80" rel="noopener" target="_blank"&gt;地圖&lt;/a&gt;'>阿宗麵線（西門）<br/><a href="https://www.google.com/maps/search/?api=1&amp;query=%E9%98%BF%E5%AE%97%E9%BA%B5%E7%B7%9A%20%E8%A5%BF%E9%96%80" rel="noopener" target="_blank">地図</a></td><td class="price">NT$60</td><td data-zh="★ Day1 中午">★ Day1 昼</td></tr>
+<tr><td data-zh='&lt;span class="nm"&gt;厚餅夾蛋、鹹豆漿&lt;/span&gt;&lt;br/&gt;&lt;span class="zh2"&gt;台式早餐&lt;/span&gt;'><span class="nm">厚餅夾蛋・鹹豆漿</span><br/><span class="zh2">台湾式の朝食</span></td><td data-zh='阜杭豆漿（華山市場2F）&lt;br/&gt;&lt;a href="https://www.google.com/maps/search/?api=1&amp;amp;query=%E9%98%9C%E6%9D%AD%E8%B1%86%E6%BC%BF" rel="noopener" target="_blank"&gt;地圖&lt;/a&gt;'>阜杭豆漿（華山市場2F）<br/><a href="https://www.google.com/maps/search/?api=1&amp;query=%E9%98%9C%E6%9D%AD%E8%B1%86%E6%BC%BF" rel="noopener" target="_blank">地図</a></td><td class="price">NT$100</td><td data-zh="★ Day2 早上">★ Day2 朝</td></tr>
+<tr><td data-zh='&lt;span class="nm"&gt;芋圓&lt;/span&gt;&lt;br/&gt;&lt;span class="zh2"&gt;芋圓、看得到海的座位&lt;/span&gt;'><span class="nm">芋圓</span><br/><span class="zh2">タロイモ団子・海の見える席</span></td><td data-zh='阿柑姨芋圓（九份）&lt;br/&gt;&lt;a href="https://www.google.com/maps/search/?api=1&amp;amp;query=%E9%98%BF%E6%9F%91%E5%A7%A8%E8%8A%8B%E5%9C%93" rel="noopener" target="_blank"&gt;地圖&lt;/a&gt;'>阿柑姨芋圓（九份）<br/><a href="https://www.google.com/maps/search/?api=1&amp;query=%E9%98%BF%E6%9F%91%E5%A7%A8%E8%8A%8B%E5%9C%93" rel="noopener" target="_blank">地図</a></td><td class="price">NT$60</td><td data-zh="★ Day2 傍晚">★ Day2 夕</td></tr>
+<tr><td data-zh='&lt;span class="nm"&gt;台灣茶（茶樓）&lt;/span&gt;&lt;br/&gt;&lt;span class="zh2"&gt;紅燈籠的木造老屋&lt;/span&gt;'><span class="nm">台湾茶（茶楼）</span><br/><span class="zh2">提灯の赤い木造建築</span></td><td data-zh='阿妹茶樓（九份）&lt;br/&gt;&lt;a href="https://www.google.com/maps/search/?api=1&amp;amp;query=%E9%98%BF%E5%A6%B9%E8%8C%B6%E6%A8%93" rel="noopener" target="_blank"&gt;地圖&lt;/a&gt;'>阿妹茶樓（九份）<br/><a href="https://www.google.com/maps/search/?api=1&amp;query=%E9%98%BF%E5%A6%B9%E8%8C%B6%E6%A8%93" rel="noopener" target="_blank">地図</a></td><td class="price">NT$300〜500</td><td data-zh="★ Day2 傍晚">★ Day2 夕</td></tr>
+<tr><td data-zh='&lt;span class="nm"&gt;小籠包&lt;/span&gt;&lt;br/&gt;&lt;span class="zh2"&gt;不用多說的必吃&lt;/span&gt;'><span class="nm">小籠包</span><br/><span class="zh2">言うまでもない一皿</span></td><td data-zh='鼎泰豐 信義本店（東門）&lt;br/&gt;&lt;a href="https://www.dintaifung.com.tw/" rel="noopener" target="_blank"&gt;官網&lt;/a&gt;'>鼎泰豐 信義本店（東門）<br/><a href="https://www.dintaifung.com.tw/" rel="noopener" target="_blank">公式</a></td><td class="price">NT$500〜700</td><td data-zh="★ Day3 中午">★ Day3 昼</td></tr>
+<tr><td data-zh='&lt;span class="nm"&gt;胡椒餅&lt;/span&gt;&lt;br/&gt;&lt;span class="zh2"&gt;窯烤肉餡餅&lt;/span&gt;'><span class="nm">胡椒餅</span><br/><span class="zh2">窯焼きの肉包</span></td><td data-zh='福州世祖胡椒餅（饒河街）&lt;br/&gt;&lt;a href="https://www.google.com/maps/search/?api=1&amp;amp;query=%E7%A6%8F%E5%B7%9E%E4%B8%96%E7%A5%96%E8%83%A1%E6%A4%92%E9%A4%85" rel="noopener" target="_blank"&gt;地圖&lt;/a&gt;'>福州世祖胡椒餅（饒河街）<br/><a href="https://www.google.com/maps/search/?api=1&amp;query=%E7%A6%8F%E5%B7%9E%E4%B8%96%E7%A5%96%E8%83%A1%E6%A4%92%E9%A4%85" rel="noopener" target="_blank">地図</a></td><td class="price">NT$60</td><td data-zh="★ Day3 晚上">★ Day3 夜</td></tr>
+<tr><td data-zh='&lt;span class="nm"&gt;滷肉飯&lt;/span&gt;&lt;br/&gt;&lt;span class="zh2"&gt;台灣的國民美食&lt;/span&gt;'><span class="nm">魯肉飯</span><br/><span class="zh2">台湾のソウルフード</span></td><td data-zh='矮仔財滷肉飯（北投市場）&lt;br/&gt;&lt;a href="https://www.google.com/maps/search/?api=1&amp;amp;query=%E7%9F%AE%E4%BB%94%E8%B2%A1%E6%BB%B7%E8%82%89%E9%A3%AF" rel="noopener" target="_blank"&gt;地圖&lt;/a&gt;'>矮仔財滷肉飯（北投市場）<br/><a href="https://www.google.com/maps/search/?api=1&amp;query=%E7%9F%AE%E4%BB%94%E8%B2%A1%E6%BB%B7%E8%82%89%E9%A3%AF" rel="noopener" target="_blank">地図</a></td><td class="price">NT$150</td><td data-zh="★ Day4 中午">★ Day4 昼</td></tr>
+<tr><td data-zh='&lt;span class="nm"&gt;炸芋丸&lt;/span&gt;&lt;br/&gt;&lt;span class="zh2"&gt;必比登推介的攤位&lt;/span&gt;'><span class="nm">揚げタロイモ団子</span><br/><span class="zh2">ビブグルマンの屋台</span></td><td data-zh='劉芋仔（寧夏夜市）&lt;br/&gt;&lt;a href="https://www.google.com/maps/search/?api=1&amp;amp;query=%E5%8A%89%E8%8A%8B%E4%BB%94%20%E5%AF%A7%E5%A4%8F%E5%A4%9C%E5%B8%82" rel="noopener" target="_blank"&gt;地圖&lt;/a&gt;'>劉芋仔（寧夏夜市）<br/><a href="https://www.google.com/maps/search/?api=1&amp;query=%E5%8A%89%E8%8A%8B%E4%BB%94%20%E5%AF%A7%E5%A4%8F%E5%A4%9C%E5%B8%82" rel="noopener" target="_blank">地図</a></td><td class="price">NT$30</td><td data-zh="★ Day1 晚上">★ Day1 夜</td></tr>
+</tbody>
+</table></div>
+<h4 class="sec" data-zh="有餘力再帶">余力があれば</h4>
+<div class="tablewrap"><table>
+<thead><tr><th data-zh="料理">料理</th><th data-zh="店家・地點">店・場所</th><th data-zh="價格參考">目安</th><th data-zh="備註">メモ</th></tr></thead>
+<tbody>
+<tr><td data-zh='&lt;span class="nm"&gt;牛肉麵&lt;/span&gt;'><span class="nm">牛肉麵</span></td><td data-zh='林東芳牛肉麵（忠孝復興）&lt;br/&gt;&lt;a href="https://www.google.com/maps/search/?api=1&amp;amp;query=%E6%9E%97%E6%9D%B1%E8%8A%B3%E7%89%9B%E8%82%89%E9%9C%B5" rel="noopener" target="_blank"&gt;地圖&lt;/a&gt;'>林東芳牛肉麵（忠孝復興）<br/><a href="https://www.google.com/maps/search/?api=1&amp;query=%E6%9E%97%E6%9D%B1%E8%8A%B3%E7%89%9B%E8%82%89%E9%9C%B5" rel="noopener" target="_blank">地図</a></td><td class="price">NT$200</td><td data-zh="Day2 回程剛好會到忠孝復興，很方便會合">Day2の帰着が忠孝復興なので合流しやすい</td></tr>
+<tr><td data-zh='&lt;span class="nm"&gt;滷肉飯、排骨&lt;/span&gt;'><span class="nm">魯肉飯・排骨</span></td><td data-zh='金峰魯肉飯（中正紀念堂）&lt;br/&gt;&lt;a href="https://www.google.com/maps/search/?api=1&amp;amp;query=%E9%87%91%E5%B3%B0%E9%AD%AF%E8%82%89%E9%A3%AF" rel="noopener" target="_blank"&gt;地圖&lt;/a&gt;'>金峰魯肉飯（中正紀念堂）<br/><a href="https://www.google.com/maps/search/?api=1&amp;query=%E9%87%91%E5%B3%B0%E9%AD%AF%E8%82%89%E9%A3%AF" rel="noopener" target="_blank">地図</a></td><td class="price">NT$120</td><td data-zh="可以跟 Day1 的中正紀念堂排在一起">Day1の中正紀念堂とセットにできる</td></tr>
+<tr><td data-zh='&lt;span class="nm"&gt;芒果冰&lt;/span&gt;'><span class="nm">マンゴーかき氷</span></td><td data-zh='思慕昔（永康街）&lt;br/&gt;&lt;a href="https://www.google.com/maps/search/?api=1&amp;amp;query=%E6%80%9D%E6%85%95%E6%98%94%20%E6%B0%B8%E5%BA%B7%E8%A1%97" rel="noopener" target="_blank"&gt;地圖&lt;/a&gt;'>思慕昔（永康街）<br/><a href="https://www.google.com/maps/search/?api=1&amp;query=%E6%80%9D%E6%85%95%E6%98%94%20%E6%B0%B8%E5%BA%B7%E8%A1%97" rel="noopener" target="_blank">地図</a></td><td class="price">NT$200</td><td data-zh="芒果已接近產季尾聲，要先確認">マンゴーは旬の終盤。要確認</td></tr>
+<tr><td data-zh='&lt;span class="nm"&gt;精品咖啡&lt;/span&gt;'><span class="nm">スペシャルティ珈琲</span></td><td data-zh='Simple Kaffa 興波咖啡&lt;br/&gt;&lt;a href="https://www.simplekaffa.com/" rel="noopener" target="_blank"&gt;官網&lt;/a&gt;'>Simple Kaffa 興波咖啡<br/><a href="https://www.simplekaffa.com/" rel="noopener" target="_blank">公式</a></td><td class="price">NT$180</td><td data-zh="世界冠軍開的店，Day5 的候選">世界チャンピオンの店。Day5の候補</td></tr>
+<tr><td data-zh='&lt;span class="nm"&gt;杏仁豆腐&lt;/span&gt;'><span class="nm">杏仁豆腐</span></td><td data-zh='夏樹甜品（迪化街）&lt;br/&gt;&lt;a href="https://www.google.com/maps/search/?api=1&amp;amp;query=%E5%A4%8F%E6%A8%B9%E7%94%9C%E5%93%81" rel="noopener" target="_blank"&gt;地圖&lt;/a&gt;'>夏樹甜品（迪化街）<br/><a href="https://www.google.com/maps/search/?api=1&amp;query=%E5%A4%8F%E6%A8%B9%E7%94%9C%E5%93%81" rel="noopener" target="_blank">地図</a></td><td class="price">NT$70</td><td data-zh="Day4 逛大稻埕時順路過去">Day4の大稻埕散策の途中に</td></tr>
+<tr><td data-zh='&lt;span class="nm"&gt;鳳梨酥（伴手禮）&lt;/span&gt;'><span class="nm">鳳梨酥（土産）</span></td><td data-zh='佳德糕餅／微熱山丘&lt;br/&gt;&lt;a href="https://www.sunnyhills.com.tw/" rel="noopener" target="_blank"&gt;官網&lt;/a&gt;'>佳德糕餅／微熱山丘<br/><a href="https://www.sunnyhills.com.tw/" rel="noopener" target="_blank">公式</a></td><td class="price">NT$400〜</td><td data-zh="Day5 一次買齊">Day5にまとめ買い</td></tr>
+<tr><td data-zh='&lt;span class="nm"&gt;珍珠奶茶&lt;/span&gt;'><span class="nm">タピオカミルクティー</span></td><td data-zh="春水堂／五十嵐／可不可">春水堂／五十嵐／可不可</td><td class="price">NT$60</td><td data-zh="記得指定甜度和冰塊（微糖／少冰）">甘さ・氷の量を指定（微糖／少冰）</td></tr>
+</tbody>
+</table></div>
 </section>
-
 <!-- ============ PACK ============ -->
-<section class="panel" id="pack" role="tabpanel" hidden>
-  <div class="dayhead"><div class="daynum">✓</div><div>
-    <h2>持ち物チェックリスト</h2>
-    <div class="when">タップで消える。この端末に保存されます</div>
-  </div></div>
-  <p class="daysummary">ドミトリー4泊＋温泉＋よく歩く行程に合わせた内容です。チェック状態はこの端末のブラウザに保存されるので、荷造りしながら消していけます。</p>
-
-  <h4 class="sec">絶対に忘れられない</h4>
-  <ul class="checks" id="list1">
-    <li><input type="checkbox" id="c1"><label for="c1">パスポート<span class="why">帰国日まで有効なら90日ビザ免除</span></label></li>
-    <li><input type="checkbox" id="c2"><label for="c2">航空券の予約確認メール<span class="why">ターミナルと便名をここで確認</span></label></li>
-    <li><input type="checkbox" id="c3"><label for="c3">ホテルの予約確認<span class="why">住所を中国語表記でも保存しておく</span></label></li>
-    <li><input type="checkbox" id="c4"><label for="c4">クレジットカード＋現金（円）<span class="why">両替用に多少の日本円</span></label></li>
-    <li><input type="checkbox" id="c5"><label for="c5">オンライン入国カードの提出<span class="why">到着後の記入が省ける</span></label></li>
-    <li><input type="checkbox" id="c6"><label for="c6">前泊 or 深夜移動の手配<span class="why">6:00発／0:45着の両方</span></label></li>
-    <li><input type="checkbox" id="c7"><label for="c7">海外旅行保険<span class="why">カード付帯の適用条件も確認</span></label></li>
-    <li><input type="checkbox" id="c8"><label for="c8">プライオリティパス（カード / アプリ）<span class="why">往路の Sky Lounge South 用</span></label></li>
-    <li><input type="checkbox" id="c9"><label for="c9">帰国後 0:45着の過ごし方を決める<span class="why">泉天空の湯 or 宿 or 深夜バス</span></label></li>
-  </ul>
-
-  <h4 class="sec">ドミトリー4泊のために</h4>
-  <ul class="checks" id="list2">
-    <li><input type="checkbox" id="c10"><label for="c10">耳栓とアイマスク<span class="why">共用ドミトリーでの睡眠を左右する</span></label></li>
-    <li><input type="checkbox" id="c11"><label for="c11">南京錠（小）<span class="why">ロッカー用。貴重品は常に身につける</span></label></li>
-    <li><input type="checkbox" id="c12"><label for="c12">サンダル・ビーチサンダル<span class="why">シャワー室と館内移動用</span></label></li>
-    <li><input type="checkbox" id="c13"><label for="c13">速乾タオル<span class="why">温泉でも使える。備品が薄い宿もある</span></label></li>
-    <li><input type="checkbox" id="c14"><label for="c14">小さめの巾着・ポーチ<span class="why">洗面用具をまとめて持ち歩く</span></label></li>
-    <li><input type="checkbox" id="c15"><label for="c15">モバイルバッテリー＋短いケーブル<span class="why">ベッドのコンセントが遠いことがある</span></label></li>
-  </ul>
-
-  <h4 class="sec">台湾・9月の気候向け</h4>
-  <ul class="checks" id="list3">
-    <li><input type="checkbox" id="c20"><label for="c20">折りたたみ傘（晴雨兼用）<span class="why">にわか雨と日差しの両対応</span></label></li>
-    <li><input type="checkbox" id="c21"><label for="c21">薄手の長袖<span class="why">室内・MRTの冷房が強い</span></label></li>
-    <li><input type="checkbox" id="c22"><label for="c22">歩けるスニーカー<span class="why">九份・象山の階段用</span></label></li>
-    <li><input type="checkbox" id="c23"><label for="c23">日焼け止め・帽子</label></li>
-    <li><input type="checkbox" id="c24"><label for="c24">着替え多め＋汗拭きシート<span class="why">1日で汗だくになる</span></label></li>
-    <li><input type="checkbox" id="c25"><label for="c25">水着・スイムキャップ<span class="why">千禧湯の露天に入る場合のみ必須</span></label></li>
-  </ul>
-
-  <h4 class="sec">あると快適</h4>
-  <ul class="checks" id="list4">
-    <li><input type="checkbox" id="c30"><label for="c30">eSIM設定 or WiFiルーター予約</label></li>
-    <li><input type="checkbox" id="c31"><label for="c31">エコバッグ<span class="why">台湾はレジ袋が有料</span></label></li>
-    <li><input type="checkbox" id="c32"><label for="c32">ウェットティッシュ・ティッシュ<span class="why">屋台と公共トイレ用</span></label></li>
-    <li><input type="checkbox" id="c33"><label for="c33">胃腸薬・常備薬</label></li>
-    <li><input type="checkbox" id="c34"><label for="c34">土産を入れる余裕（サブバッグ）</label></li>
-    <li><input type="checkbox" id="c35"><label for="c35">Google マップのオフライン地図<span class="why">台北市街を事前ダウンロード</span></label></li>
-  </ul>
-
-  <button class="resetbtn" id="reset">チェックをすべて解除</button>
+<section class="panel" hidden="" id="pack" role="tabpanel">
+<div class="dayhead"><div class="daynum">✓</div><div>
+<h2 data-zh="行李檢查清單">持ち物チェックリスト</h2>
+<div class="when" data-zh="點一下就打勾，記錄會存在這台裝置">タップで消える。この端末に保存されます</div>
+</div></div>
+<p class="daysummary" data-zh="內容是配合背包客房4晚＋溫泉＋要走很多路的行程。打勾的狀態會存在這台裝置的瀏覽器裡，可以邊打包邊一項項勾掉。">ドミトリー4泊＋温泉＋よく歩く行程に合わせた内容です。チェック状態はこの端末のブラウザに保存されるので、荷造りしながら消していけます。</p>
+<h4 class="sec" data-zh="絕對不能忘">絶対に忘れられない</h4>
+<ul class="checks" id="list1">
+<li><input id="c1" type="checkbox"/><label data-zh='護照&lt;span class="why"&gt;效期涵蓋回國日就能享90天免簽&lt;/span&gt;' for="c1">パスポート<span class="why">帰国日まで有効なら90日ビザ免除</span></label></li>
+<li><input id="c2" type="checkbox"/><label data-zh='機票的訂位確認信&lt;span class="why"&gt;在這裡確認航廈和班機號碼&lt;/span&gt;' for="c2">航空券の予約確認メール<span class="why">ターミナルと便名をここで確認</span></label></li>
+<li><input id="c3" type="checkbox"/><label data-zh='飯店的訂房確認&lt;span class="why"&gt;地址也存一份中文的&lt;/span&gt;' for="c3">ホテルの予約確認<span class="why">住所を中国語表記でも保存しておく</span></label></li>
+<li><input id="c4" type="checkbox"/><label data-zh='信用卡＋現金（日圓）&lt;span class="why"&gt;留一些日圓換錢用&lt;/span&gt;' for="c4">クレジットカード＋現金（円）<span class="why">両替用に多少の日本円</span></label></li>
+<li><input id="c5" type="checkbox"/><label data-zh='線上填寫入境登記表&lt;span class="why"&gt;抵達後就不用再填&lt;/span&gt;' for="c5">オンライン入国カードの提出<span class="why">到着後の記入が省ける</span></label></li>
+<li><input id="c6" type="checkbox"/><label data-zh='前一晚住宿 or 深夜移動的安排&lt;span class="why"&gt;6:00 出發／0:45 抵達兩邊都要&lt;/span&gt;' for="c6">前泊 or 深夜移動の手配<span class="why">6:00発／0:45着の両方</span></label></li>
+<li><input id="c7" type="checkbox"/><label data-zh='海外旅遊保險&lt;span class="why"&gt;信用卡附的保險也要看適用條件&lt;/span&gt;' for="c7">海外旅行保険<span class="why">カード付帯の適用条件も確認</span></label></li>
+<li><input id="c8" type="checkbox"/><label data-zh='Priority Pass（卡片 / App）&lt;span class="why"&gt;去程要用 Sky Lounge South&lt;/span&gt;' for="c8">プライオリティパス（カード / アプリ）<span class="why">往路の Sky Lounge South 用</span></label></li>
+<li><input id="c9" type="checkbox"/><label data-zh='決定回國 0:45 落地後怎麼過&lt;span class="why"&gt;泉天空之湯 or 住一晚 or 深夜巴士&lt;/span&gt;' for="c9">帰国後 0:45着の過ごし方を決める<span class="why">泉天空の湯 or 宿 or 深夜バス</span></label></li>
+</ul>
+<h4 class="sec" data-zh="住4晚多人房會用到">ドミトリー4泊のために</h4>
+<ul class="checks" id="list2">
+<li><input id="c10" type="checkbox"/><label data-zh='耳塞和眼罩&lt;span class="why"&gt;住多人房睡得好不好就看這個&lt;/span&gt;' for="c10">耳栓とアイマスク<span class="why">共用ドミトリーでの睡眠を左右する</span></label></li>
+<li><input id="c11" type="checkbox"/><label data-zh='小掛鎖&lt;span class="why"&gt;給置物櫃用。貴重物品隨身帶著&lt;/span&gt;' for="c11">南京錠（小）<span class="why">ロッカー用。貴重品は常に身につける</span></label></li>
+<li><input id="c12" type="checkbox"/><label data-zh='涼鞋、夾腳拖&lt;span class="why"&gt;淋浴間和館內走動用&lt;/span&gt;' for="c12">サンダル・ビーチサンダル<span class="why">シャワー室と館内移動用</span></label></li>
+<li><input id="c13" type="checkbox"/><label data-zh='快乾毛巾&lt;span class="why"&gt;泡溫泉也能用。有些住宿備品很少&lt;/span&gt;' for="c13">速乾タオル<span class="why">温泉でも使える。備品が薄い宿もある</span></label></li>
+<li><input id="c14" type="checkbox"/><label data-zh='小束口袋或收納包&lt;span class="why"&gt;把洗漱用品裝在一起帶著走&lt;/span&gt;' for="c14">小さめの巾着・ポーチ<span class="why">洗面用具をまとめて持ち歩く</span></label></li>
+<li><input id="c15" type="checkbox"/><label data-zh='行動電源＋短充電線&lt;span class="why"&gt;床邊的插座有時離很遠&lt;/span&gt;' for="c15">モバイルバッテリー＋短いケーブル<span class="why">ベッドのコンセントが遠いことがある</span></label></li>
+</ul>
+<h4 class="sec" data-zh="因應台灣9月天氣">台湾・9月の気候向け</h4>
+<ul class="checks" id="list3">
+<li><input id="c20" type="checkbox"/><label data-zh='折傘（晴雨兩用）&lt;span class="why"&gt;突然下雨和大太陽都能應付&lt;/span&gt;' for="c20">折りたたみ傘（晴雨兼用）<span class="why">にわか雨と日差しの両対応</span></label></li>
+<li><input id="c21" type="checkbox"/><label data-zh='薄長袖&lt;span class="why"&gt;室內和捷運的冷氣很強&lt;/span&gt;' for="c21">薄手の長袖<span class="why">室内・MRTの冷房が強い</span></label></li>
+<li><input id="c22" type="checkbox"/><label data-zh='好走的運動鞋&lt;span class="why"&gt;爬九份、象山的階梯用&lt;/span&gt;' for="c22">歩けるスニーカー<span class="why">九份・象山の階段用</span></label></li>
+<li><input id="c23" type="checkbox"/><label data-zh="防曬乳、帽子" for="c23">日焼け止め・帽子</label></li>
+<li><input id="c24" type="checkbox"/><label data-zh='多帶幾套換洗衣物＋擦汗濕紙巾&lt;span class="why"&gt;一天就會滿身汗&lt;/span&gt;' for="c24">着替え多め＋汗拭きシート<span class="why">1日で汗だくになる</span></label></li>
+<li><input id="c25" type="checkbox"/><label data-zh='泳衣、泳帽&lt;span class="why"&gt;只有要泡千禧湯露天池才需要&lt;/span&gt;' for="c25">水着・スイムキャップ<span class="why">千禧湯の露天に入る場合のみ必須</span></label></li>
+</ul>
+<h4 class="sec" data-zh="有了更舒適">あると快適</h4>
+<ul class="checks" id="list4">
+<li><input id="c30" type="checkbox"/><label data-zh="eSIM 設定 or 預約 WiFi 分享器" for="c30">eSIM設定 or WiFiルーター予約</label></li>
+<li><input id="c31" type="checkbox"/><label data-zh='環保袋&lt;span class="why"&gt;台灣的塑膠袋要另外付錢&lt;/span&gt;' for="c31">エコバッグ<span class="why">台湾はレジ袋が有料</span></label></li>
+<li><input id="c32" type="checkbox"/><label data-zh='濕紙巾、衛生紙&lt;span class="why"&gt;吃路邊攤和上公廁用得到&lt;/span&gt;' for="c32">ウェットティッシュ・ティッシュ<span class="why">屋台と公共トイレ用</span></label></li>
+<li><input id="c33" type="checkbox"/><label data-zh="腸胃藥、常備藥" for="c33">胃腸薬・常備薬</label></li>
+<li><input id="c34" type="checkbox"/><label data-zh="留一點空間裝伴手禮（備用袋）" for="c34">土産を入れる余裕（サブバッグ）</label></li>
+<li><input id="c35" type="checkbox"/><label data-zh='Google 地圖的離線地圖&lt;span class="why"&gt;先把台北市區下載下來&lt;/span&gt;' for="c35">Google マップのオフライン地図<span class="why">台北市街を事前ダウンロード</span></label></li>
+</ul>
+<button class="resetbtn" data-zh="全部取消勾選" id="reset">チェックをすべて解除</button>
 </section>
-
 <footer>
-  <p>時刻・料金・営業日は 2026年9月時点の目安です。中秋節（9/25）前後や台風の接近で変わることがあるため、出かける朝に各公式サイトで確認してください。</p>
-  <p>作成：2026年9月6日 ／ 参照：台北観光サイト、台鐵、桃園空港MRT、台北ナビ ほか</p>
+<p data-zh="時間、費用和營業日都是 2026年9月的參考資訊。中秋節（9/25）前後或颱風接近時可能會有變動，出門當天早上請再到各官網確認。">時刻・料金・営業日は 2026年9月時点の目安です。中秋節（9/25）前後や台風の接近で変わることがあるため、出かける朝に各公式サイトで確認してください。</p>
+<p data-zh="製作：2026年9月6日 ／ 參考：台北旅遊網、台鐵、桃園機場捷運、台北Navi 等">作成：2026年9月6日 ／ 参照：台北観光サイト、台鐵、桃園空港MRT、台北ナビ ほか</p>
 </footer>
 </div>
-
 <script>
 (function(){
   var tabs=[].slice.call(document.querySelectorAll('.navrow button'));
@@ -923,6 +877,28 @@ footer p{margin:0 0 6px}
     out.textContent=Math.round(v*r).toLocaleString('ja-JP');
   }
   twd.addEventListener('input',calc); rate.addEventListener('input',calc); calc();
+
+
+  // ---- language toggle ----
+  var LKEY='taipei2026.lang';
+  var i18n=[].slice.call(document.querySelectorAll('[data-zh]'));
+  i18n.forEach(function(n){ n.setAttribute('data-ja', n.innerHTML); });
+  var lbtns=[].slice.call(document.querySelectorAll('.langbar button'));
+  function setLang(l){
+    if(l!=='zh') l='ja';
+    document.documentElement.setAttribute('data-lang',l);
+    document.documentElement.setAttribute('lang', l==='zh' ? 'zh-Hant-TW' : 'ja');
+    i18n.forEach(function(n){
+      var v = (l==='zh') ? n.getAttribute('data-zh') : n.getAttribute('data-ja');
+      if(v!==null) n.innerHTML=v;
+    });
+    lbtns.forEach(function(b){ b.setAttribute('aria-pressed', String(b.getAttribute('data-lang')===l)); });
+    try{ localStorage.setItem(LKEY,l); }catch(e){}
+  }
+  lbtns.forEach(function(b){ b.addEventListener('click',function(){ setLang(b.getAttribute('data-lang')); }); });
+  var savedLang='ja';
+  try{ savedLang=localStorage.getItem(LKEY)||'ja'; }catch(e){}
+  setLang(savedLang);
 
   var KEY='taipei2026.packing';
   var boxes=[].slice.call(document.querySelectorAll('.checks input[type=checkbox]'));
